@@ -20,10 +20,11 @@
 
 :appendix-caption: Annex
 
-image:./media/image1.jpeg[image,width=108,height=108]INSPIRE
+image:./media/image1.jpeg[image,width=108,height=108]
+**INSPIRE**
+*Infrastructure for Spatial Information in Europe*
 
-Infrastructure for Spatial Information in Europe
-
+[discrete]
 = Technical Guidance for the implementation of INSPIRE View Services
 
 [width="100%",cols="29%,71%",]
