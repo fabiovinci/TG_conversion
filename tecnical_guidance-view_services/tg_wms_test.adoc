@@ -13,7 +13,7 @@
 :toc-title:
 
 // TOC level depth
-:toclevels: 4
+:toclevels: 7
 
 // Section numbering level depth
 :sectnumlevels: 7
