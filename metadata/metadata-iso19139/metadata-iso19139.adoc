@@ -6,6 +6,8 @@
 :toclevels: 4
 :sectnumlevels: 4
 
+:appendix-caption: Annex
+
 image:.\media/image1.png[image,width=107,height=107]
 **INSPIRE**
 *Infrastructure for Spatial Information in Europe*
@@ -137,6 +139,7 @@ The informative Annex C contains detailed tables for all the INSPIRE metadata el
 * {blank}
 +
 
+[appendix]
 Annex D contains a listing of the code lists referenced in this document including the URI’s of the code lists and their current content.
 
 * {blank}
@@ -4434,6 +4437,7 @@ If the metadata contains at least one the _srv:containsOperations/srv:SV_Operati
 For all the required and optional request parameters of all the operations described using _srv:containsOperations/srv:SV_OperationMetadata_ elements, the following child elements of s__rv:parameters/srv:SV_Parameter__ element shall be given__:srv:name/gco:aName__ shall contain the name of the parameter as used by the service. The content of this element is a Non-empty Free Text Element. The element _srv:name/gco:attributeType_ shall contain the record or the type part of the attribute name. The multiplicity of the _srv:name_ element is 1._srv:optionality_ shall contain information about whether the attribute is required or optional. The content of this element is a Non-empty Free Text Element. The multiplicity of this element is 1.srv:repeatability/gco:Boolean shall contain indicate whether the attribute can be given more than once in one operation. The value "true" shall be used indicate that the attribute may be repeated, "false" that only it may be given only once._srv:valueType/gco:TypeName/gco:Name_ shall indicate the data type of the attribute.
 ====
 
+[appendix]
 == Annex A Abstract Test Suites
 
 This Annex only contains the structure of the Abstract Test Suites and the contained Conformance Classes for testing the metadata records against the requirements of this specification. The Test Cases for the Conformance Classes are provided in a separate repositoryfootnote:[At the time of writing, the test cases for these Conformance Classes were not yet published. The repository for the Conformance Classes will be made available at http://inspire.ec.europa.eu/id/ats/metadata/2.0.].
@@ -4470,6 +4474,7 @@ This section contains test cases covering all the TG Requirements of Conformance
 
 This section contains test cases covering all the TG Requirements of Conformance Class 7: INSPIRE Harmonised Spatial Data Services metadata (http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-harmonised).
 
+[appendix]
 == Annex B Mapping of ISO 19115:2003 Core elements and INSPIRE Implementing Rules for metadata (informative)
 
 === Spatial dataset and spatial dataset series
@@ -4557,6 +4562,7 @@ The table below compares the core requirements of ISO 19115 (see Table 3 in 6.5 
 * The conformance of an ISO 19115 metadata set to the ISO 19115 Core does not guarantee the conformance to INSPIRE;
 * The use of these guidelines to create INSPIRE metadata ensures that the metadata is not in conflict with ISO 19115. However, full conformance to ISO 19115 implies the provision of additional metadata elements which are not required by the INSPIRE Implementing Rule on Metadata.
 
+[appendix]
 == Annex C INSPIRE metadata element catalog (informative)
 
 The following tables describe the mapping between the metadata elements of INSPIRE, as defined in the [Regulation 1205/2008] and [Regulation 1089/2010] (including its amendments [Regulation 1253/2013] and [Regulation 1312/2014]) and ISO 19115/ISO 19119. For each of the INSPIRE Metadata element, the mapping is composed of the main characteristics of the metadata element as they are defined in the INSPIRE implementing rules (IR) for metadata and the main characteristics of the corresponding metadata element of ISO 19115 or ISO 19119:
@@ -6796,7 +6802,6 @@ Due to making use of DQ_QuantitativeResult subset there is a mandatory element i
 |Comments |ISO 19115 lists several elements which build DQ_Element. For the purpose of theme-specific metadata according to the INSPIRE Data specifications the elements won by mapping from ISO 19157 are sufficient.
 |===
 
-== Annex D Referenced code lists and code list values
 
 === Limitations on public access
 
@@ -6880,6 +6885,7 @@ a|
 |3D compound: 2D geodetic in ETRS89 on GRS80, and EVRS height(Latitude, Longitude, H) |ETRS89-GRS80- EVRS |http://www.opengis.net/def/crs/EPSG/0/7409
 |===
 
+[appendix]
 == Annex E Mapping between IR element numbers and TG Requirements
 
 [width="99%",cols="20%,13%,24%,25%,18%",options="header",]
@@ -6986,6 +6992,7 @@ a|
 |[Regulation 1089/2010], Annex VII, (Harmonised SDS) |Part B 3 |Invocation metadata |TG Requirement 7.1, TG Requirement 7.2, TG Requirement 7.3 |4.5.1.1
 |===
 
+[appendix]
 == Annex F Mapping for Requirements in previous TG versions
 
 [width="100%",cols="44%,30%,26%",options="header",]
@@ -7179,6 +7186,7 @@ TG Requirement 7.2
 |TG SDS 3.1, Implementation Requirement 18 |[Not relevant to metadata] |-
 |===
 
-== Annex G Examples of complete INSPIRE metadata records
+[appendix]
+== Examples of complete INSPIRE metadata records
 
 Examples of complete metadata records compliant with this technical guidance are available at https://github.com/INSPIRE-MIF/helpdesk-validator/tree/master/examples.
