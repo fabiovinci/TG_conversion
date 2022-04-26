@@ -24,7 +24,7 @@ image:./media/image1.jpeg[image,width=108,height=108]INSPIRE
 
 Infrastructure for Spatial Information in Europe
 
-*Technical Guidance for the implementation of INSPIRE View Services*
+= Technical Guidance for the implementation of INSPIRE View Services
 
 [width="100%",cols="29%,71%",]
 |===
