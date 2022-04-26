@@ -13,10 +13,10 @@
 :toc-title:
 
 // TOC level depth
-:toclevels: 7
+:toclevels: 5
 
 // Section numbering level depth
-:sectnumlevels: 7
+:sectnumlevels: 8
 
 :appendix-caption: Annex
 
