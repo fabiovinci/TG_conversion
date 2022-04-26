@@ -52,125 +52,7 @@ toc::[]
 
 *TABLE OF CONTENTS*
 
-Acknowledgements link:#acknowledgements[5]
 
-Foreword link:#foreword[6]
-
-Revision History link:#revision-history[8]
-
-1 Introduction link:#introduction[10]
-
-2 Normative references link:#normative-references[11]
-
-3 Terms and abbreviations link:#terms-and-abbreviations[12]
-
-3.1 Terms link:#terms[12]
-
-3.2 Abbreviations link:#abbreviations[12]
-
-3.3 Verbal forms for the expression of provisions link:#verbal-forms-for-the-expression-of-provisions[13]
-
-3.4 References link:#references[13]
-
-4 INSPIRE Profile of ISO 19128 link:#inspire-profile-of-iso-19128[14]
-
-4.1 General background link:#general-background[14]
-
-4.2 View service operations link:#view-service-operations[16]
-
-4.2.1 Common requests parameters for the View Service operations link:#common-requests-parameters-for-the-view-service-operations[16]
-
-4.2.2 View service exceptions link:#view-service-exceptions[16]
-
-4.2.3 Get View Service Metadata operation link:#get-view-service-metadata-operation[17]
-
-4.2.3.1 General link:#general[17]
-
-4.2.3.2 GetCapabilities operation link:#getcapabilities-operation[17]
-
-4.2.3.3 GetCapabilities response link:#getcapabilities-response[19]
-
-4.2.4 Get Map Operation link:#get-map-operation[46]
-
-4.2.4.1 GetMap operation link:#getmap-operation[46]
-
-4.2.5 Link View Service operation link:#link-view-service-operation[50]
-
-4.2.5.1 Centralised scenario link:#centralised-scenario[51]
-
-4.2.5.2 View client scenario link:#view-client-scenario[51]
-
-4.2.5.3 View Service scenario link:#view-service-scenario[52]
-
-4.2.5.4 General requirement when collating maps link:#general-requirement-when-collating-maps[53]
-
-4.3 Language Requirements link:#language-requirements[54]
-
-4.3.1 GetCapabilities-Operation link:#getcapabilities-operation-1[54]
-
-4.3.1.1 GetMap-Operation link:#getmap-operation-1[57]
-
-4.3.2 Common concept for other operations (optional) link:#common-concept-for-other-operations-optional[57]
-
-4.3.3 Further Perspectives link:#further-perspectives[59]
-
-5 INSPIRE Profile of WMTS 1.0.0 link:#inspire-profile-of-wmts-1.0.0[60]
-
-5.1 General background link:#general-background-1[60]
-
-5.2 View service operations link:#view-service-operations-1[60]
-
-5.2.1 Common requests parameters for the View Service operations link:#common-requests-parameters-for-the-view-service-operations-1[61]
-
-5.2.2 View service exceptions link:#view-service-exceptions-1[61]
-
-5.2.3 Get View Service Metadata operation link:#get-view-service-metadata-operation-1[61]
-
-5.2.3.1 General link:#general-1[61]
-
-5.2.3.2 GetCapabilities operation link:#getcapabilities-operation-2[62]
-
-5.2.3.3 GetCapabilities response link:#getcapabilities-response-1[62]
-
-5.2.4 Get Map Operation link:#get-map-operation-1[76]
-
-5.2.4.1 GetTile operation link:#gettile-operation[76]
-
-5.2.5 Link View Service operation link:#link-view-service-operation-1[77]
-
-5.2.6 Language Requirements link:#language-requirements-1[77]
-
-5.2.6.1 GetCapabilities link:#getcapabilities[77]
-
-5.2.6.2 Exceptions link:#exceptions-1[78]
-
-5.2.7 Interoperability: TileMatrixSet link:#interoperability-tilematrixset[78]
-
-5.2.7.1 InspireCRS84Quad link:#inspirecrs84quad[78]
-
-5.2.7.2 Schema definition for extended capabilities for OWS 1.1 (inspire_vs_ows_11.xsd) link:#schema-definition-for-extended-capabilities-for-ows-1.1-inspire_vs_ows_11.xsd[80]
-
-6 Quality of Services link:#quality-of-services[81]
-
-6.1 General requirements link:#general-requirements[81]
-
-6.2 Performance link:#performance[81]
-
-6.2.1 Implementation requirements mandated by the Implementing Rule link:#implementation-requirements-mandated-by-the-implementing-rule[81]
-
-6.2.2 Normalized testing procedure link:#normalized-testing-procedure[81]
-
-6.3 Capacity link:#capacity[82]
-
-6.3.1 Implementation requirements mandated by the Implementing Rule link:#implementation-requirements-mandated-by-the-implementing-rule-1[82]
-
-6.3.2 Normalized testing procedure link:#normalized-testing-procedure-1[82]
-
-6.4 Availability link:#availability[83]
-
-6.4.1 Implementation requirements mandated by the Implementing Rule link:#implementation-requirements-mandated-by-the-implementing-rule-2[83]
-
-6.4.2 Normalized testing procedure link:#normalized-testing-procedure-2[83]
 
 Annex A INSPIRE Profile of Tiling WMS link:#_toc1913[84]
 
@@ -846,7 +728,7 @@ The ServiceType for an ISO 19128:2005(E) – WMS1.3.0 is fixed to "WMS".
 |FORMAT=MIME_type |O |Output format of service metadata. Defaults to text/xml.
 |===
 
-image:./media/image5.emf[UC1,width=604,height=855]
+image:./media/image5.png[UC1,width=604,height=855]
 
 [#_Ref161740370 .anchor]####Figure : Get View Service Metadata Use Case (UC1)
 
@@ -4918,7 +4800,7 @@ The _TileMatrixSet_ described here is based on the third _Well Known Scale Sets_
 Level 0 of InspireCRS84Quad is similar to level 1 of GoogleCRS84Quad with a change in the origin of the tiles. Level 1 of GoogleCRS84Quad allows representing the whole world in a four 256x256 pixels tiles where the first 128 lines of the top tiles and last 128 lines of the bottom tiles are left blank.
 
 ____
-image:./media/image12.emf[image,width=294,height=283]
+image:./media/image12.png[image,width=294,height=283]
 ____
 
 [#_Ref224365615 .anchor]####Figure : Level 1 GoogleCRS84Quad, Four 256x256 pixels tiles
