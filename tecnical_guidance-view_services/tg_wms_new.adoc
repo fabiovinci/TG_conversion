@@ -20,6 +20,8 @@
 
 :appendix-caption: Annex
 
+:figure-caption: Figure
+
 image:./media/image1.jpeg[image,width=108,height=108]
 **INSPIRE**
 *Infrastructure for Spatial Information in Europe*
@@ -284,6 +286,20 @@ In addition to the Implementing Rules, non-binding Technical Guidance documents 
 image:./media/image2.png[image,width=604,height=347]
 
 [#_Ref137635453 .anchor]####Figure : Relationship between INSPIRE Implementing Rules and Technical Guidance
+
+[caption="Figure {counter:figure}:]
+.Relationship between INSPIRE Implementing Rules and Technical Guidance
+[[Figure_1]]
+image::/media/image2.png[image,width=604,height=347,align="center"]
+
+image:./media/image2.png[image,width=604,height=347]
+
+Figure 1 : Relationship between INSPIRE Implementing Rules and Technical Guidance
+
+
+.Relationship between INSPIRE Implementing Rules and Technical Guidance
+image::./media/image2.png[image,width=604,height=347,align="center"]
+
 
 Technical Guidance documents define how Member States might implement the Implementing Rules described in a Commission Regulation. Technical Guidance documents may include non-binding technical requirements that must be satisfied if a Member State chooses to conform to the Technical Guidance. Implementing this technical guidance will maximise the interoperability of INSPIRE services.
 
@@ -841,6 +857,22 @@ inspire_common:SupportedLanguages
 This is a characteristic and often-unique name by which the resource is known. It is mapped with the <wms:Title> element.
 
 [#_Toc156382979 .anchor]####Example : Resource title
+
+[source,xml,subs="+quotes"]
+----
+<wms:WMS_Capabilities version="1.3.0" xmlns:wms="http://www.opengis.net/wms>
+<wms:service>
+  <wms:name>
+    WMS
+  </wms:name>
+  <wms:title>
+    Member State INSPIRE View Service
+  </wms:title>
+  ...
+</wms:service>
+----
+
+.Resource title
 
 [source,xml,subs="+quotes"]
 ----
