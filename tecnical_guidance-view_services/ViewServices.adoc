@@ -284,22 +284,24 @@ making it possible, as a minimum, to display, navigate, zoom in/out, pan, or ove
 
 === Abbreviations
 
-GET HTTP Get Method
-INSPIRE Infrastructure for Spatial Information in Europe
-IOC Initial Operations Capability
-ISO International Organisation for Standardisation
-MD Metadata
-NS Network Services
-OGC Open Geospatial Consortium
-OWS OGC Web Services
-SLD Styled Layer Descriptor
-TF Task Force
-URL Universal Resource Locator
-UUID Universal Unique Identifier
-WMS Web Map Service
-WMS-C WMS Tile Cashing
-WMTS Web Map Tiling Service
-XML eXtended Markup Language
+|===
+|GET| HTTP Get Method
+|INSPIRE| Infrastructure for Spatial Information in Europe
+|IOC| Initial Operations Capability
+|ISO| International Organisation for Standardisation
+|MD| Metadata
+|NS| Network Services
+|OGC| Open Geospatial Consortium
+|OWS| OGC Web Services
+|SLD| Styled Layer Descriptor
+|TF| Task Force
+|URL| Universal Resource Locator
+|UUID| Universal Unique Identifier
+|WMS| Web Map Service
+|WMS-C| WMS Tile Cashing
+|WMTS| Web Map Tiling Service
+|XML| eXtended Markup Language
+|===
 
 === Verbal forms for the expression of provisions
 
