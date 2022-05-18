@@ -109,7 +109,8 @@ In particular with respect the Network Services, Implementing Rules are required
 
 In addition to the Implementing Rules, non-binding Technical Guidance documents describe detailed implementation aspects and relations with existing standards, technologies, and practices. They may need to be revised during the course of implementing the infrastructure to take into account the evolution of technology, new requirements, and cost benefit considerations. Figure 1 illustrates the relationship between the INSPIRE Regulations containing Implementing Rules and their corresponding Technical Guidance documents.
 
-image:./media/image2.png[image,width=604,height=347,align=center]
+image:./media/image2.png[image,width=604,height=347, align=center]
+
 [.text-center]
 Figure1: Relationship between INSPIRE Implementing Rules and Technical Guidance
 
@@ -117,7 +118,7 @@ Technical Guidance documents define how Member States might implement the Implem
 
 This Technical Guidance concerns the INSPIRE View Services. The Technical Guidance contains detailed technical documentation highlighting the mandatory and the recommended elements related to the implementation of INSPIRE View Services. The technical provisions and the underlying concepts are often illustrated by use case diagrams and accompanied by examples.
 
-This document will be publicly available as a 'non-paper', as it does not represent an official position of the Commission, and as such cannot be invoked in the context of legal procedures.
+*This document will be publicly available as a 'non-paper', as it does not represent an official position of the Commission, and as such cannot be invoked in the context of legal procedures.*
 
 *Legal Notice*
 
@@ -201,7 +202,7 @@ Following this Technical Guidance will ensure that INSPIRE View Services are imp
 image:./media/image3.png[image,width=604,height=315, align=center]
 
 [.text-center]
-Figure : Extending ISO and OGC Standards for INSPIRE Requirements
+Figure2 : Extending ISO and OGC Standards for INSPIRE Requirements
 
 This document specifies requirements and recommendations based on the European de jure standard [*ISO 19128*] – Web Map Service (WMS) 1.3.0. It defines an INSPIRE Profile of [*ISO 19128*] to implement the following operations:
 
@@ -284,35 +285,20 @@ making it possible, as a minimum, to display, navigate, zoom in/out, pan, or ove
 === Abbreviations
 
 GET HTTP Get Method
-
 INSPIRE Infrastructure for Spatial Information in Europe
-
 IOC Initial Operations Capability
-
 ISO International Organisation for Standardisation
-
 MD Metadata
-
 NS Network Services
-
 OGC Open Geospatial Consortium
-
 OWS OGC Web Services
-
 SLD Styled Layer Descriptor
-
 TF Task Force
-
 URL Universal Resource Locator
-
 UUID Universal Unique Identifier
-
 WMS Web Map Service
-
 WMS-C WMS Tile Cashing
-
 WMTS Web Map Tiling Service
-
 XML eXtended Markup Language
 
 === Verbal forms for the expression of provisions
@@ -386,10 +372,10 @@ The base specification of an INSPIRE View Service relies on the [*ISO 19128*] In
 
 Section 4.2 and subsequent sections specify required extensions to the base specification. They are laid down following the [*ISO 19128,* Section 6.9] document structure.
 
-image:./media/image4.png[image,width=604,height=538, align=center]
+image:./media/image4.png[image,width=604,height=538,align=“center”]
 
 [.text-center]
-[#_Ref162312273 .anchor]####Figure : INSPIRE Generic Use Case
+*Figure 3*: INSPIRE Generic Use Case
 
 Figure 3 illustrates use cases for the creation and publication of metadata, their discovery through a discovery service and viewing of spatial data sets via an INSPIRE View service.
 
@@ -451,10 +437,10 @@ The following sections specify the required extensions to the given specificatio
 *Implementation Requirement 3* The following ISO 19128 operations shall be implemented for an INSPIRE View service: GetCapabilities; GetMap.
 ====
 
+[.text-center]
+*Table 1* : View Service Operations
 
-[#_Ref161913256 .anchor]####Table : View Service Operations
-
-[width="100%",cols="47%,53%",]
+[width="100%",cols="47%,53%",align="center"]
 |===
 |*INSPIRE View Service operations* |*ISO 19128 WMS operations*
 |Get View Service Metadata |GetCapabilities
