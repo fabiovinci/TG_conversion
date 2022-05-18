@@ -48,7 +48,8 @@ image:./media/image1.jpeg[image,width=108,height=108] **INSPIRE** *Infrastructur
 |*Coverage* |Project duration
 |===
 
-== Table of Contents
+[discrete]
+== TABLE OF CONTENTS
 toc::[]
 
 == Acknowledgements
@@ -104,15 +105,13 @@ In particular with respect the Network Services, Implementing Rules are required
 . _view services as a minimum, display, navigate, zoom in/out, pan, or overlay spatial data sets and display legend information and any relevant content of metadata;_
 . _download services enabling copies of complete spatial data sets, or of parts of such sets, to be downloaded;_
 . _transformation services enabling spatial data sets to be transformed with a view to achieving interoperability;_
-. _invoke spatial data services" enabling data services to be invoked." +
-_
+. _invoke spatial data services" enabling data services to be invoked."_
 
 In addition to the Implementing Rules, non-binding Technical Guidance documents describe detailed implementation aspects and relations with existing standards, technologies, and practices. They may need to be revised during the course of implementing the infrastructure to take into account the evolution of technology, new requirements, and cost benefit considerations. Figure 1 illustrates the relationship between the INSPIRE Regulations containing Implementing Rules and their corresponding Technical Guidance documents.
 
-image:./media/image2.png[image,width=604,height=347, align=center]
-
+image:./media/image2.png[image,width=604,height=347,align=center]
 [.text-center]
-[#_Ref137635453 .anchor]####Figure : Relationship between INSPIRE Implementing Rules and Technical Guidance
+Figure1: Relationship between INSPIRE Implementing Rules and Technical Guidance
 
 Technical Guidance documents define how Member States might implement the Implementing Rules described in a Commission Regulation. Technical Guidance documents may include non-binding technical requirements that must be satisfied if a Member State chooses to conform to the Technical Guidance. Implementing this technical guidance will maximise the interoperability of INSPIRE services.
 
