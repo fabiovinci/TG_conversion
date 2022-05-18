@@ -109,10 +109,10 @@ In particular with respect the Network Services, Implementing Rules are required
 
 In addition to the Implementing Rules, non-binding Technical Guidance documents describe detailed implementation aspects and relations with existing standards, technologies, and practices. They may need to be revised during the course of implementing the infrastructure to take into account the evolution of technology, new requirements, and cost benefit considerations. Figure 1 illustrates the relationship between the INSPIRE Regulations containing Implementing Rules and their corresponding Technical Guidance documents.
 
-image:./media/image2.png[image,width=604,height=347, align=center]
+image:./media/image2.png[image,width=604,height=347,align="center"]
 
 [.text-center]
-Figure1: Relationship between INSPIRE Implementing Rules and Technical Guidance
+*Figure 1*: Relationship between INSPIRE Implementing Rules and Technical Guidance
 
 Technical Guidance documents define how Member States might implement the Implementing Rules described in a Commission Regulation. Technical Guidance documents may include non-binding technical requirements that must be satisfied if a Member State chooses to conform to the Technical Guidance. Implementing this technical guidance will maximise the interoperability of INSPIRE services.
 
@@ -202,7 +202,7 @@ Following this Technical Guidance will ensure that INSPIRE View Services are imp
 image:./media/image3.png[image,width=604,height=315, align=center]
 
 [.text-center]
-Figure2 : Extending ISO and OGC Standards for INSPIRE Requirements
+*Figure 2*: Extending ISO and OGC Standards for INSPIRE Requirements
 
 This document specifies requirements and recommendations based on the European de jure standard [*ISO 19128*] – Web Map Service (WMS) 1.3.0. It defines an INSPIRE Profile of [*ISO 19128*] to implement the following operations:
 
@@ -512,9 +512,9 @@ Figure 4 illustrates the Get View Service metadata use case.
 
 
 [.text-center]
-Table : GetCapabilities core parameters
+*Table 2*: GetCapabilities core parameters
 
-[align=center,width="100%",cols="31%,12%,57%",options="header",]
+[align=center,width="100%",cols="31%,12%,57%",options="header"]
 |===
 |*Request parameter* |*Mandatory / optional* |*Description*
 |VERSION=version |O |Request version: 1.3.0
@@ -530,7 +530,8 @@ The ServiceType for an ISO 19128:2005(E) – WMS1.3.0 is fixed to "WMS".
 
 image:./media/image5.emf[UC1,width=604,height=855]
 
-[#_Ref161740370 .anchor]####Figure : Get View Service Metadata Use Case (UC1)
+[.text-center]
+*Figure 4*: Get View Service Metadata Use Case (UC1)
 
 ===== GetCapabilities response
 
@@ -572,7 +573,8 @@ A graphical illustration of the XML schema for the extended capabilities for bot
 
 image:./media/image6.png[Macintosh HD:Users:yannis:Documents:Inspire:ImplementingRules:NetworkServices:IOC:TechnicalGuidance:Diagrams:extcapsschema2.PNG,width=600,height=866]
 
-[#_Ref162313236 .anchor]####Figure : Illustration of the Extended Capabilities for Scenario 1 and 2 for INSPIRE View Services
+[.text-center] 
+*Figure 5*: Illustration of the Extended Capabilities for Scenario 1 and 2 for INSPIRE View Services
 
 [IMPORTANT]
 ====
@@ -588,7 +590,8 @@ image:./media/image6.png[Macintosh HD:Users:yannis:Documents:Inspire:Implementin
 
 INSPIRE metadata are mapped to the <WMS_Capabilities> element of the GetCapabilities response as illustrated in Table 3. In Sections 4.2.3.3.1.1 through 4.2.3.3.1.16 the mandatory mappings for supporting these scenarios are described in detail.
 
-[#_Ref157229052 .anchor]####Table : Mapping between INSPIRE metadata elements and [ISO 19128] WMS elements
+[.text-center] 
+*Table 3*: Mapping between INSPIRE metadata elements and [ISO 19128] WMS elements
 
 [width="100%",cols="36%,64%",options="header",]
 |===
@@ -609,12 +612,12 @@ inspire_common:ResourceType
 
 (ExtendedCapabilities)
 
-|Resource Locator (C) a|
+|Resource Locator \(C) a|
 inspire_common:ResourceLocator
 
 (ExtendedCapabilities)
 
-|Coupled Resource (C) |wms:MetadataURL (Layer property)
+|Coupled Resource \(C) |wms:MetadataURL (Layer property)
 |Spatial Data Service Type (M) a|
 inspire_common:SpatialDataServiceType
 
@@ -627,7 +630,7 @@ inspire_common:TemporalReference
 
 (ExtendedCapabilities)
 
-|Spatial Resolution (C) |wms:Abstract
+|Spatial Resolution \(C) |wms:Abstract
 |Conformity (M) a|
 inspire_common:Conformity
 
@@ -658,7 +661,7 @@ inspire_common:SupportedLanguages
 This is a characteristic and often-unique name by which the resource is known. It is mapped with the <wms:Title> element.
 
 [.text-center]
-Example : Resource title
+*Example 1*: Resource title
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -679,7 +682,7 @@ Example : Resource title
 This is a brief narrative summary of the content of the resource. It is mapped with the <wms:Abstract> element.
 
 [.text-center]
-Example : Resource abstract
+*Example 2*: Resource abstract
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -750,7 +753,7 @@ http://.../discovery?Service=CSW&Request=GetRecordById&Version=2.0.2&[http://...
 &outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full
 
 [.text-center]
-Example : Coupled resource (MetadataURL)
+*Example 3*: Coupled resource (MetadataURL)
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -856,7 +859,7 @@ Commonly used word(s), formalized word(s) or phrase(s) used to describe the reso
 
 
 [.text-center]
-Example : Keyword
+*Example 4*: Keyword
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -919,7 +922,7 @@ Typing keywords according to the Metadata Technical Guidance and [*ISO 19115*] a
 Note that this metadata element is different to the Layer Metadata Geographic Bounding Box element which is mapped to the <wms:BoundingBox> element (see Section 4.2.3.3.4.4)
 
 [.text-center]
-Example : Geographic bounding box
+*Example 5*: Geographic bounding box
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -1046,7 +1049,7 @@ Defines the conditions for access and use of spatial data sets and services, and
 
 
 [.text-center]
-Example : Conditions for access and use
+*Example 6*: Conditions for access and use
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -1089,7 +1092,7 @@ No precise syntax has been defined for the text content of these elements in [*I
 [#_Toc159065348 .anchor]##
 
 [.text-center]
-Example : Limitations on public access
+*Example 7*: Limitations on public access
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -1144,7 +1147,7 @@ Personal email addresses are not recommended.
 
 
 [.text-center]
-Example : Responsible organisation
+*Example 8*: Responsible organisation
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -1256,7 +1259,7 @@ The third mandatory operation "Link View Service", which allows a Public Authori
 
 
 [.text-center]
-Example : Operations metadata
+*Example 9*: Operations metadata
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -1321,7 +1324,7 @@ xmlns:xlink=">
 [#_Toc159065351 .anchor]##
 
 [.text-center]
-Example : GetMap operation metadata
+*Example 10*: GetMap operation metadata
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -1405,7 +1408,7 @@ The metadata elements listed in Table 3 of the INSPIRE Network Services regulati
 Table 4 below). The layers metadata are mapped with the <wms:Layer> element.
 
 [.text-center]
-Example : Layers Metadata
+*Example 11*: Layers Metadata
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -1432,7 +1435,7 @@ xmlns:wms="http://www.opengis.net/wms>
 
 [#_Ref161804377 .anchor]##
 
-Table : Mapping between INSPIRE layer metadata elements and ISO 19128 WMS elements
+*Table 4*: Mapping between INSPIRE layer metadata elements and ISO 19128 WMS elements
 
 [align=center,width="100%",cols="46%,54%",options="header",]
 |===
@@ -1462,7 +1465,7 @@ The title of the layer, used for human communication, for presentation of the la
 
 
 [.text-center]
-Example : Resource title
+*Example 12*: Resource title
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -1493,7 +1496,7 @@ Layer abstract.
 
 
 [.text-center]
-Example : Resource abstract
+*Example 13*: Resource abstract
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -1533,7 +1536,7 @@ Additional Keywords describing the layer.
 
 
 [.text-center]
-Example : Keyword
+*Example 14*: Keyword
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -1594,7 +1597,7 @@ Minimum bounding rectangle in all supported Coordinate reference systems (CRS) o
 
 
 [.text-center]
-Example : Geographic bounding box
+*Example 15*: Geographic bounding box
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -1693,7 +1696,7 @@ The Unique Resource Identifier of the resource used to create the layer. In [*IN
 +++Sample from INS MD Regulation demonstrating this concept:+++
 
 [.text-center]
-Example 16: Sample from Metadata Technical Guidance [INS MDTG] demonstrating this concept
+*Example 16*: Sample from Metadata Technical Guidance [INS MDTG] demonstrating this concept
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -1737,7 +1740,7 @@ Example 16: Sample from Metadata Technical Guidance [INS MDTG] demonstrating thi
 
 
 [.text-center]
-Example 17: Authority URL
+*Example 17*: Authority URL
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -1886,7 +1889,7 @@ The harmonised name of a layer for an INSPIRE spatial data theme as defined by [
 
 
 [.text-center]
-Table : Annexes I harmonised name examples
+*Table 5*: Annexes I harmonised name examples
 
 [align=center,width="100%",cols="33%,67%",]
 |===
@@ -1901,7 +1904,7 @@ Table : Annexes I harmonised name examples
 |===
 
 [.text-center]
-Example : Name
+*Example 18*: Name
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -1987,7 +1990,7 @@ The value of the CRS parameter depends on the coordinate reference systems catal
 
 
 [.text-center]
-Table : CRS recommended codes
+*Table 6*: CRS recommended codes
 
 [align=center,width="100%",cols="53%,47%",]
 |===
@@ -1998,7 +2001,7 @@ Table : CRS recommended codes
 |===
 
 [.text-center]
-Example : Coordinate reference systems
+*Example 19*: Coordinate reference systems
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -2126,7 +2129,7 @@ ROADS.
 [#_Toc159065360 .anchor]##
 
 [.text-center]
-Example : Styles
+*Example 20*: Styles
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -2196,7 +2199,7 @@ Location of the legend for each style, language and dimension pairs.
 
 
 [.text-center]
-Example : Legend URL
+*Example 21*: Legend URL
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -2307,10 +2310,8 @@ For more information, refer to [*ISO 19128*, Annex C].
 ====
 
 
-[#_Toc159065362 .anchor]##
-
 [.text-center]
-Example : Dimension Pairs
+*Example 22*: Dimension Pairs
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -2426,7 +2427,7 @@ Example : Dimension Pairs
 For instance, the Category Layer Hydrography Physical Waters Waterbodies could contain HY.PhysicalWaters.Waterbodies.Watercourse and HY.PhysicalWaters.Waterbodies.StandingWater nested layers.
 
 [.text-center]
-Example : Category layer
+*Example 32*: Category layer
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -2561,9 +2562,8 @@ The GetMap operation returns a map. Upon receiving a GetMap request, a WMS shall
 [.text-center]
 Table 7 shows the INSPIRE parameters that shall be used within the WMS GetMap operation according to the [*INS NS*]:
 
-[#_Ref161914628 .anchor]##
 
-Table INSPIRE and ISO 19128 parameters mapping
+*Table 7*: INSPIRE and ISO 19128 parameters mapping
 
 [align=center,width="100%",cols="39%,61%",]
 |===
@@ -2586,12 +2586,12 @@ In case of 2D request, the standard does not require this parameter.
 image:./media/image7.png[image,width=535,height=867, align=center]
 
 [.text-center]
-Figure : Get Map Activity (Use case 4)
+*Figure 6*: Get Map Activity (Use case 4)
 
 ====== GetMap request parameters
 
 [.text-center]
-Table : GetMap core parameters
+*Table 8*: GetMap core parameters
 
 [align=center,width="100%",cols="34%,13%,53%",options="header",]
 |===
@@ -2725,7 +2725,7 @@ The above INSPIRE requirement defines the need for a mechanism that allows third
 Based on the View Service's service metadata obtained from a Discovery Service through the Discover Metadata (CSW GetRecords) operation, the capabilities document of a remote INSPIRE View Service may be requested and resources published as Layers defined in this View Service can be consumed by a View Service client.
 
 [.text-center]
-Example 24: Link View Service – View Service search (CSW.GetRecords request)
+*Example 24*: Link View Service – View Service search (CSW.GetRecords request)
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -2794,7 +2794,7 @@ The response time of a single Get Map request may be more predictable as no hidd
 image:./media/image8.png[image,width=540,height=391, align=center]
 
 [.text-center]
-Figure : Client approach
+*Figure 7*: Client approach
 
 _+++Response Parameters+++_
 
@@ -2829,7 +2829,7 @@ In this case the Member State's View Service supports cascading and is responsib
 image:./media/image9.png[image,width=605,height=314, align=center]
 
 [.text-center]
-Figure : Service approach
+*Figure 8*: Service approach
 
 Disadvantages:
 
@@ -2887,7 +2887,7 @@ The HTTP/GET binding of the GetCapabilities-Operation is extended by an addition
 
 
 [.text-center]
-Table : Language parameter
+*Table 9*: Language parameter
 
 [align=center,width="100%",cols="17%,43%,17%,23%",options="header",]
 |===
@@ -2985,10 +2985,10 @@ Regardless of the response language, the *list of supported languages* is invari
 
 *Examples:*
 
-A service supports French and English and the service default language is French:[#_Toc159065367 .anchor]##
+A service supports French and English and the service default language is French:
 
 [.text-center]
-Example : Response to [OGC-GetCapabilities-Request]&LANGUAGE=eng
+*Example 25*: Response to [OGC-GetCapabilities-Request]&LANGUAGE=eng
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -3015,7 +3015,7 @@ Example : Response to [OGC-GetCapabilities-Request]&LANGUAGE=eng
 ----
 
 [.text-center]
-Example : Response to [OGC-GetCapabilities-Request] or +
+*Example 26*: Response to [OGC-GetCapabilities-Request] or +
 [OGC-GetCapabilities-Request]&LANGUAGE=fre
 
 [source,xml,subs="+quotes",align=center]
@@ -3046,7 +3046,7 @@ Example : Response to [OGC-GetCapabilities-Request] or +
 A service supports only German:
 
 [.text-center]
-Example : Response to any GetCapabilities-Request
+*Example 27*: Response to any GetCapabilities-Request
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -3103,7 +3103,7 @@ An example of this behaviour is given below, showing how to extend the WMS.getMa
 . The service responses with extended Capabilities including the supported Languages:
 
 [.text-center]
-Example : Service response including supported languages
+*Example 28*: Service response including supported languages
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -3135,10 +3135,9 @@ Example : Service response including supported languages
 .. translated natural language fields (titles, abstracts)
 .. *language specific entry points* for the language specific operations using this concept.
 
-[#_Toc159065371 .anchor]##
 
 [.text-center]
-Example : Response to [OCG-GetCapabilities-Request]&LANGUAGE=eng +
+*Example 29*: Response to [OCG-GetCapabilities-Request]&LANGUAGE=eng +
 or [OCG-GetCapabilities-Request
 
 [source,xml,subs="+quotes",align=center]
@@ -3167,7 +3166,7 @@ or [OCG-GetCapabilities-Request
 ----
 
 [.text-center]
-Example : Response to [OCG-GetCapabilities-Request]&LANGUAGE=ger
+*Example 30*: Response to [OCG-GetCapabilities-Request]&LANGUAGE=ger
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -3229,7 +3228,7 @@ IETF RFC 4646 is supported by OGC standards relying upon OWS 1.1.0.
 
 
 [.text-center]
-Table 10: Mapping between ISO 639/B alpha 3 and the two forms of IETF RFC 4646 supported by OWS 1.1.0
+*Table 10*: Mapping between ISO 639/B alpha 3 and the two forms of IETF RFC 4646 supported by OWS 1.1.0
 
 [align=center,width="100%",cols="28%,33%,39%",]
 |===
@@ -3303,7 +3302,7 @@ The following sections specify the required extensions to the given specificatio
 
 
 [.text-center]
-Table : View Service Operations
+*Table 11*: View Service Operations
 
 [align=center,width="100%",cols="47%,53%",]
 |===
@@ -3373,7 +3372,7 @@ Most of the necessary metadata can be provided through the service Capabilities,
 ====
 
 
-+++*Example*:+++
+*Example*:
 
 The use of the ows:Metadata element of [*OGC 06-121r3*] – OGC Web Services Common Specification (OWS) 1.1.0 is explicitly described in the [*OGC 07-057r7*] – Web Map Tile Service (WMTS) 1.0.0.
 
@@ -3394,7 +3393,7 @@ Note: The metadata on the spatial dataset explain the spatial dataset itself; ho
 
 ===== GetCapabilities operation
 
-Table : GetCapabilities core parameters
+*Table 12*: GetCapabilities core parameters
 
 [width="99%",cols="31%,12%,57%,",options="header",]
 |===
@@ -3456,7 +3455,7 @@ It also contains the following elements:
 * WSDL
 * serviceMetadataURL
 
-Example 31: WMTS GetCapabilities structure
+*Example 31*: WMTS GetCapabilities structure
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -3537,7 +3536,7 @@ Operations metadata are mapped to the <ows:OperationsMetadata> element. There ar
 
 
 [.text-center]
-Example : GetCapabilities Operation Metadata
+*Example 32*: GetCapabilities Operation Metadata
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -3570,7 +3569,7 @@ Example : GetCapabilities Operation Metadata
 
 
 [.text-center]
-Example : GetMap operation metadata
+*Example 33*: GetMap operation metadata
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -3604,7 +3603,7 @@ In the case of a WMTS service the output format is specific to a layer. The cons
 ====== Languages
 
 [.text-center]
-Example : Languages
+*Example 34*: Languages
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -3631,7 +3630,7 @@ Example : Languages
 These metadata are mapped with the <Layer> element of the <Contents> structure.
 
 [.text-center]
-Example : Layers Metadata
+*Example 35*: Layers Metadata
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -3668,7 +3667,7 @@ Example : Layers Metadata
 
 
 [.text-center]
-Table : Mapping between INSPIRE layer metadata elements and OGC WMTS elements
+*Table 13*: Mapping between INSPIRE layer metadata elements and OGC WMTS elements
 
 [align=center,width="100%",cols="46%,,54%,",options="header",]
 |===
@@ -3694,7 +3693,7 @@ Table : Mapping between INSPIRE layer metadata elements and OGC WMTS elements
 
 
 [.text-center]
-Example : Resource title
+*Example 36*: Resource title
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -3737,7 +3736,7 @@ Example : Resource title
 
 
 [.text-center]
-Example : Resource abstract
+*Example 37*: Resource abstract
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -3785,7 +3784,7 @@ Example : Resource abstract
 [#_Toc159065380 .anchor]##
 
 [.text-center]
-Example : Keywords
+*Example 38*: Keywords
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -3837,7 +3836,7 @@ Example : Keywords
 
 
 [.text-center]
-Example : Geographic Bounding Box
+*Example 39*: Geographic Bounding Box
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -3893,7 +3892,7 @@ Example : Geographic Bounding Box
 [*OGC 07-057r7*] states that the Layer identifier SHALL be *unique* for each layer listed in the GetCapabilities response. Therefore, this identifier, which has previously been mapped to the Name metadata of the layer, can also be used as the unique resource identifier metadata of the layer.
 
 [.text-center]
-Example 40: Unique resource identifier
+*Example 40*: Unique resource identifier
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -3987,7 +3986,7 @@ Consequently, the resource unique identifier will be an INSPIRE harmonized name 
 It is mapped to the <ows:Identifier> element.
 
 [.text-center]
-Example : Name
+*Example 41*: Name
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -4061,17 +4060,17 @@ Each layer of a WMTS Server is linked to a unique _TileMatrixSet_ which defines 
 image:./media/image10.png[image,width=330,height=226, align=center]
 
 [.text-center]
-Figure : TILEMATRIXSET concept
+*Figure 9*: TILEMATRIXSET concept
 
 image:./media/image11.png[image,width=482,height=298, align=center]
 
 [.text-center]
-Figure : TILEMATRIXSET concept
+*Figure 10*: TILEMATRIXSET concept
 
 As a result, the unique link between a layer and a _TileMatrixSet_ implicitly defines the CRS for this layer.
 
 [.text-center]
-Example : Link to TILEMATRIXSET on the spatial dataset
+*Example 42*: Link to TILEMATRIXSET on the spatial dataset
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -4152,7 +4151,7 @@ Example : Link to TILEMATRIXSET on the spatial dataset
 
 
 [.text-center]
-Example : Styles
+*Example 43*: Styles
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -4242,7 +4241,7 @@ Example : Styles
 
 
 [.text-center]
-Example : Legend URL
+*Example 44*: Legend URL
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -4345,7 +4344,7 @@ The GetTile operation allows WMTS clients to request a particular tile of a part
 ====
 
 
-Table : INSPIRE and WMS parameters mapping
+*Table 14*: INSPIRE and WMS parameters mapping
 
 [width="99%",cols="49%,51%,",]
 |===
@@ -4363,7 +4362,7 @@ Table : INSPIRE and WMS parameters mapping
 
 ====== GetTile request parameters
 
-[#_Ref162320990 .anchor]####Table : GetTile core parameters
+*Table 15*: GetTile core parameters
 
 [width="100%",cols="31%,13%,56%,",options="header",]
 |===
@@ -4485,7 +4484,7 @@ The _TileMatrixSet_ described here is based on the third _Well Known Scale Sets_
 ===== InspireCRS84Quad
 
 [.text-center]
-Table 16: InspireCRS84Quad – Pixel size for each level
+*Table 16*: InspireCRS84Quad – Pixel size for each level
 
 [align=center,width="100%",cols="32%,68%",]
 |===
@@ -4530,14 +4529,14 @@ Level 0 of InspireCRS84Quad is similar to level 1 of GoogleCRS84Quad with a chan
 image:./media/image12.emf[image,width=294,height=283, align=center]
 
 [.text-center]
-[#_Ref224365615 .anchor]####Figure : Level 1 GoogleCRS84Quad, Four 256x256 pixels tiles
+*Figure 11*: Level 1 GoogleCRS84Quad, Four 256x256 pixels tiles
 
 To avoid this situation the level 0 of InspireCRS84Quad is composed of two tiles representing exactly the whole world.
 
 image:./media/image13.png[image,width=389,height=215, align=center]
 
 [.text-center]
-Figure : Level 0 InspireCRS84Quad. Two 256x256 pixels tiles.
+*Figure 12*: Level 0 InspireCRS84Quad. Two 256x256 pixels tiles.
 
 ===== Schema definition for extended capabilities for OWS 1.1 (inspire_vs_ows_11.xsd)
 
@@ -4663,7 +4662,7 @@ Planned downtime is recommended to be less than 10 hours per month (i.e. less th
 The following table shows the maximum downtime according to the implementing rules:
 
 [.text-center]
-Table : Downtime per week, month, year
+*Table 17*: Downtime per week, month, year
 
 [align=center,width="100%",cols="27%,24%,24%,25%",]
 |===
@@ -4709,7 +4708,7 @@ _The most important point bound to the SRS is the tiling scheme definition (pyra
 
 
 [.text-center]
-Example : INSPIRE Profile for Tiling WMS
+*Example 45*: INSPIRE Profile for Tiling WMS
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -5824,7 +5823,7 @@ xmlns:inspire_common CDATA #FIXED 'http://inspire.ec.europa.eu/schemas/common/1.
 *WMS 1.1.1 Profile*
 
 [.text-center]
-Example : WMS 1.1.1 Profile
+*Example 46*: WMS 1.1.1 Profile
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -6910,7 +6909,7 @@ xlink:href="URL"
 ## Example of Extended Capabilities Response Scenario 1
 
 [.text-center]
-Example 47: Extended Capabilities Response Scenario 1
+*Example 47*: Extended Capabilities Response Scenario 1
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -7136,7 +7135,7 @@ Example 47: Extended Capabilities Response Scenario 1
 ## Example of Extended Capabilities Response Scenario 2
 
 [.text-center]
-Example 48: Extended Capabilities Response Scenario 2
+*Example 48*: Extended Capabilities Response Scenario 2
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -7441,7 +7440,7 @@ Example 48: Extended Capabilities Response Scenario 2
 The following XML description is an example of SLD (Styled Layer Descriptor) to define a symbol for a point representing a borehole (FeatureType : BSS_Sondage). Three rules are used to define this symbol according to values of some properties.
 
 [.text-center]
-Example 49: Examples of SLD usage
+*Example 49*: Examples of SLD usage
 
 [source,xml,subs="+quotes",align=center]
 ----
@@ -7574,7 +7573,7 @@ _Rule #3 : If the borehole is an « OUVRAGE » then the symbol « croix.gif�
 This compliance matrix shows how the View Service Technical Guidance within the main body of this document conforms to the INSPIRE Network Services Regulation [INS NS].
 
 [.text-center]
-Table : INSPIRE Network Services Regulation Compliance
+*Table 18*: INSPIRE Network Services Regulation Compliance
 
 [align=center,width="100%",cols="12%,54%,12%,12%,10%",]
 |===
