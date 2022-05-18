@@ -75,9 +75,10 @@ This Technical Guidance document relates to the implementation of the requiremen
 
 Implementing this Technical Guidance are designed to maximise the interoperability of INSPIRE services. Technical Guidance documents describe how Member States might implement the Implementing Rules described in a Commission Regulation. The technical provisions and the underlying concepts are often illustrated by use case diagrams and accompanied by examples. Technical Guidance documents may also include non-binding technical recommendations that should be satisfied if a Member State chooses to conform to the Technical Guidance. However, these recommendations have no legally binding effect.
 
-image:.\media/image2.png[TG vs IR,width=600,height=450]
+image:.\media/image2.png[TG vs IR,width=600,height=450,align="center"]
 
-*Figure* *1:* Relationship between the INSPIRE Implementing Rules and the associated Technical Guidance.
+[.text-center] 
+*Figure 1*: Relationship between the INSPIRE Implementing Rules and the associated Technical Guidance.
 
 [width="100%",cols="100%",options="header",]
 |===
