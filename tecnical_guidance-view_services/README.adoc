@@ -23,7 +23,7 @@
 
 :appendix-caption: Annex
 
-image::./media/image1.jpeg[image,width=108,height=108] **INSPIRE** *Infrastructure for Spatial Information in Europe*
+image:./media/image1.jpeg[width=108,height=108] **INSPIRE** *Infrastructure for Spatial Information in Europe*
 
 [discrete]
 = Technical Guidance for the implementation of INSPIRE View Services
@@ -199,7 +199,7 @@ INSPIRE View Services allow users and computer programs to view spatial datasets
 
 Following this Technical Guidance will ensure that INSPIRE View Services are implemented in a consistent and compatible way across Europe. It is based on European and international standards, current practices in related stakeholder communities and relevant European initiatives such as e‑Government, and the EU Interoperability Framework.
 
-image:./media/image3.png[image,width=604,height=315, align=center]
+image::./media/image3.png[image,width=604,height=315,align="center"]
 
 [.text-center]
 *Figure 2*: Extending ISO and OGC Standards for INSPIRE Requirements
@@ -374,7 +374,7 @@ The base specification of an INSPIRE View Service relies on the [*ISO 19128*] In
 
 Section 4.2 and subsequent sections specify required extensions to the base specification. They are laid down following the [*ISO 19128,* Section 6.9] document structure.
 
-image:./media/image4.png[image,width=604,height=538,align=“center”]
+image::./media/image4.png[image,width=604,height=538,align=“center”]
 
 [.text-center]
 *Figure 3*: INSPIRE Generic Use Case
@@ -527,7 +527,7 @@ The ServiceType for an ISO 19128:2005(E) – WMS1.3.0 is fixed to "WMS".
 |FORMAT=MIME_type |O |Output format of service metadata. Defaults to text/xml.
 |===
 
-image:./media/image5.png[UC1,width=604,height=855]
+image::./media/image5.png[UC1,width=604,height=855,align=“center”]
 
 [.text-center]
 *Figure 4*: Get View Service Metadata Use Case (UC1)
@@ -570,7 +570,7 @@ In scenario 2, INSPIRE service metadata are fully mapped to [*ISO 19128*] – WM
 
 A graphical illustration of the XML schema for the extended capabilities for both scenarios as required for the INSPIRE View Services is shown in Figure 5. Examples of extended capabilities response for both scenarios are provided in Annexes Annex C and Annex D.
 
-image:./media/image6.png[Macintosh HD:Users:yannis:Documents:Inspire:ImplementingRules:NetworkServices:IOC:TechnicalGuidance:Diagrams:extcapsschema2.PNG,width=600,height=866]
+image::./media/image6.png[width=600,height=866,align=“center”]
 
 [.text-center] 
 *Figure 5*: Illustration of the Extended Capabilities for Scenario 1 and 2 for INSPIRE View Services
@@ -592,7 +592,7 @@ INSPIRE metadata are mapped to the <WMS_Capabilities> element of the GetCapabili
 [.text-center] 
 *Table 3*: Mapping between INSPIRE metadata elements and [ISO 19128] WMS elements
 
-[width="100%",cols="36%,64%",options="header",]
+[width="100%",cols="36%,64%",options="header"]
 |===
 ^|*INSPIRE Metadata elements* +
 *(+++M+++andatory - +++C+++onditional)*
@@ -634,7 +634,7 @@ INSPIRE metadata are mapped to the <WMS_Capabilities> element of the GetCapabili
 (ExtendedCapabilities)
 |===
 
-======= 4.2.3.3.1.1 RESOURCE TITLE
+4.2.3.3.1.1 RESOURCE TITLE
 
 This is a characteristic and often-unique name by which the resource is known. It is mapped with the <wms:Title> element.
 
@@ -2561,7 +2561,7 @@ In case of 2D request, the standard does not require this parameter.
 
 |===
 
-image:./media/image7.png[image,width=535,height=867, align=center]
+image::./media/image7.png[image,width=535,height=867,align="center"]
 
 [.text-center]
 *Figure 6*: Get Map Activity (Use case 4)
@@ -2769,7 +2769,7 @@ Advantages:
 
 The response time of a single Get Map request may be more predictable as no hidden requests to third party View Services are involved.
 
-image:./media/image8.png[image,width=540,height=391, align=center]
+image::./media/image8.png[image,width=540,height=391,align="center"]
 
 [.text-center]
 *Figure 7*: Client approach
@@ -2804,7 +2804,7 @@ In this case the Member State's View Service supports cascading and is responsib
 ====
 
 
-image:./media/image9.png[image,width=605,height=314, align=center]
+image::./media/image9.png[image,width=605,height=314,align="center"]
 
 [.text-center]
 *Figure 8*: Service approach
@@ -4035,12 +4035,12 @@ Each layer of a WMTS Server is linked to a unique _TileMatrixSet_ which defines 
 * A _TileMatrix_ is a collection of tiles for a fixed scale.
 * A _Tile_ is a rectangular pictorial representation of geographic data, often part of a set of such elements, covering a spatially contiguous extent and sharing similar information content and graphical styling, which can be uniquely defined by a pair of indices for the column and row along with an identifier for the tile matrix.
 
-image:./media/image10.png[image,width=330,height=226, align=center]
+image::./media/image10.png[image,width=330,height=226,align="center"]
 
 [.text-center]
 *Figure 9*: TILEMATRIXSET concept
 
-image:./media/image11.png[image,width=482,height=298, align=center]
+image::./media/image11.png[image,width=482,height=298,align="center"]
 
 [.text-center]
 *Figure 10*: TILEMATRIXSET concept
@@ -4504,14 +4504,14 @@ The _TileMatrixSet_ described here is based on the third _Well Known Scale Sets_
 Level 0 of InspireCRS84Quad is similar to level 1 of GoogleCRS84Quad with a change in the origin of the tiles. Level 1 of GoogleCRS84Quad allows representing the whole world in a four 256x256 pixels tiles where the first 128 lines of the top tiles and last 128 lines of the bottom tiles are left blank.
 
 
-image:./media/image12.emf[image,width=294,height=283, align=center]
+image::./media/image12.emf[image,width=294,height=283,align="center"]
 
 [.text-center]
 *Figure 11*: Level 1 GoogleCRS84Quad, Four 256x256 pixels tiles
 
 To avoid this situation the level 0 of InspireCRS84Quad is composed of two tiles representing exactly the whole world.
 
-image:./media/image13.png[image,width=389,height=215, align=center]
+image::./media/image13.png[image,width=389,height=215,align="center"]
 
 [.text-center]
 *Figure 12*: Level 0 InspireCRS84Quad. Two 256x256 pixels tiles.
