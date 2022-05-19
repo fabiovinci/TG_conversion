@@ -726,7 +726,8 @@ The timelines relevant for the provision of discovery metadata are different fro
 
 Figure 2 gives an overview of the dates at which the requirements included in the two Implementing Rules for data sets related to Annex I, II or III have to be metfootnote:[Dates in this figure are accurate at the time of publication. For definitive dates refer to the roadmap published on the INSPIRE website (http://inspire.ec.europa.eu/inspire-roadmap/61).].
 
-image:.\media/image3.png[image,width=563,height=424]
+image::./media/image3.png[image,width=563,height=424,align="center"]
+//image::./media/image2.png[TGvsIR,width=600,height=450,align="center"]
 
 *Figure* *2:* Illustration of Implementation Roadmap for discovery metadata, metadata for interoperability, and metadata for Invocable Spatial Data Services.
 
