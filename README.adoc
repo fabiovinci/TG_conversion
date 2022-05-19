@@ -2,6 +2,7 @@
 :tip-caption: 📒
 :note-caption: 📘
 :toc: left
+:toc-placement!:
 :toc-title:
 :toclevels: 4
 :sectnumlevels: 4
