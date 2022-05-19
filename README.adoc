@@ -1,7 +1,7 @@
 :important-caption: 📕
 :tip-caption: 📒
 :note-caption: 📘
-:toc: macro
+:toc: left
 :toc-title:
 :toclevels: 4
 :sectnumlevels: 4
