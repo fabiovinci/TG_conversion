@@ -594,68 +594,47 @@ INSPIRE metadata are mapped to the <WMS_Capabilities> element of the GetCapabili
 
 [width="100%",cols="36%,64%",options="header",]
 |===
-a|
-*INSPIRE Metadata elements*
-
+^|*INSPIRE Metadata elements* +
 *(+++M+++andatory - +++C+++onditional)*
 
-a|
-*ISO 19128 elements of*
-
+^|*ISO 19128 elements of* +
 *<WMS_Capabilities>*
 
 |Resource Title (M) |wms:Title
 |Resource Abstract (M) |wms:Abstract
-|Resource Type (M) a|
-inspire_common:ResourceType
-
+|Resource Type (M) |inspire_common:ResourceType +
 (ExtendedCapabilities)
 
-|Resource Locator \(C) a|
-inspire_common:ResourceLocator
-
+|Resource Locator \(C) |inspire_common:ResourceLocator +
 (ExtendedCapabilities)
 
 |Coupled Resource \(C) |wms:MetadataURL (Layer property)
-|Spatial Data Service Type (M) a|
-inspire_common:SpatialDataServiceType
-
+|Spatial Data Service Type (M) | inspire_common:SpatialDataServiceType +
 (ExtendedCapabilities)
 
 |Keyword (M) |wms:Keyword; inspire_common:Keyword
 |Geographic Bounding Box (M) |wms:EX_GeographicBoundingBox (Layer property)
-|Temporal Reference (M) a|
-inspire_common:TemporalReference
-
+|Temporal Reference (M) |inspire_common:TemporalReference +
 (ExtendedCapabilities)
 
 |Spatial Resolution \(C) |wms:Abstract
-|Conformity (M) a|
-inspire_common:Conformity
-
+|Conformity (M) |inspire_common:Conformity +
 (ExtendedCapabilities)
 
 |Conditions for Access and Use (M) |wms:Fees
 |Limitations on Public Access (M) |wms:AccessConstraints
 |Responsible Organisation (M) |wms:ContactInformation
-|Metadata Point of Contact (M) a|
-inspire_common:MetadataPointOfContact
-
+|Metadata Point of Contact (M) |inspire_common:MetadataPointOfContact +
 (ExtendedCapabilities)
 
-|Metadata Date (M) a|
-inspire_common:MetadataDate
-
+|Metadata Date (M) |inspire_common:MetadataDate +
 (ExtendedCapabilities)
 
-|Metadata Language (M) a|
-inspire_common:SupportedLanguages
-
+|Metadata Language (M) |inspire_common:SupportedLanguages +
 (ExtendedCapabilities)
-
 |===
 
-======= resource title
+======= 4.2.3.3.1.1 RESOURCE TITLE
 
 This is a characteristic and often-unique name by which the resource is known. It is mapped with the <wms:Title> element.
 
