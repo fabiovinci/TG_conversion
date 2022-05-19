@@ -23,7 +23,7 @@
 
 :appendix-caption: Annex
 
-image:./media/image1.jpeg[image,width=108,height=108] **INSPIRE** *Infrastructure for Spatial Information in Europe*
+image::./media/image1.jpeg[image,width=108,height=108] **INSPIRE** *Infrastructure for Spatial Information in Europe*
 
 [discrete]
 = Technical Guidance for the implementation of INSPIRE View Services
@@ -109,7 +109,7 @@ In particular with respect the Network Services, Implementing Rules are required
 
 In addition to the Implementing Rules, non-binding Technical Guidance documents describe detailed implementation aspects and relations with existing standards, technologies, and practices. They may need to be revised during the course of implementing the infrastructure to take into account the evolution of technology, new requirements, and cost benefit considerations. Figure 1 illustrates the relationship between the INSPIRE Regulations containing Implementing Rules and their corresponding Technical Guidance documents.
 
-image:./media/image2.png[image,width=604,height=347,align="center"]
+image::./media/image2.png[image,width=604,height=347,align="center"]
 
 [.text-center]
 *Figure 1*: Relationship between INSPIRE Implementing Rules and Technical Guidance
