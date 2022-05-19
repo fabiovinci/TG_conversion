@@ -1,12 +1,19 @@
 :important-caption: 📕
 :tip-caption: 📒
 :note-caption: 📘
+
+//ifdef::env-github[]
+//:imagesdir: https://github.com/fabiovinci/TG_conversion/blob/main/media
+//:toc: left
+//endif::[]
+
+
 :toc: left
 :toc-title:
 :toclevels: 4
 :sectnumlevels: 4
 
-image:.\media/image1.png[image,width=107,height=107]
+image:./media/image1.png[image,width=107,height=107]
 **INSPIRE**
 *Infrastructure for Spatial Information in Europe*
 
@@ -75,7 +82,7 @@ This Technical Guidance document relates to the implementation of the requiremen
 
 Implementing this Technical Guidance are designed to maximise the interoperability of INSPIRE services. Technical Guidance documents describe how Member States might implement the Implementing Rules described in a Commission Regulation. The technical provisions and the underlying concepts are often illustrated by use case diagrams and accompanied by examples. Technical Guidance documents may also include non-binding technical recommendations that should be satisfied if a Member State chooses to conform to the Technical Guidance. However, these recommendations have no legally binding effect.
 
-image:.\media/image2.png[TG vs IR,width=600,height=450,align="center"]
+image::./media/image2.png[TGvsIR,width=600,height=450,align="center"]
 
 [.text-center] 
 *Figure 1*: Relationship between the INSPIRE Implementing Rules and the associated Technical Guidance.
