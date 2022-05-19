@@ -462,17 +462,14 @@ The first two operations use parameters defined in the [*ISO 19128*] WMS standar
 
 *Common request parameters for the View Service operations:*
 
-VERSION The VERSION parameter specifies the protocol version number. It is optional for the GetCapabilities operation and mandatory for the GetMap operation.
-
-REQUEST The mandatory REQUEST parameter indicates which service operation is being invoked. The value shall be the name of one of the operations offered by the Web Map Server.
-
-FORMAT The FORMAT parameter specifies the output format of the response to an operation. It is optional for the GetCapabilities operation and mandatory for the GetMap operation.
-
-EXCEPTIONS The optional EXCEPTIONS request parameter states the format in which to report errors.
-
-SERVICE The SERVICE parameter specifies the type of service and shall have the value "WMS"
-
-LANGUAGE See Section 0 Language Requirements (INSPIRE extension)
+|===
+|VERSION |The VERSION parameter specifies the protocol version number. It is optional for the GetCapabilities operation and mandatory for the GetMap operation.
+|REQUEST |The mandatory REQUEST parameter indicates which service operation is being invoked. The value shall be the name of one of the operations offered by the Web Map Server.
+|FORMAT |The FORMAT parameter specifies the output format of the response to an operation. It is optional for the GetCapabilities operation and mandatory for the GetMap operation.
+|EXCEPTIONS |The optional EXCEPTIONS request parameter states the format in which to report errors.
+|SERVICE |The SERVICE parameter specifies the type of service and shall have the value "WMS"
+|LANGUAGE |See Section 0 Language Requirements (INSPIRE extension)
+|===
 
 ==== View service exceptions
 
@@ -530,7 +527,7 @@ The ServiceType for an ISO 19128:2005(E) – WMS1.3.0 is fixed to "WMS".
 |FORMAT=MIME_type |O |Output format of service metadata. Defaults to text/xml.
 |===
 
-image:./media/image5.emf[UC1,width=604,height=855]
+image:./media/image5.png[UC1,width=604,height=855]
 
 [.text-center]
 *Figure 4*: Get View Service Metadata Use Case (UC1)
