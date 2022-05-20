@@ -284,6 +284,7 @@ making it possible, as a minimum, to display, navigate, zoom in/out, pan, or ove
 
 === Abbreviations
 
+[cols="10,40"]
 |===
 |GET| HTTP Get Method
 |INSPIRE| Infrastructure for Spatial Information in Europe
@@ -391,30 +392,24 @@ Compliance with the "basic WMS" conformance class should augment the feasibility
 
 *Rationale behind the choice of an INSPIRE Schema for implementing the extended capabilities of INSPIRE Network Services*
 
- 
-
 The INSPIRE Network Service Regulation [*INS NS*] requires a Network Service to respond to a Get Network Service Metadata request with a response that contains as one of its parameters the Network Service INSPIRE metadata.
 
- 
-
 At the time of writing this Technical Guidance the OGC GetCapabilities response document does not include all required INSPIRE metadata for the Network Service and in order to do so the Extended Capabilities mechanism is used. Through this mechanism it is possible to link INSPIRE metadata with the GetCapabilities response, either by including the missing INSPIRE metadata elements of the Network Service, or by including a reference to the INSPIRE Network Service metadata record.
-
- 
 
 The initial approach was to re-use, for extended capabilities elements, the ISO 19139 data types. The Advantages of using the ISO 19139 data types are:
 
 * new data types do not need to be defined 
-* existing client applications already have the necessary bindings to read and write the information. Type redefinition was however necessary for the following elements:  
-** INSPIRE Service Type (implemented as gco:GenericName_PropertyType) 
-** Languages 
-** CurrentLanguage 
-** TemporalReference   
+* existing client applications already have the necessary bindings to read and write the information. Type redefinition was however necessary for the following elements:
+** INSPIRE Service Type (implemented as gco:GenericName_PropertyType)
+** Languages
+** CurrentLanguage
+** TemporalReference
 
-Which, however breaks compatibility with existing clients. The disadvantages of this approach on the other hand are:
+Which, however breaks compatibility with existing clients. The disadvantages of this approach on the other hand are:
 
 * ISO 19139 data types currently have a double implementation;
-** The schemas from ISO 19139 version 2005-DIS (Draft International Standard) dated 2006 May 4 (http://schemas.opengis.net/iso/19139/20060504/[+++20060504/+++]) depend on the unofficial GML 3.2.0 version, but on the other hand is used in ISO AP 1.0 for CSW;  
-** The ISO/TS 19139 Schemas dated 2007 April 17 (http://schemas.opengis.net/iso/19139/20070417/[+++20070417/+++]) depend on the official GML version 3.2.1 which relies on a different namespace but does not make available the implementation for the "srv" namespace for service metadata;  
+** The schemas from ISO 19139 version 2005-DIS (Draft International Standard) dated 2006 May 4 (http://schemas.opengis.net/iso/19139/20060504/[+++20060504/+++]) depend on the unofficial GML 3.2.0 version, but on the other hand is used in ISO AP 1.0 for CSW;
+** The ISO/TS 19139 Schemas dated 2007 April 17 (http://schemas.opengis.net/iso/19139/20070417/[+++20070417/+++]) depend on the official GML version 3.2.1 which relies on a different namespace but does not make available the implementation for the "srv" namespace for service metadata;
 * CSW schema version 2.0.2 includes OGC filter version 1.1.0 which in turn includes GML version 3.1.1;
 * An INSPIRE View Service may also be implemented using WMS 1.1.1. The WMS 1.1.1 schema however is officially implemented only through DTD technology. There is no official DTD implementation for ISO 19139.
 
@@ -444,7 +439,7 @@ The following sections specify the required extensions to the given specificatio
 
 [width="100%",cols="47%,53%",align="center"]
 |===
-|*INSPIRE View Service operations* |*ISO 19128 WMS operations*
+^|*INSPIRE View Service operations* ^|*ISO 19128 WMS operations*
 |Get View Service Metadata |GetCapabilities
 |Get Map |GetMap
 |Link View Service |See Section 4.2.5
