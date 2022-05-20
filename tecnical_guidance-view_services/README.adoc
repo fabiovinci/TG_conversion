@@ -772,8 +772,7 @@ Given that [*ISO 19128*] – WMS 1.3.0 has been identified as one of the relevan
 *Implementation Requirement 15* For the Spatial Data Service Type as defined by the INSPIRE Metadata Regulation [*INS MD*] ('view') an extension shall be used to map this to an <inspire_common:SpatialDataServiceType> element within an <inspire_vs:ExtendedCapabilities> element. For an INSPIRE View Service the Spatial Data Service Type shall have a fixed value "view" according to INSPIRE Metadata Regulation [INS MD Part 3].
 ====
 
-
-======= keyword
+4.2.3.3.1.7 KEYWORD
 
 Commonly used word(s), formalized word(s) or phrase(s) used to describe the resource.
 
@@ -782,18 +781,15 @@ Commonly used word(s), formalized word(s) or phrase(s) used to describe the reso
 *Implementation Requirement 16* The INSPIRE Metadata Regulation [*INS MD*] mandates that in the case of spatial data services at least one keyword from the "Classification of Spatial data Services" (Part D.4 from *INS MD*] shall be provided.
 ====
 
-
 [TIP]
 ====
 *Implementation Recommendation 3* Additional keywords may be described as a free text or may originate from any Controlled Vocabulary. If they originate from a Controlled Vocabulary, for example GEMET, then the citation of the originating Controlled Vocabulary shall be provided in the extended capabilities.
 ====
 
-
 [IMPORTANT]
 ====
 *Implementation Requirement 17* If additional keywords are provided they shall be mapped with the <wms:KeywordList> element, the individual keywords shall be mapped to the <wms:Keyword> element, the referenced vocabulary shall be mapped to the 'vocabulary' attribute of the <wms:Keyword> element.
 ====
-
 
 [.text-center]
 *Example 4*: Keyword
@@ -801,43 +797,20 @@ Commonly used word(s), formalized word(s) or phrase(s) used to describe the reso
 [source,xml,subs="+quotes",align=center]
 ----
 <wms:wms_capabilities iso"="" version="1.3.0" xmlns:wms="http://www.opengis.net/wms>
-
-
-<wms:Service>
-
-
-<wms:Name>WMS</wms:Name>
-
-
-<wms:Title>Member State INSPIRE View Service</wms:Title>
-
-
-<wms:Abstract>
-
-
-Service for making available INSPIRE spatial data themes
-
-
-</wms:Abstract>
-
-
-<wms:KeywordList>
-
-
-<!-- vocabulary in WMS 1.3.0 only -->
-
-
-<wms:Keyword vocabulary=">
-  infoMapAccessService
-  <wms:keyword vocabulary="GEMET">
-    keyword
-  </wms:keyword>
-  <wms:keyword>
-    keyword
-  </wms:keyword>
-  ...
-  ...
-</wms:wms_capabilities>
+  <wms:Service>
+    <wms:Name>WMS</wms:Name>
+    <wms:Title>Member State INSPIRE View Service</wms:Title>
+    <wms:Abstract>Service for making available INSPIRE spatial data themes</wms:Abstract>
+    <wms:KeywordList>
+      <!-- vocabulary in WMS 1.3.0 only -->
+      <wms:Keyword vocabulary="ISO">infoMapAccessService</wms:Keyword>
+      <wms:Keyword vocabulary="GEMET">keyword</wms:Keyword>
+      <wms:Keyword>keyword</wms:Keyword>
+      ...
+    </wms:KeywordList>
+    ...
+  </wms:Service>
+</wms:WMS_Capabilities>
 ----
 
 Typing keywords according to the Metadata Technical Guidance and [*ISO 19115*] allow for the detailed description of the thesaurus a keyword belongs to. To provide this functionality and to keep a similar interface as for the Discovery Service, this approach for describing keywords is provided as an extended capability.
@@ -847,14 +820,12 @@ Typing keywords according to the Metadata Technical Guidance and [*ISO 19115*] a
 *Implementation Requirement 18* The keywords shall be mapped to the capabilities extension <inspire_common:Keyword> and <inspire_common:MandatoryKeyword> within an <inspire_vs:ExtendedCapabilities> element.
 ====
 
-
-======= Geographic bounding box
+4.2.3.3.1.8 GEOGRAPHIC BOUNDING BOX
 
 [IMPORTANT]
 ====
 *Implementation Requirement 19* Geographic Bounding Box shall be mapped to the EX_GeographicBoundingBox element of Layer elements.
 ====
-
 
 Note that this metadata element is different to the Layer Metadata Geographic Bounding Box element which is mapped to the <wms:BoundingBox> element (see Section 4.2.3.3.4.4)
 
@@ -863,68 +834,34 @@ Note that this metadata element is different to the Layer Metadata Geographic Bo
 
 [source,xml,subs="+quotes",align=center]
 ----
-<wms:wms_capabilities gemet"="" version="1.3.0" xmlns:wms="http://www.opengis.net/wms>
-
-
-<wms:Service>
-
-
-...
-
-
-</wms:Service>
-
-
-<wms:Capability>
-
-
-...
-
-
-<wms:Layer>
-
-
-...
-
-
-<wms:Title>Transport networks: Road Area</wms:Title>
-
-
-<wms:Abstract>
-
-
-View Service for making available a road transport network...
-
-
-</wms:Abstract>
-
-
-<wms:KeywordList>
-
-
-<wms:Keyword vocabulary=">
-  GEMET keyword
-  ...
-  ...
-  <wms:ex_geographicboundingbox>
-    <wms:westboundlongitude>
-      -31.2
-    </wms:westboundlongitude>
-    <wms:eastboundlongitude>
-      69.1
-    </wms:eastboundlongitude>
-    <wms:southboundlatitude>
-      27.2
-    </wms:southboundlatitude>
-    <wms:northboundlatitude>
-      80.9
-    </wms:northboundlatitude>
-  </wms:ex_geographicboundingbox>
-  ...
-</wms:wms_capabilities>
+<wms:WMS_Capabilities version=“1.3.0” xmlns:wms=”http://www.opengis.net/wms>
+  <wms:Service>
+    ...
+  </wms:Service>
+  <wms:Capability>
+    ...
+    <wms:Layer>
+      ...
+      <wms:Title>Transport networks: Road Area</wms:Title>
+      <wms:Abstract>View Service for making available a road transport network…</wms:Abstract>
+      <wms:KeywordList>
+        <wms:Keyword vocabulary=”GEMET”>GEMET keyword</wms:Keyword>
+        ...
+      </wms:KeywordList>
+      ...
+      <wms:EX_GeographicBoundingBox>
+        <wms:westBoundLongitude>-31.2</wms:westBoundLongitude>
+        <wms:eastBoundLongitude>69.1</wms:eastBoundLongitude>
+        <wms:southBoundLatitude>27.2</wms:southBoundLatitude>
+        <wms:northBoundLatitude>80.9</wms:northBoundLatitude>
+      </wms:EX_GeographicBoundingBox>
+      ...
+    </wms:Layer>
+  </wms:Capability>
+</wms:WMS_Capabilities>
 ----
 
-======= temporal reference
+4.2.3.3.1.9 TEMPORAL REFERENCE
 
 The creation, publishing or revision date of the INSPIRE View Service.
 
@@ -933,7 +870,6 @@ The creation, publishing or revision date of the INSPIRE View Service.
 *Implementation Requirement 20* To be compliant with the INSPIRE Metadata Regulation [*INS MD*] and with [*ISO 19115*] one of following dates shall be used: date of publication, date of last revision, or the date of creation. Date of last revision is preferred. The date shall be expressed in conformity with the [*INS MD*]
 ====
 
-
 INSPIRE also allows the use of a Temporal Extent as Temporal Reference, which is not supported by [*ISO 19115*].
 
 [IMPORTANT]
@@ -941,8 +877,7 @@ INSPIRE also allows the use of a Temporal Extent as Temporal Reference, which is
 *Implementation Requirement 21* As the Temporal Reference is not directly supported by [*ISO 19128*] – WMS 1.3.0 an extension shall be used to map this to an <inspire_common:TemporalReference> element within an <inspire_vs:ExtendedCapabilities> element.
 ====
 
-
-======= spatial resolution
+4.2.3.3.1.10 SPATIAL RESOLUTION
 
 Spatial resolution refers to the level of detail of the data set. As stated by the INSPIRE Metadata Technical Guidance [*INS MDTG*], it is not possible to express the restriction of a service concerning the spatial resolution in the current version of [*ISO 19119*].
 
@@ -954,13 +889,12 @@ Spatial resolution refers to the level of detail of the data set. As stated by t
 
 Nevertheless is it possible to describe the Spatial Resolution of an individual Layer in the "resx" and "resy" attributes of a <wms:BoundingBox> element. Additional to any Spatial Resolution restrictions expressed in the <wms:Abstract> element, the Spatial Resolution for every published Layer may be documented in the in the "resx" and "resy" attributes of the <wms:BoundingBox> for this Layer. This is not required by INSPIRE Regulations at this moment.
 
-======= conformity
+4.2.3.3.1.11 CONFORMITY
 
 [IMPORTANT]
 ====
 *Implementation Requirement 22* The INSPIRE Metadata Regulation [*INS MD*] requires that metadata shall include information on the degree of conformity with the implementing rules provided in Art. 7.1 (Interoperability of spatial data sets and services) of the INSPIRE Directive [*Directive 2007/2/EC*].
 ====
-
 
 The INSPIRE Metadata Regulation [*INS MD*, Part D 5] defines three degrees of conformity which shall be reported in the capabilities:
 
@@ -974,8 +908,7 @@ There is no element available in [*ISO 19128*] – WMS 1.3.0 that allows the des
 *Implementation Requirement 23* An extension shall be used to map this to an <inspire_common:Conformity> element within an <inspire_vs:ExtendedCapabilities> element.
 ====
 
-
-======= conditions for access and use
+4.2.3.3.1.12 CONDITIONS FOR ACCESS AND USE
 
 Defines the conditions for access and use of spatial data sets and services, and where applicable, corresponding fees
 
@@ -983,7 +916,6 @@ Defines the conditions for access and use of spatial data sets and services, and
 ====
 *Implementation Requirement 24* This metadata element shall be mapped to the <wms:Fees>  element of the capabilities. If no conditions apply to the access and use of the resource, "no conditions apply" shall be used. If conditions are unknown "conditions unknown" shall be used.
 ====
-
 
 [.text-center]
 *Example 6*: Conditions for access and use
@@ -1014,7 +946,7 @@ Defines the conditions for access and use of spatial data sets and services, and
 </wms:service>
 ----
 
-======= limitations on public access
+4.2.3.3.1.13 LIMITATIONS ON PUBLIC ACCESS
 
 This metadata element shall provide information on the limitations (if they exist) and the reasons for such limitations. It is mapped with <wms:AccessConstraints> element.
 
@@ -1057,9 +989,9 @@ No precise syntax has been defined for the text content of these elements in [*I
 </wms:service>
 ----
 
-======= responsible organisation
+4.2.3.3.1.14 RESPONSIBLE ORGANISATION
 
-Description of the organisation responsible for the establishment, management, maintenance and distribution of the resource. It shall be mapped to the <wms:ContactInformation> element where the most relevant properties are:
+Description of the organisation responsible for the establishment, management, maintenance and distribution of the resource. It shall be mapped to the +<wms:ContactInformation>+ element where the most relevant properties are:
 
 * Organisation
 * Role
