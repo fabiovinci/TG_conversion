@@ -1894,8 +1894,7 @@ For more information, refer to [*ISO 19128*, Annex C].
 				<Format>text/xml</Format>
 					<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink"                    
                xlink:type="simple"
-               xlink:href=" http://.../discovery?Service=CSW&Request=GetRecordById&Version=2.0.2&id=[METADATA_IDENTIFIER]&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full"
-             />
+               xlink:href=" http://.../discovery?Service=CSW&Request=GetRecordById&Version=2.0.2&id=[METADATA_IDENTIFIER]&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full"/>
 			</MetadataURL>
 			...
 			<wms:Style>
@@ -1906,8 +1905,7 @@ For more information, refer to [*ISO 19128*, Annex C].
 					<wms:OnlineResource
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 						xlink:type="simple"
-						xlink:href="URL"
-				/>
+						xlink:href="URL"/>
 				<wms:LegendURL>
 			</wms:Style>
 			...
@@ -1949,8 +1947,7 @@ For instance, the Category Layer Hydrography Physical Waters Waterbodies could c
 	     	<Format>text/xml</Format>
    	     	<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink"                    
      	          xlink:type="simple"
-       		        xlink:href=" http://.../discovery?Service=CSW&Request=GetRecordById&Version=2.0.2&id=[METADATA_IDENTIFIER]&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full"
-            />
+       		        xlink:href=" http://.../discovery?Service=CSW&Request=GetRecordById&Version=2.0.2&id=[METADATA_IDENTIFIER]&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full"/>
        	</MetadataURL>
 			<wms:Layer>
 				<wms:Name>
@@ -1978,8 +1975,7 @@ For instance, the Category Layer Hydrography Physical Waters Waterbodies could c
 	         <Format>text/xml</Format>
    	         <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink"                    
      	          xlink:type="simple"
-       		        xlink:href=" http://.../discovery?Service=CSW&Request=GetRecordById&Version=2.0.2&id=[METADATA_IDENTIFIER]&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full"
-             />
+       		        xlink:href=" http://.../discovery?Service=CSW&Request=GetRecordById&Version=2.0.2&id=[METADATA_IDENTIFIER]&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full"/>
        		</MetadataURL>
 			...
 			</wms:Layer>
@@ -2009,8 +2005,7 @@ For instance, the Category Layer Hydrography Physical Waters Waterbodies could c
 	         <Format>text/xml</Format>
    	         <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink"                    
      	          xlink:type="simple"
-       		        xlink:href=" http://.../discovery?Service=CSW&Request=GetRecordById&Version=2.0.2&id=[METADATA_IDENTIFIER]&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full"
-             />
+       		        xlink:href=" http://.../discovery?Service=CSW&Request=GetRecordById&Version=2.0.2&id=[METADATA_IDENTIFIER]&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full"/>
        		</MetadataURL>
 				...
 			</wms:Layer>
@@ -2027,15 +2022,14 @@ The GetMap operation returns a map. Upon receiving a GetMap request, a WMS shall
 
 [*INS NS*] states that "..._this map is an image spatially referenced_": the GetMap request is geo-referencing the returned image at least by the use of the Bounding box and Coordinate Reference System parameters.
 
-[.text-center]
 Table 7 shows the INSPIRE parameters that shall be used within the WMS GetMap operation according to the [*INS NS*]:
 
-
+[.text-center]
 *Table 7*: INSPIRE and ISO 19128 parameters mapping
 
 [align=center,width="100%",cols="39%,61%",]
 |===
-|*INSPIRE parameters* |*ISO 19128 parameters*
+^|*INSPIRE parameters* ^|*ISO 19128 parameters*
 |Layers |LAYERS
 |Styles |STYLES
 |Coordinate Reference System |CRS
@@ -2044,11 +2038,8 @@ Table 7 shows the INSPIRE parameters that shall be used within the WMS GetMap op
 |Image height |HEIGHT
 |Image format |FORMAT
 |Language |None. See LANGUAGE section
-|Dimension Pair a|
-TIME, ELEVATION or other sample dimension(s).
-
+|Dimension Pair a|TIME, ELEVATION or other sample dimension(s). +
 In case of 2D request, the standard does not require this parameter.
-
 |===
 
 image::./media/image7.png[image,width=535,height=867,align="center"]
@@ -2063,7 +2054,7 @@ image::./media/image7.png[image,width=535,height=867,align="center"]
 
 [align=center,width="100%",cols="34%,13%,53%",options="header",]
 |===
-|*Request parameter* |*Mandatory/optional* |*Description*
+^|*Request parameter* ^|*Mandatory/optional* ^|*Description*
 |VERSION=1.3.0 |M |Request version
 |REQUEST=GetMap |M |Request name
 |LAYERS=name,name |M |Comma-separated list of one or more map layers names. Names are harmonized INSPIRE layers names.
@@ -2073,7 +2064,6 @@ image::./media/image7.png[image,width=535,height=867,align="center"]
 |WIDTH=output_width |M |Width in pixels of map picture
 |HEIGHT=output_height |M |Height in pixels of map picture
 |FORMAT=output_format |M |Output format of map. At least supported : Portable Network Graphics format(PNG; MIME type "image/png") or the GIF (Graphics Interchange Format) without LZW compression (MIME type "image/gif")
-| | |
 |TRANSPARENT=TRUE|FALSE |O |Background transparency of map (default=FALSE)
 |BGCOLOR=color_value |O |Hexadecimal red-green-blue colour value for the background color (default=0xFFFFFF)
 |EXCEPTIONS=error_format |O |The format in which exceptions are to be reported by the WMS (default=XML)
@@ -2082,93 +2072,83 @@ image::./media/image7.png[image,width=535,height=867,align="center"]
 |Other sample dimension(s) |C |Value of other dimensions as appropriate
 |===
 
-======= version
+4.2.4.1.1.1 VERSION
 
 [IMPORTANT]
 ====
 *Implementation Requirement 50* The mandatory VERSION parameter. The value "1.3.0" shall be used for GetMap requests that comply with the [*ISO 19128*] standard.
 ====
 
-
-======= request
+4.2.4.1.1.2 REQUEST
 
 [IMPORTANT]
 ====
 *Implementation Requirement 51* The mandatory REQUEST parameter is defined in [*ISO 19128*, Section 6.9.2]. To invoke the GetMap operation, the value "GetMap" shall be used to comply with the [*ISO 19128*] standard.
 ====
 
-
-======= layers
+4.2.4.1.1.3 LAYERS
 
 [IMPORTANT]
 ====
 *Implementation Requirement 52* The mandatory LAYERS parameter lists the map layer(s) to be returned by this GetMap request. The value of the LAYERS parameter shall be a comma-separated list of one or more valid INSPIRE harmonized layer names.
 ====
 
-
-======= styles
+4.2.4.1.1.4 STYLES
 
 [IMPORTANT]
 ====
 *Implementation Requirement 53* The mandatory STYLES parameter lists the style in which each layer is to be rendered. The value of the STYLES parameter shall be a comma-separated list of one or more valid INSPIRE style names. A client may request the default Style using a null value (as in "STYLES=").
 ====
 
-
-======= crs
+4.2.4.1.1.5 CRS
 
 [IMPORTANT]
 ====
 *Implementation Requirement 54* The CRS request parameter states what Layer CRS applies to the BBOX request parameter. Values must be CRS that are defined in the INSPIRE Annex I, theme 1, Coordinate Reference System.
 ====
 
-
 Recommended CRS are listed in Section 4.2.3.3.4.7.
 
-======= bbox
+4.2.4.1.1.6 BBOX
 
 [IMPORTANT]
 ====
 *Implementation Requirement 55* The mandatory BBOX parameter allows a Client to request a particular Bounding Box. The value of the BBOX parameter in a GetMap request shall be a list of comma-separated real numbers in the form "minx,miny,maxx,maxy". These values specify the minimum X, minimum Y, maximum X, and maximum Y values of a region in the Layer CRS of the request. The units, ordering and direction of increment of the X and Y axes shall be as defined by the Layer CRS. The four bounding box values indicate the outside limits of the region.
 ====
 
-
-======= width and height
+4.2.4.1.1.7 WIDTH AND HEIGHT
 
 [IMPORTANT]
 ====
 *Implementation Requirement 56* The mandatory WIDTH and HEIGHT parameters specify the size in integer pixels of the map to be produced.
 ====
 
-
-======= format
+4.2.4.1.1.8 FORMAT
 
 [IMPORTANT]
 ====
 *Implementation Requirement 57* The mandatory FORMAT parameter states the desired format of the map. The [*INS NS*, Annex III, Part B, Section 2] Image format states that at least one of "image/png" or "image/gif" must be supported and therefore advertised in the GetCapabilities operation.
 ====
 
-
-======= transparent
+4.2.4.1.1.9 TRANSPARENT
 
 [IMPORTANT]
 ====
 *Implementation Requirement 58* The optional TRANSPARENT parameter specifies whether the map background is to be made transparent or not. The service is required to implement this.
 ====
 
-
-======= bgcolor
+4.2.4.1.1.10BGCOLOR
 
 The optional BGCOLOR parameter is a string that specifies the color to be used as the background (nodata) pixels of the map.
 
-======= exceptions
+4.2.4.1.1.11 EXCEPTIONS
 
 [IMPORTANT]
 ====
 *Implementation Requirement 59* The default value shall be "XML" if this parameter is absent from the request. Other valid values are INIMAGE and BLANK.
 ====
 
-
-======= time, elevation and other sample dimension(s)
+4.2.4.1.1.12 TIME, ELEVATION AND OTHER SAMPLE DIMENSION(S)
 
 Used when issuing a request using the Temporal coordinate system, height coordinate system or other dimensions. For more information, see [*ISO 19128*, Annexes C and D].
 
@@ -2181,14 +2161,12 @@ In case of a 2D request, the standard does not require this parameter.
 *Implementation Requirement 60* As stated in [*INS NS]*, the Link View Service operation allows a Public Authority or a Third Party to declare a View Service for the viewing of its resources through the Member State View Service while maintaining the viewing capability at the Public Authority or the Third party location. Furthermore, the Link View Service parameter shall provide all information about the Public Authority's or Third Party's View Service compliant with this regulation, enabling the Member State View Service to get a map from the Public Authority's or Third Party's View Service and to collate it with other maps.
 ====
 
-
 The above INSPIRE requirement defines the need for a mechanism that allows third parties to publish their View Services to the INSPIRE network through a Member State INSPIRE network service. If a Third Party publishes its View Service metadata through a Member State Discovery Service, it shall be possible to view Third Party resources by discovering the Third Party's View Service metadata in the Member State's Discovery Service. The retrieval of this View Service metadata can be handled by the client through a search on View Service metadata in a Member State's Discovery Service.
 
 [IMPORTANT]
 ====
 *Implementation Requirement 61* This operation shall be implemented with the Discover Metadata operation of the Discovery Service.
 ====
-
 
 Based on the View Service's service metadata obtained from a Discovery Service through the Discover Metadata (CSW GetRecords) operation, the capabilities document of a remote INSPIRE View Service may be requested and resources published as Layers defined in this View Service can be consumed by a View Service client.
 
@@ -2197,35 +2175,27 @@ Based on the View Service's service metadata obtained from a Discovery Service t
 
 [source,xml,subs="+quotes",align=center]
 ----
-<csw:getrecords maxrecords="10" outputformat="application/xml" outputschema="http://www.isotc211.org/2005/gmd" resulttype="results" service="CSW" startposition="1" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2">
-  <csw:query typenames="gmd:MD_Metadata">
-    <csw:elementsetname typenames="gmd:MD_Metadata">
-      full
-    </csw:elementsetname>
-    <csw:constraint version="1.1.0">
-      <ogc:filter xmlns:ogc="http://www.opengis.net/ogc">
-        <ogc:and>
-          <ogc:propertyisequalto>
-            <ogc:propertyname>
-              apiso:Language
-            </ogc:propertyname>
-            <ogc:literal>
-              eng
-            </ogc:literal>
-          </ogc:propertyisequalto>
-          <ogc:propertyisequalto>
-            <ogc:propertyname>
-              apiso:ServiceType
-            </ogc:propertyname>
-            <ogc:literal>
-              view
-            </ogc:literal>
-          </ogc:propertyisequalto>
-        </ogc:and>
-      </ogc:filter>
-    </csw:constraint>
-  </csw:query>
-</csw:getrecords>
+<csw:GetRecords xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" service="CSW" resultType="results"
+                       outputFormat="application/xml" outputSchema="http://www.isotc211.org/2005/gmd" 
+                       startPosition="1" maxRecords="10">
+    <csw:Query typeNames="gmd:MD_Metadata">
+		<csw:ElementSetName typeNames="gmd:MD_Metadata">full</csw:ElementSetName>
+        <csw:Constraint version="1.1.0">
+            <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+                <ogc:And>
+                    <ogc:PropertyIsEqualTo>
+                        <ogc:PropertyName>apiso:Language</ogc:PropertyName>
+                        <ogc:Literal>eng</ogc:Literal>
+                    </ogc:PropertyIsEqualTo>
+                    <ogc:PropertyIsEqualTo>
+                    <ogc:PropertyName>apiso:ServiceType</ogc:PropertyName>
+                        <ogc:Literal>view</ogc:Literal>
+                    </ogc:PropertyIsEqualTo>
+                </ogc:And>
+            </ogc::Filter>
+        </csw:Constraint>        
+    </csw:Query>
+</csw:GetRecords>
 ----
 
 If the Member State's View Service supports cascading, the Member State can publish the Third Party's View Service as part of its own capabilities document. In this case Third Party View Services can be consumed through the Member State's View Service. To let the View Service client choose whether he wants to consume the Third Party's View Service directly at the Third Party location or via a cascading View Service at the Member State's location, the View Service metadata of the Third Party's View Service shall be published in a Discovery Service that is part of the network via the Discovery Publish Metadata operation (see *[INS DSTG]* for more information on this operation).
@@ -2236,13 +2206,10 @@ In general there are three possible scenarios: the centralised, the view client 
 
 If the Member State provides all View Service metadata, viewing capabilities and View Services centralised at national level, then the link View Service operation as required by the INSPIRE Regulation [*INS NS*] is implicitly fulfilled.
 
-_+++Response Parameters+++_
+_Response Parameters_
 
-____
-GetCapabilities Response:
-
-No additional parameters are required.
-____
+	GetCapabilities Response:
+	No additional parameters are required.
 
 ===== View client scenario
 
