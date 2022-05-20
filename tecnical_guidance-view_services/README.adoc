@@ -2510,7 +2510,8 @@ The recommended INSPIRE Extension described before already provides language spe
 An example of this behaviour is given below, showing how to extend the WMS.getMap() operation to support multilingual error messages.
 
 [arabic]
-. The client sends the initial Request for Capabilities: [OCG-GetCapabilities-Request]
+. The client sends the initial Request for Capabilities +
+[OCG-GetCapabilities-Request]
 . The service responses with extended Capabilities including the supported Languages:
 
 [.text-center]
@@ -2518,24 +2519,16 @@ An example of this behaviour is given below, showing how to extend the WMS.getMa
 
 [source,xml,subs="+quotes",align=center]
 ----
-<inspire_vs:extendedcapabilities>
-  ...
-  <inspire_common:supportedlanguages>
-    <inspire_common:defaultlanguage>
-      fre
-    </inspire_common:defaultlanguage>
-    <inspire_common:supportedlanguage>
-      eng
-    </inspire_common:supportedlanguage>
-  </inspire_common:supportedlanguages>
-  <inspire_common:supportedlanguage>
-    dut
-  </inspire_common:supportedlanguage>
-  <inspire_common:responselanguage>
-    eng
-  </inspire_common:responselanguage>
-  ...
-</inspire_vs:extendedcapabilities>
+<inspire_vs:ExtendedCapabilities>
+...
+<inspire_common:SupportedLanguages>
+  <inspire_common:DefaultLanguage>fre</inspire_common:DefaultLanguage> 
+  <inspire_common:SupportedLanguage>eng</inspire_common:SupportedLanguage> 
+</inspire_common:SupportedLanguages>
+<inspire_common:SupportedLanguage>dut</inspire_common:SupportedLanguage>
+<inspire_common:ResponseLanguage>eng</inspire_common:ResponseLanguage> 
+...
+</inspire_vs:ExtendedCapabilities>
 ----
 
 [arabic, start=3]
