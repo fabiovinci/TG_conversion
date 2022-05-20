@@ -2509,9 +2509,9 @@ The recommended INSPIRE Extension described before already provides language spe
 
 An example of this behaviour is given below, showing how to extend the WMS.getMap() operation to support multilingual error messages.
 
-[arabic, start=3]
+[arabic]
 . The client sends the initial Request for Capabilities +
-[OCG-GetCapabilities-Request]
+[OCG-GetCapabilities-Request] +
 . The service responses with extended Capabilities including the supported Languages:
 
 [.text-center]
