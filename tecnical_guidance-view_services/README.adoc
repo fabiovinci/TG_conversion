@@ -2207,9 +2207,11 @@ In general there are three possible scenarios: the centralised, the view client 
 If the Member State provides all View Service metadata, viewing capabilities and View Services centralised at national level, then the link View Service operation as required by the INSPIRE Regulation [*INS NS*] is implicitly fulfilled.
 
 _Response Parameters_
+____
+GetCapabilities Response:
 
-	GetCapabilities Response:
-	No additional parameters are required.
+No additional parameters are required.
+____
 
 ===== View client scenario
 
@@ -2231,11 +2233,10 @@ image::./media/image8.png[image,width=540,height=391,align="center"]
 [.text-center]
 *Figure 7*: Client approach
 
-_+++Response Parameters+++_
+_Response Parameters_
 
 ____
 GetCapabilities Response:
-
 No additional parameters are required.
 ____
 
@@ -2248,18 +2249,15 @@ In this case the Member State's View Service supports cascading and is responsib
 *Implementation Requirement 62* In the case where it is more preferable to collate maps in a View Service (for example: the Member State View Service collates maps that are served locally with maps that are served remote by a Third Party), the Member State's View Service shall include the service's layer metadata in his own service metadata (capabilities document).
 ====
 
-
 [IMPORTANT]
 ====
 *Implementation Requirement 63* The "cascaded" attribute of the <wms:Layer> element shall be used to indicate that the layer is hosted by a remote View Service.
 ====
 
-
 [IMPORTANT]
 ====
 *Implementation Requirement 64* Every time a map from a View Service is cascaded through another View Service the value of the "cascaded" attribute shall be incremented by 1. The actual collation of maps is out-of-scope for this Technical Guideline.
 ====
-
 
 image::./media/image9.png[image,width=605,height=314,align="center"]
 
@@ -2277,11 +2275,9 @@ Advantages:
 * View Services behind a firewall can be accessed via the Member State's View Service.
 * Get Map request/responses for remote View Services don't have to be processed by every client.
 
-_+++Response Parameters+++_
-
+_Response Parameters_
 ____
 GetCapabilities Response:
-
 No additional parameters are required.
 ____
 
@@ -2292,7 +2288,6 @@ ____
 *Implementation Requirement 65* To support collation with other maps for both supported image formats (GIF and PNG), the transparency parameter (TRANSPARENT) of the WMS GetMap request shall be set to "true" and the background parameter (BGCOLOR) for all layers shall be set to the same colour.
 ====
 
-
 === Language Requirements
 
 The Network Services Regulation requires that multilingual aspects for network services are supported [*INS NS*]. As there is no standard way to deal with multilingualism within the current ISO or OGC specifications, the following basic principle shall be used for INSPIRE Network Services:
@@ -2302,17 +2297,14 @@ The Network Services Regulation requires that multilingual aspects for network s
 *Implementation Requirement 66* A network service metadata response shall contain a list of the natural languages supported by the service. This list shall contain one or more languages that are supported.
 ====
 
-
 [IMPORTANT]
 ====
 *Implementation Requirement 67* A client may specify a specific language in a request. If the requested language is contained in the list of supported languages, the natural language fields of the service response shall be in the requested language. It the requested language is not supported by the service, then this parameter shall be ignored.
 ====
 
-
 ==== GetCapabilities-Operation
 
-*GetCapabilities-Request:*
-
+*GetCapabilities-Request:* +
 The HTTP/GET binding of the GetCapabilities-Operation is extended by an additional parameter that indicates the client's preferred language.
 
 [IMPORTANT]
@@ -2333,50 +2325,56 @@ Codelist (See ISO/TS 19139) based on alpha-3 codes of ISO 639-2.
 Use only three-letter codes from in ISO 639-2/B (bibliographic codes),
 
 The list of codes for the 23 official EU languages and EFTA Countries is:
+!===
 
-Bulgarian – *bul* Italian – *ita*
+!Bulgarian – *bul* !Italian – *ita*
 
-Czech – *cze* Latvian – *lav*
+!Czech – *cze* !Latvian – *lav*
 
-Danish – *dan* Liechenstein – *ger* Dutch – *dut* Lithuanian – *lit*
+!Danish – *dan* !Liechenstein – *ger*
 
-English – *eng* Maltese – *mlt*
+!Dutch – *dut* !Lithuanian – *lit*
 
-Polish – *pol* Norwegian – *nor* Estonian – *est* Portuguese – *por*
+!English – *eng* !Maltese – *mlt*
 
-Finnish – *fin* Romanian – *rum*
+!Polish – *pol* !Norwegian – *nor*
 
-French – *fre* Romansh - *roh*
+!Estonian – *est* !Portuguese – *por*
 
-German – *ger* Slovak – *slo*
+!Finnish – *fin* !Romanian – *rum*
 
-Greek – *gre* Slovenian – *slv*
+!French – *fre* !Romansh - *roh*
 
-Hungarian – *hun* Spanish – *spa*
+!German – *ger* !Slovak – *slo*
 
-Irish – *gle* Swedish – *swe*
+!Greek – *gre* !Slovenian – *slv*
 
-Icelandic – *ice*
+!Hungarian – *hun* !Spanish – *spa*
 
-The list of all the codes is defined at
+!Irish – *gle* !Swedish – *swe*
 
-http://www.loc.gov/standards/iso639-2/
+!Icelandic – *ice* !
 
+!===
+
+The list of all the codes is defined at 
+http://www.loc.gov/standards/iso639-2/ +
 Regional languages also are included in this list.
 
 |No, it is optional. |Yes, it is mandatory to be supported and shall be processed if the parameter is present in a client's request with a supported language code. If the parameter is absent in a clients request or it requested an unsupported language the service shall response in the service default language.
 |===
 
-Schema:
+|===
 
-[OCG-GetCapabilities-Request]&LANGUAGE=<ISO 639-2/B alpha 3 code>
+Schema: +
+[OCG-GetCapabilities-Request]&LANGUAGE=<ISO639-2/B alpha 3 code>
 
-Example:
+Example: +
+\http://inspire.network.service.example/service?SERVICE=[...]&VERSION=[...]&LANGUAGE=eng
 
-http://inspire.network.service.example/service?SERVICE=[...]&VERSION=[...]&LANGUAGE=eng
+|===
 
-*GetCapabilities-Response:*
-
+*GetCapabilities-Response:* +
 If a client request specifies a supported language the following fields of the GetCapabilties-Response are affected:
 
 * Titles
@@ -2386,7 +2384,6 @@ If a client request specifies a supported language the following fields of the G
 ====
 *Implementation Requirement 69* If a client request specifies an unsupported language, or the parameter is absent in the request, the above fields shall be provided in the service default language.
 ====
-
 
 This behaviour ensures backward compatibility so that any existing clients may interact with the service using the default OGC standard.
 
@@ -2399,7 +2396,6 @@ To advertise the supported languages the service shall respond with Extended Cap
 *Implementation Requirement 70* The Extended Capabilities shall indicate the *response language* used for the GetCapabilities-Response: Depending on the *requested language* the value of the <inspire_common:ResponseLanguage> corresponds to the current used language. If a supported language was requested, <inspire_common:ResponseLanguage> shall correspond to that requested language. If an unsupported language was requested or if no specific language was requested <inspire_common:ResponseLanguage> shall correspond to the *service default language <inspire_common:DefaultLanguage>*
 ====
 
-
 [IMPORTANT]
 ====
 *Implementation Requirement 71* The Extended Capabilities shall contain the *list of supported languages* indicated in <inspire_common:SupportedLanguages>. +
@@ -2411,12 +2407,10 @@ This *list of supported languages* shall consist of +
 Regardless of the response language, the *list of supported languages* is invariant for each GetCapabilities-Response.
 ====
 
-
 [IMPORTANT]
 ====
 *Implementation Requirement 72* The Extended Capabilities shall use the XML Schema as defined in the INSPIRE online schema repository.
 ====
-
 
 *Examples:*
 
@@ -2427,26 +2421,21 @@ A service supports French and English and the service default language is French
 
 [source,xml,subs="+quotes",align=center]
 ----
-<inspire_vs:extendedcapabilities>
-  ...
-  <inspire_common:supportedlanguages>
-    <inspire_common:defaultlanguage>
-      <inspire_common:language>
-        fre
-      </inspire_common:language>
-    </inspire_common:defaultlanguage>
-    <inspire_common:supportedlanguage>
-      <inspire_common:language>
-        eng
-      </inspire_common:language>
-    </inspire_common:supportedlanguage>
-  </inspire_common:supportedlanguages>
-  <inspire_common:responselanguage>
-    <inspire_common:language>
-      eng
-    </inspire_common:language>
-  </inspire_common:responselanguage>
-</inspire_vs:extendedcapabilities>
+<inspire_vs:ExtendedCapabilities>
+...
+	<inspire_common:SupportedLanguages>
+		<inspire_common:DefaultLanguage>
+			<inspire_common:Language>fre</inspire_common:Language>
+		</inspire_common:DefaultLanguage>
+		<inspire_common:SupportedLanguage>
+			<inspire_common:Language>eng</inspire_common:Language>
+		</inspire_common:SupportedLanguage>
+	</inspire_common:SupportedLanguages>
+	<inspire_common:ResponseLanguage>
+		<inspire_common:Language>eng</inspire_common:Language>
+	</inspire_common:ResponseLanguage 
+...	
+</inspire_vs:ExtendedCapabilities> 
 ----
 
 [.text-center]
@@ -2455,27 +2444,21 @@ A service supports French and English and the service default language is French
 
 [source,xml,subs="+quotes",align=center]
 ----
-<inspire_vs:extendedcapabilities>
-  ...
-  <inspire_common:supportedlanguages>
-    <inspire_common:defaultlanguage>
-      <inspire_common:language>
-        fre
-      </inspire_common:language>
-    </inspire_common:defaultlanguage>
-    <inspire_common:supportedlanguage>
-      <inspire_common:language>
-        eng
-      </inspire_common:language>
-    </inspire_common:supportedlanguage>
-  </inspire_common:supportedlanguages>
-  <inspire_common:responselanguage>
-    <inspire_common:language>
-      fre
-    </inspire_common:language>
-  </inspire_common:responselanguage>
-  ...
-</inspire_vs:extendedcapabilities>
+<inspire_vs:ExtendedCapabilities>
+...
+	<inspire_common:SupportedLanguages>
+		<inspire_common:DefaultLanguage>
+			<inspire_common:Language>fre</inspire_common:Language>
+		</inspire_common:DefaultLanguage>
+		<inspire_common:SupportedLanguage>
+			<inspire_common:Language>eng</inspire_common:Language>
+		</inspire_common:SupportedLanguage>
+	</inspire_common:SupportedLanguages>
+	<inspire_common:ResponseLanguage>
+		<inspire_common:Language>fre</inspire_common:Language>
+	</inspire_common:ResponseLanguage> 
+...
+</inspire_vs:ExtendedCapabilities>
 ----
 
 A service supports only German:
@@ -2485,22 +2468,18 @@ A service supports only German:
 
 [source,xml,subs="+quotes",align=center]
 ----
-<inspire_vs:extendedcapabilities>
-  ...
-  <inspire_common:supportedlanguages>
-    <inspire_common:defaultlanguage>
-      <inspire_common:language>
-        ger
-      </inspire_common:language>
-    </inspire_common:defaultlanguage>
-  </inspire_common:supportedlanguages>
-  <inspire_common:responselanguage>
-    <inspire_common:language>
-      ger
-    </inspire_common:language>
-  </inspire_common:responselanguage>
-  ...
-</inspire_vs:extendedcapabilities>
+<inspire_vs:ExtendedCapabilities>
+...
+	<inspire_common:SupportedLanguages>
+		<inspire_common:DefaultLanguage>
+			<inspire_common:Language>ger</inspire_common:Language>
+		</inspire_common:DefaultLanguage>
+	</inspire_common:SupportedLanguages>
+	<inspire_common:ResponseLanguage>
+		<inspire_common:Language>ger</inspire_common:Language>
+	</inspire_common:ResponseLanguage>
+...
+</inspire_vs:ExtendedCapabilities>
 ----
 
 ===== GetMap-Operation
@@ -2511,7 +2490,6 @@ Neither the INSPIRE Network Services [*INS NS*] Regulation or the Regulation as 
 ====
 *Implementation Requirement 73* If any portrayal rules require language support for rendered text - e.g. by further amendments for Annex II or Annex III - INSPIRE View Services shall implement the common concept as stated in Section 4.3.2.
 ====
-
 
 ==== Common concept for other operations (optional)
 
@@ -2529,12 +2507,10 @@ The recommended INSPIRE Extension described before already provides language spe
 *Implementation Recommendation 17* For further language support for other operation it is recommended to replace the operation-online-resources in each language specific GetCapabilities-Response by a specific operation-online-resource for that language. To support the additional operation-online-resources the service shall listen at the language specific operation end-points to distinguish for the requested languages.
 ====
 
-
 An example of this behaviour is given below, showing how to extend the WMS.getMap() operation to support multilingual error messages.
 
 [arabic]
-. The client sends the initial Request for Capabilities: +
-[OCG-GetCapabilities-Request]
+. The client sends the initial Request for Capabilities: [OCG-GetCapabilities-Request]
 . The service responses with extended Capabilities including the supported Languages:
 
 [.text-center]
