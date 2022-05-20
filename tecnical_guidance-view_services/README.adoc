@@ -2538,7 +2538,6 @@ An example of this behaviour is given below, showing how to extend the WMS.getMa
 .. translated natural language fields (titles, abstracts)
 .. *language specific entry points* for the language specific operations using this concept.
 
-
 [.text-center]
 *Example 29*: Response to [OCG-GetCapabilities-Request]&LANGUAGE=eng +
 or [OCG-GetCapabilities-Request
@@ -2604,7 +2603,7 @@ or [OCG-GetCapabilities-Request
 ____
 English operation end point: +
 Request: +
-http://someHOST.example/*eng*/GetMap?SERVICE=WMS&LAYERS=nonexistentLayer&[...] +
+\http://someHOST.example/*eng*/GetMap?SERVICE=WMS&LAYERS=nonexistentLayer&[...] +
 Response: +
 The service responses with an exception including an English exception message: e.g. "The request is invalid. Reason is ... ".
 ____
@@ -2613,7 +2612,7 @@ ____
 ____
 German operation end point: +
 Request: +
-http://someHOST.example/*ger*/GetMap?SERVICE=WMS&LAYERS=nonexistentLayer&[...] +
+\http://someHOST.example/*ger*/GetMap?SERVICE=WMS&LAYERS=nonexistentLayer&[...] +
 Response: +
 The service responses with an exception including a German exception message: e.g. "Die Anfrage ist fehlerhaft aufgrund ...".
 ____
@@ -2629,13 +2628,12 @@ IETF RFC 4646 is supported by OGC standards relying upon OWS 1.1.0.
 *Implementation Recommendation 18* The support of IETF RFC 4646 is recommended wherever the support of ISO/639 B alpha3 for languages infringes the conformity with the standard used for implementing the [*INS NS*].
 ====
 
-
 [.text-center]
 *Table 10*: Mapping between ISO 639/B alpha 3 and the two forms of IETF RFC 4646 supported by OWS 1.1.0
 
 [align=center,width="100%",cols="28%,33%,39%",]
 |===
-|ISO639/B alpha 3 |IETF RFC 4646 short |IETF RFC 4646 long
+|*ISO639/B alpha 3* |*IETF RFC 4646 short* |*IETF RFC 4646 long*
 |bul |bg |bg-BG
 |cze |cs |cs-CZ
 |dan |da |da-DK
