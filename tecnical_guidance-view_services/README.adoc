@@ -2544,27 +2544,21 @@ or [OCG-GetCapabilities-Request
 
 [source,xml,subs="+quotes",align=center]
 ----
-<wms_capabilities[...] <capability="">
-  <request>
-    [...]
-    <getmap>
-      [...]
-      <dcptype>
-        <http>
-          <get>
-            <onlineresourcexlink:href="http: eng="" getmap?"="" somehost.example="">
-            </onlineresourcexlink:href="http:>
-          </get>
-        </http>
-      </dcptype>
-    </getmap>
-    [...]
-  </request>
-  [...]
-  <capability>
-    [...]
-  </capability>
-</wms_capabilities[...]>
+<WMS_Capabilities[…]
+  <Capability>
+    <Request>[…]
+      <GetMap>[…]
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:href="http://someHOST.example/eng/GetMap?"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetMap>[…]
+    </Request>[…]
+  <Capability>[…]
+</WMS_Capabilities>
 ----
 
 [.text-center]
@@ -2572,50 +2566,37 @@ or [OCG-GetCapabilities-Request
 
 [source,xml,subs="+quotes",align=center]
 ----
-<wms_capabilities[...] <capability="">
-  <request>
-    [...]
-    <getmap>
-      [...]
-      <dcptype>
-        <http>
-          <get>
-            <onlineresourcexlink:href="http: ger="" getmap?"="" somehost.example="">
-            </onlineresourcexlink:href="http:>
-          </get>
-        </http>
-      </dcptype>
-    </getmap>
-    [...]
-  </request>
-  [...]
-  <capability>
-    [...]
-  </capability>
-</wms_capabilities[...]>
+<WMS_Capabilities[…]
+  <Capability>
+    <Request>[…]
+      <GetMap>[…]
+        <DCPType>
+          <HTTP>
+            <Get>
+              <OnlineResource xlink:href="http://someHOST.example/ger/GetMap?"/>
+            </Get>
+          </HTTP>
+        </DCPType>
+      </GetMap>[…]
+    </Request>[…]
+  <Capability>[…]
+</WMS_Capabilities>
 ----
 
 [arabic, start=5]
 . The Client sends an invalid request to either the English or the German operation endpoint.
-[loweralpha]
-.. {blank}
-+
-____
-English operation end point: +
+
+.. English operation end point: +
 Request: +
-\http://someHOST.example/*eng*/GetMap?SERVICE=WMS&LAYERS=nonexistentLayer&[...] +
+_\http://someHOST.example/*eng*/GetMap?SERVICE=WMS&LAYERS=nonexistentLayer&[...]_ +
 Response: +
 The service responses with an exception including an English exception message: e.g. "The request is invalid. Reason is ... ".
-____
-.. {blank}
-+
-____
-German operation end point: +
+
+.. German operation end point: +
 Request: +
-\http://someHOST.example/*ger*/GetMap?SERVICE=WMS&LAYERS=nonexistentLayer&[...] +
+_\http://someHOST.example/*ger*/GetMap?SERVICE=WMS&LAYERS=nonexistentLayer&[...]_ +
 Response: +
 The service responses with an exception including a German exception message: e.g. "Die Anfrage ist fehlerhaft aufgrund ...".
-____
 
 ==== Further Perspectives
 
