@@ -2688,7 +2688,7 @@ The following sections specify the required extensions to the given specificatio
 
 [align=center,width="100%",cols="47%,53%",]
 |===
-|*INSPIRE View Service operations* |*OCG WMTS operations*
+^|*INSPIRE View Service operations* ^|*OCG WMTS operations*
 |Get View Service Metadata |GetCapabilities
 |Get Map |GetTile
 |Link View Service |
@@ -2760,15 +2760,12 @@ The use of the ows:Metadata element of [*OGC 06-121r3*] – OGC Web Services Com
 
 [source,xml,subs="+quotes",align=center]
 ----
-<layer>
-  <ows:title>
-    etopo2
-  </ows:title>
-  ...
-  <ows:metadata xlink:href="id=[METADATA_IDENTIFIER]&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full">
-  </ows:metadata>
-  ...
-</layer>
+<Layer> 
+  <ows:Title>etopo2</ows:Title> 	
+	...
+  <ows:Metadata xlink:href="http://.../discovery?Service=CSW&Request=GetRecordById&Version=2.0.2&id=[METADATA_IDENTIFIER]&outputSchema=http://www.isotc211.org/2005/gmd&elementSetName=full"/> 
+	...
+</Layer> 
 ----
 
 Note: The metadata on the spatial dataset explain the spatial dataset itself; however they do not replace the other metadata on the layer as part of the capabilities.
@@ -2779,7 +2776,7 @@ Note: The metadata on the spatial dataset explain the spatial dataset itself; ho
 
 [width="99%",cols="31%,12%,57%,",options="header",]
 |===
-|*Request parameter* |*Mandatory / optional* |*Description* |
+^|*Request parameter* ^|*Mandatory / optional* ^|*Description* |
 |SERVICE=WMTS |M a|
 Service type. Fixed value: WMTS.
 
@@ -2841,63 +2838,58 @@ It also contains the following elements:
 
 [source,xml,subs="+quotes",align=center]
 ----
-<?xml version="1.0" encoding="UTF-8"?>
-<capabilities version="1.0.0" xmlns="http://www.opengis.net/wmts/1.0" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs_ows11/1.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemalocation="http://www.opengis.net/wmts/1.0 http://schemas.opengis.net/wmts/1.0/wmtsGetCapabilities_response.xsd http://inspire.ec.europa.eu/schemas/inspire_vs_ows11/1.0 http://inspire.ec.europa.eu/schemas/inspire_vs_ows11/1.0/inspire_vs_ows_11.xsd">
-  <ows:serviceidentification>
-    ...
-  </ows:serviceidentification>
-  <ows:serviceprovider>
-    ...
-  </ows:serviceprovider>
-  <ows:operationsmetadata>
-    ...
-    <inspire_vs:extendedcapabilities>
-      ...
-    </inspire_vs:extendedcapabilities>
-  </ows:operationsmetadata>
-  <contents>
-    ...
-  </contents>
-  <themes>
-    ...
-  </themes>
-  <wsdl xlink:href="...">
-  </wsdl>
-  <servicemetadataurl xlink:href="...">
-  </servicemetadataurl>
-</capabilities>
+<?xml version="1.0" encoding="UTF-8"?> 
+<Capabilities xmlns="http://www.opengis.net/wmts/1.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs_ows11/1.0" version="1.0.0" xsi:schemaLocation="http://www.opengis.net/wmts/1.0 http://schemas.opengis.net/wmts/1.0/wmtsGetCapabilities_response.xsd http://inspire.ec.europa.eu/schemas/inspire_vs_ows11/1.0 http://inspire.ec.europa.eu/schemas/inspire_vs_ows11/1.0/inspire_vs_ows_11.xsd">
+    <ows:ServiceIdentification>
+        ...
+    </ows:ServiceIdentification>
+    <ows:ServiceProvider>
+        ...
+    </ows:ServiceProvider>
+    <ows:OperationsMetadata>
+        ...
+        <inspire_vs:ExtendedCapabilities>
+            ...
+        </inspire_vs:ExtendedCapabilities>
+    </ows:OperationsMetadata>
+    <Contents>...</Contents>
+    <Themes>...</Themes>
+    <WSDL xlink:href="..."/>
+    <ServiceMetadataURL xlink:href="..."/>
+</Capabilities>
 ----
 
 To allow a WMTS instance using the INSPIRE Profile to supply the required metadata concerning the service, an Extended Capabilities element is added in the place provided by OGC OWS 1.1 specification:
 
 [source,xml,subs="+quotes",align=center]
 ----
-<?xml version="1.0" encoding="UTF-8"?>
-<capabilities ...="" <ows:serviceidentification="" xmlns="http://www.opengis.net/wmts/1.0">
-  ...
-  <ows:serviceprovider>
-    ...
-  </ows:serviceprovider>
-  <ows:operationsmetadata>
-    ...
-    <inspire_vs:extendedcapabilities>
-      ...
-    </inspire_vs:extendedcapabilities>
-  </ows:operationsmetadata>
-  <contents>
-    ...
-  </contents>
-  <themes>
-    ...
-  </themes>
-  <wsdl xlink:href="...">
-  </wsdl>
-  <servicemetadataurl xlink:href="...">
-  </servicemetadataurl>
-</capabilities>
+<?xml version="1.0" encoding="UTF-8"?> 
+<Capabilities xmlns="http://www.opengis.net/wmts/1.0" 
+...
+    <ows:ServiceIdentification>
+        ...
+    </ows:ServiceIdentification>
+    <ows:ServiceProvider>
+        ...
+    </ows:ServiceProvider>
+    <ows:OperationsMetadata>
+        ...
+        <inspire_vs:ExtendedCapabilities>
+            ...
+        </inspire_vs:ExtendedCapabilities>
+    </ows:OperationsMetadata>
+    <Contents>...</Contents>
+    <Themes>...</Themes>
+    <WSDL xlink:href="..."/>
+    <ServiceMetadataURL xlink:href="..."/>
+</Capabilities>
 ----
 
-The schema file for inspire_vs:ExtendedCapabilities defined for OWS 1.1 based services is attached at the end of this document.
+The schema file for #inspire_vs:ExtendedCapabilities# defined for OWS 1.1 based services is attached at the end of this document.
+
+The schema file for +inspire_vs:ExtendedCapabilities+ defined for OWS 1.1 based services is attached at the end of this document.
+
+The schema file for `inspire_vs:ExtendedCapabilities` defined for OWS 1.1 based services is attached at the end of this document.
 
 ====== Operations Metadata
 
