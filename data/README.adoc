@@ -5125,8 +5125,8 @@ There is one colour defined for each of the 32 WRB Reference Soil Groups (RSG):
 
 
 [appendix]
-## Abstract Test Suite +
-(normative) 
+== Abstract Test Suite
+*(normative)*
  
 ====
 *Disclaimer*
@@ -5284,11 +5284,10 @@ Each test in this suite follows the same structure:
 
 According to ISO 19105:2000 all tests in this ATS are basic tests. Therefore, this statement is not repeated each time.
 
-*Part 1 
-*(normative)
-
-* 
-Conformity with Commission Regulation No 1089/2010*
+[.text-center] 
+*Part 1* +
+(normative) +
+*Conformity with Commission Regulation No 1089/2010*
 
 === Application Schema Conformance Class
 
