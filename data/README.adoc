@@ -5288,6 +5288,9 @@ According to ISO 19105:2000 all tests in this ATS are basic tests. Therefore, th
 [discrete]
 [.text-center]
 === *Part 1* (normative)
+
+[discrete]
+[.text-center]
 === *Conformity with Commission Regulation No 1089/2010*
 
 === Application Schema Conformance Class
