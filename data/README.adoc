@@ -5087,6 +5087,8 @@ There is one colour defined for each of the 32 WRB Reference Soil Groups (RSG):
 |*Minimum & maximum scales* |No scale limits
 |===
 
+
+:sectnums!:
 == Bibliography
 
 [DS-D2.3] INSPIRE DS-D2.3, Definition of Annex Themes and Scope, v3.0, http://inspire.jrc.ec.europa.eu/reports/ImplementingRules/DataSpecifications/D2.3_Definition_of_Annex_Themes_and_scope_v3.0.pdf
@@ -5121,7 +5123,6 @@ There is one colour defined for each of the 32 WRB Reference Soil Groups (RSG):
 
 [OGC 06-103r3] Implementation Specification for Geographic Information - Simple feature access – Part 1: Common Architecture v1.2.0
 
-[upperalpha]
 [appendix]
 .  
 (normative) 
