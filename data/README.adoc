@@ -18,13 +18,15 @@
 // Section numbering level depth
 :sectnumlevels: 8
 
+// Line Break Doc Title
+:hardbreaks-option:
+
 :appendix-caption: Annex
 
 image:./media/image2.jpeg[image,width=131,height=90, align=center]
 
 [.text-center]
-image:./media/image3.png[image,width=93,height=93, align=center] **INSPIRE** +
-*Infrastructure for Spatial Information in Europe*
+image:./media/image3.png[image,width=93,height=93, align=center] **INSPIRE** *Infrastructure for Spatial Information in Europe*
 
 [discrete]
 = D2.8.III.3 Data Specification on _Soil_ – Technical Guidelines
@@ -158,6 +160,7 @@ Unit H06: Digital Earth and Reference Data
 _http://inspire.ec.europa.eu/index.cfm/pageid/2_
 
 
+[discrete]
 == Table of Contents
 toc::[]
 
@@ -5136,6 +5139,7 @@ Bibliography
 [OGC 06-103r3] Implementation Specification for Geographic Information - Simple feature access – Part 1: Common Architecture v1.2.0
 
 [upperalpha]
+[appendix]
 .  
 (normative) 
  
