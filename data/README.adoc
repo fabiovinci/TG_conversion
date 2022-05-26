@@ -5123,6 +5123,7 @@ There is one colour defined for each of the 32 WRB Reference Soil Groups (RSG):
 
 [OGC 06-103r3] Implementation Specification for Geographic Information - Simple feature access – Part 1: Common Architecture v1.2.0
 
+:sectnums:
 
 [appendix]
 == Abstract Test Suite
