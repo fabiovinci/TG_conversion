@@ -23,8 +23,7 @@
 image:./media/image2.jpeg[image,width=131,height=90, align=center]
 
 [.text-center]
-image:./media/image3.png[image,width=93,height=93, align=center]
-**INSPIRE** +
+image:./media/image3.png[image,width=93,height=93, align=center] **INSPIRE** +
 *Infrastructure for Spatial Information in Europe*
 
 [discrete]
