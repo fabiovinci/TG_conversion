@@ -465,8 +465,7 @@ Specifically, for the theme _Soil_, the following terms are defined:
 |XML |EXtensible Markup Language
 |===
 
-===  
-How the Technical Guidelines map to the Implementing Rules
+=== How the Technical Guidelines map to the Implementing Rules
 
 The schematic diagram in Figure 4 gives an overview of the relationships between the INSPIRE legal acts (the INSPIRE Directive and Implementing Rules) and the INSPIRE Technical Guidelines. The INSPIRE Directive and Implementing Rules include legally binding requirements that describe, usually on an abstract level, _what_ Member States must implement.
 
@@ -521,8 +520,7 @@ NOTE The implementation of recommendations is not mandatory. Compliance with the
 
 Annex A includes the abstract test suite for checking conformance with the requirements included in these Technical Guidelines and the corresponding parts of the Implementing Rules (Commission Regulation (EU) No 1089/2010).
 
-==  
-Specification scopes
+== Specification scopes
 
 This data specification does not distinguish different specification scopes, but just considers one general scope.
 
@@ -536,8 +534,7 @@ http://inspire.ec.europa.eu/tg/so/3.0
 
 NOTE ISO 19131 suggests further identification information to be included in this section, e.g. the title, abstract or spatial representation type. The proposed items are already described in the document metadata, executive summary, overview description (section 2) and descriptions of the application schemas (section 5). In order to avoid redundancy, they are not repeated here.
 
-==  
-Data content and structure
+== Data content and structure
 
 === Application schemas – Overview 
 
@@ -1017,8 +1014,7 @@ Figure 5 – Examples of a rectified grid (left) and a referenceable grid (right
 
 Figure 6 – Example of a time series
 
-===  
-Application schema SOIL
+=== Application schema SOIL
 
 ==== Description
 
@@ -3548,8 +3544,7 @@ The externally governed code lists included in this application schema are speci
 
 NOTE All the externally managed code lists and their values are presented in the Annex C of this document
 
-==  
-Reference systems, units of measure and grids
+== Reference systems, units of measure and grids
 
 === Default reference systems, units of measure and grid
 
@@ -3766,8 +3761,7 @@ Theme-specific requirements and recommendations
 
 There are no theme-specific requirements or recommendations on reference systems and grids.
 
-==  
-Data quality
+== Data quality
 
 This chapter includes a description of the data quality elements and sub-elements as well as the corresponding data quality measures that should be used to evaluate and document data quality for data sets related to the spatial data theme _Soil_ (section 7.1).
 
@@ -3924,8 +3918,7 @@ No minimum data quality requirements are defined for the spatial data theme _Soi
 
 No minimum data quality recommendations are defined for the spatial data theme _Soil_.
 
-==  
-Dataset-level metadata
+== Dataset-level metadata
 
 This section specifies dataset-level metadata elements, which should be used for documenting metadata for a complete dataset or dataset series.
 
@@ -4842,13 +4835,11 @@ The recommended coverage encodings for SoilThemeCoverage, SoilThemeDescribtedCov
 
 The encoding of coverage components in GMLJP2 within a JPEG 2000 file should conform to the rules specified in the Guidelines for the encoding of spatial data [DS-D2.7]
 
-==  
-Data Capture
+== Data Capture
 
 There is no specific guidance required with respect to data capture.
 
-==  
-Portrayal
+== Portrayal
 
 This clause defines the rules for layers and styles to be used for portrayal of the spatial object types defined for this theme. Portrayal is regulated in Article 14 of the IRs.
 
@@ -5102,8 +5093,7 @@ There is one colour defined for each of the 32 WRB Reference Soil Groups (RSG):
 |*Minimum & maximum scales* |No scale limits
 |===
 
-==  
-Bibliography
+== Bibliography
 
 [DS-D2.3] INSPIRE DS-D2.3, Definition of Annex Themes and Scope, v3.0, http://inspire.jrc.ec.europa.eu/reports/ImplementingRules/DataSpecifications/D2.3_Definition_of_Annex_Themes_and_scope_v3.0.pdf
 
