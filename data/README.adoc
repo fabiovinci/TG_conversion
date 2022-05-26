@@ -23,9 +23,9 @@
 
 :appendix-caption: Annex
 
-image:./media/image2.jpeg[image,width=131,height=90,align=center]
+image::./media/image2.jpeg[image,width=131,height=90,align=center]
 
-image:./media/image3.png[image,width=93,height=93] **INSPIRE** *Infrastructure for Spatial Information in Europe*
+image::./media/image3.png[image,width=93,height=93] **INSPIRE** *Infrastructure for Spatial Information in Europe*
 
 [discrete]
 = D2.8.III.3 Data Specification on _Soil_ – Technical Guidelines
@@ -251,7 +251,7 @@ Based on the mentioned Use Cases and on the TWG-SO expertise, the following rele
 
 The INSPIRE themes _Soil_ and Geology show some overlap regarding the real world objects they describe, but often see them under different perspectives (*Figure 1*). For the soil domain, rock is the parent material of any soil development, and as such geogenic layers are included in soil datasets. Nonetheless, rock types and their genesis can be named in the same way as in the domain of geology. Hence, the code lists to characterize lithology, processes and process environments have been agreed upon by the INSPIRE Thematic Working Groups Geology and _Soil_. As the superficial layers in which soils develop are not considered in geological datasets throughout, the spatial data from both domains do not necessarily overlap, but kind of complete one another.
 
-image:./media/image4.png[image,width=381,height=509, align=center]
+image::./media/image4.png[image,width=381,height=509, align=center]
 
 [.text-center]
 *Figure 1: The field of Pedology seen in relation to the field of Geology.*
@@ -271,7 +271,7 @@ However, as exemplified by some of the described Use Cases, the objects of the m
 
 In the following, the structuring of the elements and concepts of the soil domain as model-objects and attributes is described. It should be noted that many elements of the European Soil Geographical Data Base and other international initiatives related to the standardization and exchange of soil data have been taken into account. The names given to the objects, attributes and associations are as neutral as possible i.e. not deliberately taken from existing, specific nomenclature.
 
-image:./media/image5.png[image,width=398,height=273, align=center]
+image::./media/image5.png[image,width=398,height=273, align=center]
 
 [.text-center]
 *Figure 2: Soil profile layer and horizon located in a soil plot.*
@@ -282,7 +282,7 @@ The real world concept "soil profile" (*_SoilProfile_* class in the model) (illu
 
 The real world concept "observed soil profile" (*_ObservedSoilProfile_* object in the model) represents a soil profile *physically* located in a soil plot (or exposed with a boring), described in the field, possibly sampled and analysed in the laboratory. An observed soil profile refers to a real world location (specified by an associated soil plot).
 
-image:./media/image6.png[image,width=468,height=370, align=center]
+image::./media/image6.png[image,width=468,height=370, align=center]
 
 [.text-center]
 *Figure 3: Soil profiles, soil bodies.*
@@ -471,7 +471,7 @@ The schematic diagram in Figure 4 gives an overview of the relationships between
 
 In contrast, the Technical Guidelines define _how_ Member States might implement the requirements included in the INSPIRE Implementing Rules. As such, they may include non-binding technical requirements that must be satisfied if a Member State data provider chooses to conform to the Technical Guidelines. Implementing these Technical Guidelines will maximise the interoperability of INSPIRE spatial data sets.
 
-image:./media/image7.png[image,width=603,height=375, align=center]
+image::./media/image7.png[image,width=603,height=375, align=center]
 
 [.text-center]
 Figure 4 - Relationship between INSPIRE Implementing Rules and Technical Guidelines
@@ -1005,7 +1005,7 @@ In addition, some themes make reference to the types TimeValuePair and Timeserie
 
 Where possible, only these coverage types (or a subtype thereof) are used in INSPIRE application schemas.
 
-image:./media/image8.png[image,width=222,height=207] image:./media/image9.png[image,width=309,height=209, align=center]
+image::./media/image8.png[image,width=222,height=207] image::./media/image9.png[image,width=309,height=209, align=center]
 
 [.text-center]
 (Source: ISO 19136:2007) (Source: GML 3.3.0)
@@ -1170,27 +1170,27 @@ In the model, all the information related to the observation is considered to be
 
 ===== UML Overview
 
-image:./media/image10.jpeg[image,width=605,height=587, align=center]
+image::./media/image10.jpeg[image,width=605,height=587, align=center]
 
 [.text-center]
 *Figure 7 – UML class diagram: Overview of the SOIL application schema (Vector part)*
 
-image:./media/image11.jpeg[image,width=605,height=627, align=center]
+image::./media/image11.jpeg[image,width=605,height=627, align=center]
 
 [.text-center]
 Figure 8 - UML class diagram: Overview of the SOIL application schema (Coverages part)
 
-image:./media/image12.jpeg[image,width=604,height=477, align=center]
+image::./media/image12.jpeg[image,width=604,height=477, align=center]
 
 [.text-center]
 Figure 9 - UML class diagram: Overview of the SOIL data types
 
-image:./media/image13.jpeg[image,width=604,height=677, align=center]
+image::./media/image13.jpeg[image,width=604,height=677, align=center]
 
 [.text-center]
 Figure 10 – UML class diagram: Overview of the SOIL code lists
 
-image:./media/image14.jpeg[image,width=617,height=828, align=center]
+image::./media/image14.jpeg[image,width=617,height=828, align=center]
 
 [.text-center]
 ==== Feature catalogue
@@ -5295,7 +5295,6 @@ According to ISO 19105:2000 all tests in this ATS are basic tests. Therefore, th
 === Application Schema Conformance Class
 
 *Conformance class:*
-
 http://inspire.ec.europa.eu/conformance-class/ir/so/as/Soil
 
 ==== Schema element denomination test
@@ -6054,10 +6053,10 @@ P = support practice factor
 |*Priority* |_High_
 |*Description* |_Member States will need to provide soil erosion data to Eurostat, according to the RUSLE model_
 |*Legal foundation(s)* a|
-* image:./media/image15.png[image,width=19,height=16]_Council conclusions (2006)_
-* image:./media/image15.png[image,width=19,height=16]_Commission Communication (2006)_
-* image:./media/image15.png[image,width=19,height=16]_Commission Communication (2001)_
-* image:./media/image15.png[image,width=19,height=16]_Commission Communication (2000)_
+* image::./media/image15.png[image,width=19,height=16]_Council conclusions (2006)_
+* image::./media/image15.png[image,width=19,height=16]_Commission Communication (2006)_
+* image::./media/image15.png[image,width=19,height=16]_Commission Communication (2001)_
+* image::./media/image15.png[image,width=19,height=16]_Commission Communication (2000)_
 * _Eurostat has the legal mandate to collect data from the Member States_
 
 |*Pre-condition* |_Availability of data that is required for computation of the indicators_
@@ -6267,10 +6266,10 @@ The main indicator is 'agri-environmental soil quality index', derived from four
 |*Priority* |_High_
 |*Description* |_Member States will need to provide soil quality data to Eurostat, according to the model which is currently under development_
 |*Legal foundation(s)* a|
-* image:./media/image15.png[image,width=19,height=16]_Council conclusions (2006)_
-* image:./media/image15.png[image,width=19,height=16]_Commission Communication (2006)_
-* image:./media/image15.png[image,width=19,height=16]_Commission Communication (2001)_
-* image:./media/image15.png[image,width=19,height=16]_Commission Communication (2000)_
+* image::./media/image15.png[image,width=19,height=16]_Council conclusions (2006)_
+* image::./media/image15.png[image,width=19,height=16]_Commission Communication (2006)_
+* image::./media/image15.png[image,width=19,height=16]_Commission Communication (2001)_
+* image::./media/image15.png[image,width=19,height=16]_Commission Communication (2000)_
 * _Eurostat has the legal mandate to collect data from the Member States_
 
 |*Pre-condition* |_Availability of data that is required for computation of the indicators_
@@ -6696,12 +6695,12 @@ _Soil_ cartographic units are reclassified according to the parameters above men
 
 The "Land irrigation suitability map" is made at a scale of 1:25.000, therefore, and depending on the case, for further and more detailed information, additional works should be carried out.
 
-image:./media/image16.png[image,width=660,height=729]image:./media/image17.png[image,width=660,height=729]image:./media/image18.png[image,width=660,height=729, align=center]
+image::./media/image16.png[image,width=660,height=729]image::./media/image17.png[image,width=660,height=729]image::./media/image18.png[image,width=660,height=729, align=center]
 
 [.text-center]
 Figure 1: Reclassification of Soil Cartographic Units according to soil parameters, topography and drainage.
 
-image:./media/image22.png[image,width=616,height=458, align=center]
+image::./media/image22.png[image,width=616,height=458, align=center]
 
 [.text-center]
 *Figure 2: Schema of the GIS geoprocessing in Geobide.*
@@ -7243,7 +7242,7 @@ In summary, CGMS consists of three main parts (*Figure 3*):
 
 {empty}3. Statistical evaluation of the results
 
-image:./media/image23.png[image,width=553,height=605, align=center]
+image::./media/image23.png[image,width=553,height=605, align=center]
 
 [.text-center]
 *Figure 3: Levels in the Crop Growth Monitoring System*
@@ -7516,10 +7515,10 @@ information sources are needed list each source separately>
 [arabic, start=3]
 . results from regional water monitoring systems showing excesses in the concentrations of NP
 
-image:./media/image24.png[image,width=554,height=787, align=center]
+image::./media/image24.png[image,width=554,height=787, align=center]
 
 [.text-center]
-image:./media/image25.png[image,width=554,height=688, align=center]
+image::./media/image25.png[image,width=554,height=688, align=center]
 
 [.text-center]
 _IMPORTANT NOTE it still needs to be checked if the elements in this Use Case match the latest version of the soil data model, as described in this document._
@@ -7536,7 +7535,7 @@ The
 
 Figure *5* below shows an example from the web site giving the Cd total threshold for 0-30 cm.
 
-image:./media/image26.png[image,width=553,height=332, align=center]
+image::./media/image26.png[image,width=553,height=332, align=center]
 
 [.text-center]
 *Figure 5*
@@ -7711,7 +7710,7 @@ Use of Soil Scape Viewer
 
 The *Soilscapes Viewer* (see *Figure 6* below) allows users to view and map the soils of England and Wales, searching by U.K. postcode or co-ordinates to see the general conditions at any point. An interactive legend allows users to click on a feature represented in the map and learn more about that soil type including drainage, texture, land cover, habitats, and fertility.
 
-image:./media/image27.png[image,width=488,height=352, align=center]
+image::./media/image27.png[image,width=488,height=352, align=center]
 
 [.text-center]
 *Figure 6: screenshot of the soil scape viewer*
@@ -8238,7 +8237,7 @@ housing zone
 
 * complete and detailed description (measurement data: soil-air, soil, groundwater) of the site and all kinds of relevant information can be added in an extra file for download; also a detailed site map and risk assessment information
 
-image:./media/image28.png[image,width=531,height=368, align=center]
+image::./media/image28.png[image,width=531,height=368, align=center]
 
 [.text-center]
 *Figure 7: Delineation of contaminated sites in Austria.*
@@ -8629,7 +8628,7 @@ After a first generic approach a discussion may raise on the need of remediation
 . Ecology: field observations (condition and variation of soil organisms, plants, trees).
 
 ====
-image:./media/image29.png[image,width=136,height=138, align=center]
+image::./media/image29.png[image,width=136,height=138, align=center]
 
 [.text-center]====
 
@@ -8639,7 +8638,7 @@ The basis of the Triad method is to compare results from a polluted site with th
 
 The Triad method assists to provide a 'Weight of Evidence' of the ecological effects from the three types of investigation. Like other methods for soil surveys and investigations the Triad method can be applied in a stepwise (tiered) way, from simple to more elaborate methods and investigations, in order to exploit the research in a cost-effective manner.
 
-image:./media/image30.png[image,width=446,height=469, align=center]
+image::./media/image30.png[image,width=446,height=469, align=center]
 
 [.text-center]
 _Output of the Triad method: risk evaluation of the soil samples B and C (with sample A as clean reference) by 'Weight of evidence' of the chemical, toxicological and ecological investigation._
@@ -14180,7 +14179,7 @@ The UML-model on contaminated sites demonstrates the extensibility of the UML da
 
 The UML-model on contaminated sites (see *Figure 9*) is limited to: getting an overview of the work done and the work going on in the field of local soil and groundwater contamination in the form of investigations and soil site management measures.
 
-image:./media/image31.jpeg[image,width=596,height=641, align=center]
+image::./media/image31.jpeg[image,width=596,height=641, align=center]
 
 [.text-center]
 *Figure 9: UML class diagram: Soil Contamination*
@@ -14189,10 +14188,10 @@ For a description of all objects in this UML class diagram see the Feature Catal
 
 Figure 10 gives an overview which items are in the data model and which items are purposely left out of the data model to make it fit for getting an overview on this important topic without interfering in the member states rights to protect the soil in the ways they consider fit for the specific local circumstances and regulations.
 
-image:./media/image32.png[image,width=648,height=400, align=center]
+image::./media/image32.png[image,width=648,height=400, align=center]
 
 [.text-center]
-image:./media/image33.png[image,width=655,height=397, align=center]
+image::./media/image33.png[image,width=655,height=397, align=center]
 
 [.text-center]
 Figure 10: Overview of the items inside the data model and the items which are purposely left out of the data model.
@@ -14213,7 +14212,7 @@ For each step in the tiered procedure screening values specific for this step ca
 
 The remediation and site management may involve temporary protection and restriction measures, cleaning or partial cleaning (of the contamination sources or of kernels with high contamination levels) over longer or shorter periods, change of land use, or isolation or immobilization of the contaminants and may include aftercare. Aftercare may consist of maintenance of physical provisions and land use restrictions or monitoring of contamination levels and dispersion rates of the contaminants.
 
-image:./media/image34.png[image,width=594,height=366, align=center]
+image::./media/image34.png[image,width=594,height=366, align=center]
 
 [.text-center]
 Figure 11: Tiered approach on headlines of the investigation and management of sites with possibly contaminated soil and/or groundwater. Starting on the top and going down following procedures for investigations and management.
@@ -14246,10 +14245,10 @@ The reasons to investigate and manage a site are the hazards and risks as specif
 
 In this example: the trigger to investigate the justification and application may be up to the member states. It may be informative for policy makers to know which triggers are dominant and as it is compliant to the rules of the member states generally there is no reason to keep it back. The information is included in the model as an option with a generalized and extendable code list.
 
-image:./media/image35.png[image,width=491,height=340, align=center]
+image::./media/image35.png[image,width=491,height=340, align=center]
 
 [.text-center]
-image:./media/image36.png[image,width=355,height=94, align=center]
+image::./media/image36.png[image,width=355,height=94, align=center]
 
 [.text-center]
 *Figure 12: Quick reference view of the model*
@@ -14264,10 +14263,10 @@ Some subjects are not included in the model and it is recommended that these sho
 
 As soil pollution may have implications for a large field of economic activities the management of contaminated sites and brown fields may have wider implications in fields for which the TWG Soil has no expertise available. Figure 13 gives a wider overview of related management issues to consider several of these issues will be integrated in management related to other themes, making use of soil pollution data. It is recommended to make a further check of the connection of soil pollution with other INSPIRE themes. The current data model is restricted and mainly aiming to record the status of contaminated sites to foster public health and safe and sustainable land development.
 
-image:./media/image37.png[image,width=625,height=421, align=center]
+image::./media/image37.png[image,width=625,height=421, align=center]
 
 [.text-center]
-image:./media/image38.png[image,width=368,height=143, align=center]
+image::./media/image38.png[image,width=368,height=143, align=center]
 
 [.text-center]
 Figure 13: Possible tasks in management of soil pollution, with (in grey) the main management issues in which these tasks may be integrated. This is an illustration of the wider fields of risk management on soil pollution and not part of the proposed data model.
