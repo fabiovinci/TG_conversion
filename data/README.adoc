@@ -5125,11 +5125,9 @@ There is one colour defined for each of the 32 WRB Reference Soil Groups (RSG):
 
 
 [appendix]
-## Abstract Test Suite
+## Abstract Test Suite +
 (normative) 
  
-*Abstract Test Suite*
-
 ====
 *Disclaimer*
 
