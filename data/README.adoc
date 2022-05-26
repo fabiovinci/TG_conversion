@@ -23,7 +23,7 @@
 image:./media/image2.jpeg[image,width=131,height=90, align=center]
 
 [.text-center]
-image:./media/image3.wmf[image,width=93,height=93, align=center]
+image:./media/image3.png[image,width=93,height=93, align=center]
 **INSPIRE**
 *Infrastructure for Spatial Information in Europe*
 
@@ -162,320 +162,7 @@ _http://inspire.ec.europa.eu/index.cfm/pageid/2_
 == Table of Contents
 toc::[]
 
-* 
-Table of contents*
-
-1 Scope 10
-
-2 Overview 10
-
-2.1 Name 10
-
-2.2 Informal description 10
-
-2.3 Normative References 18
-
-2.4 Terms and definitions 19
-
-2.5 Symbols and abbreviations 20
-
-2.6 How the Technical Guidelines map to the Implementing Rules 22
-
-2.6.1 Requirements 22
-
-2.6.2 Recommendations 23
-
-2.6.3 Conformance 23
-
-3 Specification scopes 24
-
-4 Identification information 24
-
-5 Data content and structure 25
-
-5.1 Application schemas – Overview 25
-
-5.1.1 Application schemas included in the IRs 25
-
-5.1.2 Additional recommended application schemas 26
-
-5.2 Basic notions 26
-
-5.2.1 Notation 27
-
-5.2.2 Voidable characteristics 28
-
-5.2.3 Enumerations 29
-
-5.2.4 Code lists 29
-
-5.2.5 Identifier management 33
-
-5.2.6 Geometry representation 33
-
-5.2.7 Temporality representation 33
-
-5.2.8 Coverages 35
-
-5.3 Application schema SOIL 37
-
-5.3.1 Description 37
-
-5.3.2 Feature catalogue 48
-
-5.3.3 Externally governed code lists 84
-
-6 Reference systems, units of measure and grids 86
-
-6.1 Default reference systems, units of measure and grid 86
-
-6.1.1 Coordinate reference systems 86
-
-6.1.2 Temporal reference system 89
-
-6.1.3 Units of measure 89
-
-6.1.4 Grids 90
-
-6.2 Theme-specific requirements and recommendations 91
-
-7 Data quality 92
-
-7.1 Data quality elements 92
-
-7.1.1 Logical consistency – Conceptual consistency 93
-
-7.1.2 Logical consistency – Domain consistency 93
-
-7.1.3 Completeness – Omission 94
-
-7.2 Minimum data quality requirements 95
-
-7.3 Minimum data quality recommendations 95
-
-8 Dataset-level metadata 96
-
-8.1 Metadata elements defined in INSPIRE Metadata Regulation 96
-
-8.1.1 Conformity 97
-
-8.1.2 Lineage 99
-
-8.1.3 Temporal reference 100
-
-8.2 Metadata elements for interoperability 101
-
-8.2.1 Coordinate Reference System 102
-
-8.2.2 Temporal Reference System 102
-
-8.2.3 Encoding 103
-
-8.2.4 Character Encoding 104
-
-8.2.5 Spatial representation type 104
-
-8.2.6 Data Quality – Logical Consistency – Topological Consistency 105
-
-8.3 Recommended theme-specific metadata elements 106
-
-8.3.1 Maintenance Information 106
-
-8.3.2 Metadata elements for reporting data quality 107
-
-9 Delivery 109
-
-9.1 Updates 109
-
-9.2 Delivery medium 109
-
-9.3 Encodings 110
-
-9.3.1 Default Encoding(s) 111
-
-9.3.2 Recommended Encoding(s) 111
-
-9.4 Options for delivering coverage data 111
-
-10 Data Capture 114
-
-11 Portrayal 115
-
-11.1 Layers to be provided by INSPIRE view services 116
-
-11.1.1 Layers organisation 117
-
-11.2 Styles required to be supported by INSPIRE view services 117
-
-11.2.1 Styles for the layer SO.SoilBody 117
-
-11.2.2 Styles for the layer SO.ObservedSoilProfile 117
-
-11.2.3 Styles for the layer SO.SoilSite 118
-
-11.3 Other recommended styles 118
-
-11.3.1 Styles for the layer SO.SoilBody 118
-
-Bibliography 121
-
-Annex A (normative) Abstract Test Suite 122
-
-A.1 Application Schema Conformance Class 125
-
-A.1.1 Schema element denomination test 125
-
-A.1.2 Value type test 125
-
-A.1.3 Value test 126
-
-A.1.4 Soil parameters theme specific value test 126
-
-A.1.5 Soil descriptive parameter theme specific value test 127
-
-A.1.6 Soil horazion classification theme specific value test 127
-
-A.1.7 Soil type name theme specific value test 127
-
-A.1.8 Attributes/associations completeness test 127
-
-A.1.9 Abstract spatial object test 128
-
-A.1.10 Constraints test 128
-
-A.1.11 Geometry representation test 128
-
-A.2 Reference Systems Conformance Class 129
-
-A.2.1 Datum test 129
-
-A.2.2 Coordinate reference system test 129
-
-A.2.3 Grid test 130
-
-A.2.4 View service coordinate reference system test 130
-
-A.2.5 Temporal reference system test 130
-
-A.2.6 Units of measurements test 131
-
-A.3 Data Consistency Conformance Class 131
-
-A.3.1 Unique identifier persistency test 131
-
-A.3.2 Version consistency test 131
-
-A.3.3 Life cycle time sequence test 132
-
-A.3.4 Validity time sequence test 132
-
-A.3.5 Update frequency test 132
-
-A.4 Metadata IR Conformance Class 133
-
-A.4.1 Metadata for interoperability test 133
-
-A.5 Information Accessibility Conformance Class 133
-
-A.5.1 Code list publication test 133
-
-A.5.2 CRS publication test 133
-
-A.5.3 CRS identification test 134
-
-A.5.4 Grid identification test 134
-
-A.6 Data Delivery Conformance Class 134
-
-A.6.1 Encoding compliance test 134
-
-A.7 Portrayal Conformance Class 134
-
-A.7.1 Layer designation test 134
-
-A.8 Technical Guideline Conformance Class 136
-
-A.8.1 Multiplicity test 136
-
-A.8.2 CRS http URI test 136
-
-A.8.3 Metadata encoding schema validation test 136
-
-A.8.4 Metadata occurrence test 136
-
-A.8.5 Metadata consistency test 137
-
-A.8.6 Encoding schema validation test 137
-
-A.8.7 Coverage multipart representation test 137
-
-A.8.8 Coverage domain consistency test 138
-
-A.8.9 Style test 138
-
-Annex B (informative) Use Cases 139
-
-B.1 Agri-Environmental Indicator – Soil Erosion 141
-
-B.2 Agri-Environmental Indicator – Soil Quality 146
-
-B.3 Progress in management of Contaminated sites (CSI 015) indicator 153
-
-B.4 Land Irrigation Suitability for Navarre (Spain) 154
-
-B.5 Development of methodologies for soil salinity surveillance in the middle Ebro basin 160
-
-B.6 MARS project 169
-
-B.7 Restrictions for agricultural use based on mineral, the N-, and P-saturation in the soil and (shallow) ground water 173
-
-B.8 Calculation threshold trace elements 178
-
-B.9 Use of Soil Scape Viewer 181
-
-B.10 Establishment Less Favoured Areas (France) 184
-
-B.11 Contaminated Land Register Austria 187
-
-B.12 Risk for drinking water wells by contamination 193
-
-B.13 Ecological risk of soil contamination 196
-
-B.14 Contamination in relation to property 202
-
-B.15 State of soil in Europe 207
-
-Annex C (normative) Code list values 211
-
-Annex D (informative) Soil Data Model Extensions 267
-
-D.1 Soil Contamination 267
-
-D.1.1 Feature catalogue 275
-
-D.1.1.1 Feature catalogue metadata 275
-
-D.1.1.2 Spatial object types 275
-
-D.1.1.3 Data types 279
-
-D.1.1.4 Code lists 281
-
-D.1.1.5 Imported types (informative) 284
-
-D.1.2 SoilContamination - Code Lists 288
-
-D.2 Soil Organic Carbon Content provision 313
-
-D.2.1 INTRODUCTION 313
-
-D.2.2 USE CASE DESCRIPTION 314
-
-D.2.3 CODE LISTS USED 317
-
 :sectnums:
-
-== 
 
 == Scope
 
@@ -7027,7 +6714,7 @@ _Soil_ cartographic units are reclassified according to the parameters above men
 
 The "Land irrigation suitability map" is made at a scale of 1:25.000, therefore, and depending on the case, for further and more detailed information, additional works should be carried out.
 
-image:./media/image16.emf[image,width=660,height=729]image:./media/image17.emf[image,width=660,height=729]image:./media/image18.png[image,width=660,height=729, align=center]
+image:./media/image16.png[image,width=660,height=729]image:./media/image17.png[image,width=660,height=729]image:./media/image18.png[image,width=660,height=729, align=center]
 
 [.text-center]
 Figure 1: Reclassification of Soil Cartographic Units according to soil parameters, topography and drainage.
@@ -7850,10 +7537,10 @@ information sources are needed list each source separately>
 [arabic, start=3]
 . results from regional water monitoring systems showing excesses in the concentrations of NP
 
-image:./media/image24.wmf[image,width=554,height=787, align=center]
+image:./media/image24.png[image,width=554,height=787, align=center]
 
 [.text-center]
-image:./media/image25.wmf[image,width=554,height=688, align=center]
+image:./media/image25.png[image,width=554,height=688, align=center]
 
 [.text-center]
 _IMPORTANT NOTE it still needs to be checked if the elements in this Use Case match the latest version of the soil data model, as described in this document._
@@ -8046,7 +7733,7 @@ Use of Soil Scape Viewer
 
 The *Soilscapes Viewer* (see *Figure 6* below) allows users to view and map the soils of England and Wales, searching by U.K. postcode or co-ordinates to see the general conditions at any point. An interactive legend allows users to click on a feature represented in the map and learn more about that soil type including drainage, texture, land cover, habitats, and fertility.
 
-image:./media/image27.emf[image,width=488,height=352, align=center]
+image:./media/image27.png[image,width=488,height=352, align=center]
 
 [.text-center]
 *Figure 6: screenshot of the soil scape viewer*
@@ -8964,7 +8651,7 @@ After a first generic approach a discussion may raise on the need of remediation
 . Ecology: field observations (condition and variation of soil organisms, plants, trees).
 
 ====
-image:./media/image29.emf[image,width=136,height=138, align=center]
+image:./media/image29.png[image,width=136,height=138, align=center]
 
 [.text-center]====
 
@@ -8974,7 +8661,7 @@ The basis of the Triad method is to compare results from a polluted site with th
 
 The Triad method assists to provide a 'Weight of Evidence' of the ecological effects from the three types of investigation. Like other methods for soil surveys and investigations the Triad method can be applied in a stepwise (tiered) way, from simple to more elaborate methods and investigations, in order to exploit the research in a cost-effective manner.
 
-image:./media/image30.emf[image,width=446,height=469, align=center]
+image:./media/image30.png[image,width=446,height=469, align=center]
 
 [.text-center]
 _Output of the Triad method: risk evaluation of the soil samples B and C (with sample A as clean reference) by 'Weight of evidence' of the chemical, toxicological and ecological investigation._
