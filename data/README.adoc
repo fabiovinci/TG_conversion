@@ -25,7 +25,7 @@
 
 image::./media/image2.jpeg[image,width=131,height=90,align=center]
 
-image:./media/image3.png[image,width=93,height=93][discrete] = **INSPIRE** *Infrastructure for Spatial Information in Europe*
+image:./media/image3.png[image,width=93,height=93]**INSPIRE** *Infrastructure for Spatial Information in Europe*
 
 [discrete]
 = D2.8.III.3 Data Specification on _Soil_ – Technical Guidelines
@@ -49,9 +49,9 @@ image:./media/image3.png[image,width=93,height=93][discrete] = **INSPIRE** *Infr
 |*Coverage* |Project duration
 |===
 
-*Foreword*
-
-*How to read the document?*
+[discrete]
+= *Foreword* +
+= *How to read the document?*
 
 This document describes the _"INSPIRE data specification on Soil – Technical Guidelines"_ version 3.0 as developed by the Thematic Working Group (TWG) _TWG-Soil_ using both natural and a conceptual schema language.
 
