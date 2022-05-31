@@ -135,7 +135,7 @@ The data specification is based, as far as possible, on existing standards. Apar
 
 To enhance semantic interoperability the use of the soil classification scheme WRB (World Reference Base for Soil Resources) and the FAO horizon notation scheme as primary classification systems are proposed. The use of other currently used (local, regional, national) classification systems is also provided for.
 
-[discrete]
+
 = *Acknowledgements*
 
 Many individuals and organisations have contributed to the development of these Guidelines.
@@ -155,7 +155,7 @@ Unit H06: Digital Earth and Reference Data
 _http://inspire.ec.europa.eu/index.cfm/pageid/2_
 
 <<<
-[discrete]
+
 = Table of Contents
 toc::[]
 
