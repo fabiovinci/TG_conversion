@@ -49,7 +49,6 @@ image:./media/image3.png[image,width=93,height=93] **INSPIRE** *Infrastructure f
 |*Coverage* |Project duration
 |===
 
-[discrete]
 = *Foreword*
 = *How to read the document?*
 
@@ -76,7 +75,6 @@ In order to distinguish the INSPIRE spatial data themes from the spatial object 
 
 Neither the European Commission nor any person acting on behalf of the Commission is responsible for the use which might be made of this publication.
 
-[discrete]
 = *Interoperability of Spatial Data Sets and Services – General Executive Summary*
 
 The challenges regarding the lack of availability, quality, organisation, accessibility, and sharing of spatial information are common to a large number of policies and activities and are experienced across the various levels of public authority in Europe. In order to solve these problems it is necessary to take measures of coordination between the users and providers of spatial information. The Directive 2007/2/EC of the European Parliament and of the Council adopted on 14 March 2007 aims at establishing an Infrastructure for Spatial Information in the European Community (INSPIRE) for environmental policies, or policies and activities that have an impact on the environment.
@@ -110,7 +108,6 @@ By listing a number of requirements and making the necessary recommendations, th
 
 In addition to providing a basis for the interoperability of spatial data in INSPIRE, the data specification development framework and the thematic data specifications can be reused in other environments at local, regional, national and global level contributing to improvements in the coherence and interoperability of data in spatial data infrastructures.
 
-[discrete]
 = *_Soil_ – Executive Summary*
 
 For the purpose of the data specification in this document, soil is the upper part of the earth's crust, formed by mineral particles, organic matter, water, air and living organisms. It is the interface between rock, air and water which hosts most of the biosphere. Soil is subject to a series of threats as recognized not only in the EU Soil Thematic Strategy (COM(2006)231 final), but indirectly also in several adopted EU Directives (e.g. 1999/31/EC, 91/676/EEC, 86/278/EC..). The requirements of these directives were considered while compiling this data specification.
