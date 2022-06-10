@@ -156,7 +156,7 @@ Unit H06: Digital Earth and Reference Data
 _http://inspire.ec.europa.eu/index.cfm/pageid/2_
 
 //Add page break support for PDF export
->>>
+<<<
 
 [discrete]
 = Table of Contents
