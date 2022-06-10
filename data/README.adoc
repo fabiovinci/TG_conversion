@@ -66,7 +66,7 @@ The technical provisions and the underlying concepts are often illustrated by ex
 
 In order to distinguish the INSPIRE spatial data themes from the spatial object types, the INSPIRE spatial data themes are written in _italics._
 
-[width="100%",cols="100%",options="header",]
+[width="100%",cols="100%"]
 |===
 |The document will be publicly available as a 'non-paper'. It does not represent an official position of the European Commission, and as such cannot be invoked in the context of legal procedures.
 |===
