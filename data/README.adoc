@@ -318,7 +318,9 @@ On the one hand, the notion of "soil sample", considered as a physical part of t
 
 On the other hand, "sample" is considered to be the location where soil material is taken at a specific depth or over a depth range without doing any soil profile description. "Sample", together with trial pit and borehole, is a type of soil plot. The latter is the concept described in the model.
 
-*Definition:*
+|===
+
+|*Definition:*
 
 Soils and subsoil characterised according to depth, texture, structure and content of particles and organic material, stoniness, erosion, where appropriate mean slope and anticipated water storage capacity. [Directive 2007/2/EC]
 
@@ -331,7 +333,9 @@ INSPIRE _Soil_ data theme comprises information on:
 • Soil inventories that provide one-off assessments of soil conditions and/or soil properties at certain locations and at a specific point in time, and allow soil monitoring, providing a series of assessments showing how soil conditions and/or properties change over time.
 
 • Soil mapping that provides a spatial representation of the properties linked to the soils, including soil types; typically, soil maps are derived with the help of data available in soil inventories. Also other soil related information derived from soil properties, possibly in combination with non-soil data are within the scope.
+|===
 
+[.text-right]
 Entry in the INSPIRE registry: _http://inspire.ec.europa.eu/theme/so/_
 
 === Normative References
