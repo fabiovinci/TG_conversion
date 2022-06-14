@@ -321,17 +321,12 @@ On the other hand, "sample" is considered to be the location where soil material
 |===
 
 |*Definition:*
-
 Soils and subsoil characterised according to depth, texture, structure and content of particles and organic material, stoniness, erosion, where appropriate mean slope and anticipated water storage capacity. [Directive 2007/2/EC]
 
 *Description:*
-
 _Soil_ represents the upper part of the earth's crust, formed by mineral particles, organic matter, water, air and living organisms. It is the interface between rock, air and water which hosts most of the biosphere.
-
 INSPIRE _Soil_ data theme comprises information on:
-
 • Soil inventories that provide one-off assessments of soil conditions and/or soil properties at certain locations and at a specific point in time, and allow soil monitoring, providing a series of assessments showing how soil conditions and/or properties change over time.
-
 • Soil mapping that provides a spatial representation of the properties linked to the soils, including soil types; typically, soil maps are derived with the help of data available in soil inventories. Also other soil related information derived from soil properties, possibly in combination with non-soil data are within the scope.
 |===
 
@@ -382,7 +377,7 @@ ISO 19156: 2011. Geographic Information – Observation and Measurements
 
 ISO DIS 28258 Soil Quality – Digital Exchange of Soil-Related data
 
-NOTE The ISO DIS 28258 draft standard has been developed in parallel with this data specification on soil. It has a wider scope, but the models mutually influenced each other. In conclusion, as far as both models cover the same real world objects, central terms and definitions in and for the data models are near enough to be mappable into each other.
+NOTE: The ISO DIS 28258 draft standard has been developed in parallel with this data specification on soil. It has a wider scope, but the models mutually influenced each other. In conclusion, as far as both models cover the same real world objects, central terms and definitions in and for the data models are near enough to be mappable into each other.
 
 === Terms and definitions
 
@@ -398,7 +393,7 @@ Specifically, for the theme _Soil_, the following terms are defined:
 
 === Symbols and abbreviations
 
-[width="100%",cols="14%,86%",options="header",]
+[width="100%",cols="14%,86%"]
 |===
 |ATS |Abstract Test Suite
 |CAP |Common Agricultural Policy
@@ -477,7 +472,7 @@ In contrast, the Technical Guidelines define _how_ Member States might implement
 image::./media/image7.png[image,width=603,height=375, align=center]
 
 [.text-center]
-Figure 4 - Relationship between INSPIRE Implementing Rules and Technical Guidelines
+*Figure 4 \- Relationship between INSPIRE Implementing Rules and Technical Guidelines*
 
 ==== Requirements
 
@@ -532,7 +527,6 @@ NOTE For more information on specification scopes, see [ISO 19131:2007], clause 
 == Identification information
 
 These Technical Guidelines are identified by the following URI:
-
 http://inspire.ec.europa.eu/tg/so/3.0
 
 NOTE ISO 19131 suggests further identification information to be included in this section, e.g. the title, abstract or spatial representation type. The proposed items are already described in the document metadata, executive summary, overview description (section 2) and descriptions of the application schemas (section 5). In order to avoid redundancy, they are not repeated here.
