@@ -481,8 +481,8 @@ The purpose of these Technical Guidelines (Data specifications on _Soil_) is to 
 [IMPORTANT]
 ====
 [.text-center]
-*IR Requirement* +
-_Article / Annex / Section no._ +
+*IR Requirement*
+_Article / Annex / Section no._
 *Title / Heading*
 
 This style is used for requirements contained in the Implementing Rules on interoperability of spatial data sets and services (Commission Regulation (EU) No 1089/2010).
@@ -541,10 +541,9 @@ Articles 3, 4 and 5 of the Implementing Rules lay down the requirements for the 
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 Article 4
-
 *Types for the Exchange and Classification of Spatial Objects*
 
 {empty}1. For the exchange and classification of spatial objects from data sets meeting the conditions laid down in Article 4 of Directive 2007/2/EC, Member States shall use the spatial object types and associated data types, enumerations and code lists that are defined in Annexes II, III and IV for the themes the data sets relate to.
@@ -575,10 +574,9 @@ An application schema may include references (e.g. in attributes or inheritance 
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 _Article 3_
-
 *Common Types*
 
 Types that are common to several of the themes listed in Annexes I, II and III to Directive 2007/2/EC shall conform to the definitions and constraints and include the attributes and association roles set out in Annex I.
@@ -627,10 +625,9 @@ The following important rules related to class inheritance and abstract classes 
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 Article 5
-
 *Types*
 
 (...)
@@ -713,10 +710,9 @@ Enumerations are modelled as classes in the application schemas. Their values ar
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 Article 6
-
 *Code Lists and Enumerations*
 
 (...)
@@ -735,10 +731,9 @@ The IRs distinguish the following types of code lists.
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 Article 6
-
 *Code Lists and Enumerations*
 
 {empty}1) Code lists shall be of one of the following types, as specified in the Annexes:
@@ -776,10 +771,9 @@ In addition, code lists can be hierarchical, as explained in Article 6(2) of the
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 Article 6
-
 *Code Lists and Enumerations*
 
 (...)
@@ -794,10 +788,9 @@ The type of code list and whether it is hierarchical or not is also indicated in
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 Article 6
-
 *Code Lists and Enumerations*
 
 (....)
@@ -893,10 +886,9 @@ An empty code list may also be used as a super-class for a number of specific co
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 _Article 9_
-
 *Identifier Management*
 
 {empty}1. The data type Identifier defined in Section 2.1 of Annex I shall be used as a type for the external object identifier of a spatial object.
@@ -915,10 +907,9 @@ NOTE 3 Article 9(2) is ensured if the _namespace_ and _localId_ attributes of th
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 _Article 12_
-
 *Other Requirements & Rules*
 
 {empty}1. The value domain of spatial properties defined in this Regulation shall be restricted to the Simple Feature spatial schema as defined in Herring, John R. (ed.), OpenGIS® Implementation Standard for Geographic information – Simple feature access – Part 1: Common architecture, version 1.2.1, Open Geospatial Consortium, 2011, unless specified otherwise for a specific spatial data theme or type.
@@ -941,10 +932,9 @@ NOTE 2 Changes to the attribute "endLifespanVersion" does not trigger a change i
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 _Article 10_
-
 *Life-cycle of Spatial Objects*
 
 (...)
@@ -973,10 +963,9 @@ Specific application schemas may give examples what "being valid" means for a sp
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 _Article 12_
-
 *Other Requirements & Rules*
 
 (...)
@@ -1044,10 +1033,9 @@ Any soil profile can be characterized as a whole by a number of properties, of w
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 _Annex IV / Section 3.4._
-
 *Theme specific requirement*
 
 Only one Other Soil Name Type classification shall be used for a dataset.
@@ -1069,10 +1057,9 @@ A horizon is further specified by a horizon name according to the FAO horizon no
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 _Annex IV / Section 3.4_
-
 *Theme specific requirement*
 
 Only one Other Horizon Notation Type classification shall be used for a dataset.
@@ -1086,10 +1073,9 @@ Note that, since the parameters for _soilProfile_, _ProfileElement_ and _soilDer
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 _Annex IV / Section 3.4_
-
 *Theme specific requirement*
 
 The values of the first level hierarchical code lists: ProfileElementParameterNameValue, SoilDerivedObjectParameterNameValue, SoilProfileParameterNameValue, SoilSiteParameterNameValue (chemicalParameter, biologicalParameter, physicalParameter) serve only the purpose of structuring; only the lower-level values shall be used.
@@ -1117,10 +1103,9 @@ At _SoilDerivedObject_ object level__,__ the value for the associated parameter 
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 _Annex IV / Section 3.4_
-
 *Theme specific requirement*
 
 When an additional descriptive parameter for the soil derived object is needed, the parameter attribute of the OM_Observation spatial object type shall be used.
@@ -3553,10 +3538,9 @@ The reference systems, units of measure and geographic grid systems included in 
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 _Annex II, Section 1.2_
-
 *Datum for three-dimensional and two-dimensional coordinate reference systems*
 
 For the three-dimensional and two-dimensional coordinate reference systems and the horizontal component of compound coordinate reference systems used for making spatial data sets available, the datum shall be the datum of the European Terrestrial Reference System 1989 (ETRS89) in areas within its geographical scope, or the datum of the International Terrestrial Reference System (ITRS) or other geodetic coordinate reference systems compliant with ITRS in areas that are outside the geographical scope of ETRS89. Compliant with the ITRS means that the system definition is based on the definition of the ITRS and there is a well documented relationship between both systems, according to EN ISO 19111.
@@ -3567,10 +3551,9 @@ For the three-dimensional and two-dimensional coordinate reference systems and t
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 _Annex II, Section 1.3_
-
 *Coordinate Reference Systems*
 
 Spatial data sets shall be made available using at least one of the coordinate reference systems specified in sections 1.3.1, 1.3.2 and 1.3.3, unless one of the conditions specified in section 1.3.4 holds.
@@ -3612,10 +3595,9 @@ The geodetic codes and parameters needed to describe these coordinate reference 
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 _Annex II, Section 1.4_
-
 *Coordinate Reference Systems used in the View Network Service*
 
 For the display of spatial data sets with the view network service as specified in Regulation No 976/2009, at least the coordinate reference systems for two-dimensional geodetic coordinates (latitude, longitude) shall be available.
@@ -3626,10 +3608,9 @@ For the display of spatial data sets with the view network service as specified 
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 _Annex II, Section 1.5_
-
 *Coordinate Reference System Identifiers*
 
 {empty}1. Coordinate reference system parameters and identifiers shall be managed in one or several common registers for coordinate reference systems.
@@ -3687,10 +3668,9 @@ Table 2. http URIs for the default coordinate reference systems
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 _Article 11_
-
 *Temporal Reference Systems*
 
 {empty}1. The default temporal reference system referred to in point 5 of part B of the Annex to Commission Regulation (EC) No 1205/2008 (footnote:[OJ L 326, 4.12.2008, p. 12.]) shall be used, unless other temporal reference systems are specified for a specific spatial data theme in Annex II.
@@ -3707,10 +3687,9 @@ EXAMPLE 1997 (the year 1997), 1997-07-16 (16^th^ July 1997), 1997-07-16T19:20:30
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 _Article 12_
-
 *Other Requirements & Rules*
 
 (...)
@@ -3723,10 +3702,9 @@ _Article 12_
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 _Annex II, Section 2.2_
-
 *Grids*
 
 Either of the grids with fixed and unambiguously defined locations defined in Sections 2.2.1 and 2.2.2 shall be used as a geo-referencing framework to make gridded data available in INSPIRE, unless one of the following conditions holds:
@@ -4187,10 +4165,9 @@ It is recommended that at least the date of the last revision of a spatial data 
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 Article 13
-
 *Metadata required for Interoperability*
 
 The metadata describing a spatial data set shall include the following metadata elements required for interoperability:
@@ -4658,10 +4635,9 @@ NOTE The DQ_Result type should be DQ_DescriptiveResult and in the statement (68.
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 _Article 8_
-
 *Updates*
 
 {empty}1. Member States shall make available updates of data on a regular basis.
@@ -4702,10 +4678,9 @@ The IRs contain the following two requirements for the encoding to be used to ma
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 _Article 7_
-
 *Encoding*
 
 {empty}1. Every encoding rule used to encode spatial data shall conform to EN ISO 19118. In particular, it shall specify schema conversion rules for all spatial object types and all attributes and association roles and the output data structure used.
@@ -4836,10 +4811,9 @@ This clause defines the rules for layers and styles to be used for portrayal of 
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 _Article 14_
-
 *Portrayal*
 
 {empty}1. For the portrayal of spatial data sets using a view network service as specified in Commission Regulation No 976/2009 (footnote:[OJ L 274, 20.10.2009, p. 9.]), the following shall be available:
@@ -4941,10 +4915,9 @@ NOTE The table above contains several layers for the spatial object type(s) <spa
 
 [IMPORTANT]
 ====
+[.text-center]
 *IR Requirement*
-
 _Article 14_
-
 *Portrayal*
 
 (...)
