@@ -651,7 +651,7 @@ NOTE Since "void" is not a concept supported by OCL, OCL constraints cannot incl
 In the application schemas in this section several stereotypes are used that have been defined as part of a UML profile for use in INSPIRE [DS-D2.5]. These are explained in Table 1 below.
 
 [.text-center]
-Table 1 – Stereotypes (adapted from [DS-D2.5])
+*Table 1 – Stereotypes (adapted from [DS-D2.5])*
 
 [align=center,width="100%",cols="22%,14%,64%",options="header",]
 |===
@@ -736,9 +736,9 @@ The IRs distinguish the following types of code lists.
 Article 6
 *Code Lists and Enumerations*
 
-{empty}1) Code lists shall be of one of the following types, as specified in the Annexes:
+1) Code lists shall be of one of the following types, as specified in the Annexes:
 
-{empty}a) code lists whose allowed values comprise only the values specified in this Regulation;
+ a) code lists whose allowed values comprise only the values specified in this Regulation;
 
 {empty}b) code lists whose allowed values comprise the values specified in this Regulation and narrower values defined by data providers;
 
