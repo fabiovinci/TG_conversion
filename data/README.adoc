@@ -472,7 +472,7 @@ In contrast, the Technical Guidelines define _how_ Member States might implement
 image::./media/image7.png[image,width=603,height=375, align=center]
 
 [.text-center]
-*Figure 4 \- Relationship between INSPIRE Implementing Rules and Technical Guidelines*
+*Figure 4 - Relationship between INSPIRE Implementing Rules and Technical Guidelines*
 
 ==== Requirements
 
