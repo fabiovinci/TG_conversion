@@ -1222,7 +1222,7 @@ a|
 !===
 !  !Name: !perived profile presence in soil body
 !  !Definition: !indicates the percentages (lower and upper boundary) that the derived profile takes part in the Soil body.
-!  !Description: !
+!  !Description: !NOTE 1 A soil body is characterized by one or more derived soil profiles in a defined geographic area. When the soil body is characterized by more than one derived profiles, the distribution area of these derived soil profiles is not spatially defined, but their presence is indicated by a range of percentages.
 !  !Stereotypes: !«associationType»
 !===
 
@@ -3539,8 +3539,6 @@ Spatial data sets shall be made available using at least one of the coordinate r
 
 *1.3.1. Three-dimensional Coordinate Reference Systems*
 
-====
-
 * Three-dimensional Cartesian coordinates based on a datum specified in 1.2 and using the parameters of the Geodetic Reference System 1980 (GRS80) ellipsoid.
 * Three-dimensional geodetic coordinates (latitude, longitude and ellipsoidal height) based on a datum specified in 1.2 and using the parameters of the GRS80 ellipsoid.
 
@@ -3569,6 +3567,7 @@ Exceptions, where other coordinate reference systems than those listed in 1.3.1,
 {empty}2. For regions outside of continental Europe, Member States may define suitable coordinate reference systems.
 
 The geodetic codes and parameters needed to describe these coordinate reference systems and to allow conversion and transformation operations shall be documented and an identifier shall be created, according to EN ISO 19111 and ISO 19127.
+====
 
 ===== Display
 
