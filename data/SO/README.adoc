@@ -997,8 +997,7 @@ The major spatial object types that can be distinguished in the Soil data model 
 
 Their meaning and relationships are explained in the following paragraphs. All objects, apart from SoilThemeCoverage and SoilThemeDescriptiveCoverage, are presented in Figure 7– Vector, while Figure 8 presents the UML class diagram for these objects. The used data types and codelists are illustrated in and Figure 9 and Figure 10. The relation to Observations and Measurements is illustrated in Figure 11.
 
-[arabic, start=1]
-. _Soil Profile, Layer and Horizon_
+====== _Soil Profile, Layer and Horizon_
 
 The concepts of "observed soil profile" and "derived soil profile" are represented through the classes _ObservedSoilProfile_ and _DerivedSoilProfile_ that are subtypes of the abstract class _SoilProfile_. (see Figure 7)
 
@@ -1058,8 +1057,7 @@ _Annex IV / Section 3.4_
 The values of the first level hierarchical code lists: ProfileElementParameterNameValue, SoilDerivedObjectParameterNameValue, SoilProfileParameterNameValue, SoilSiteParameterNameValue (chemicalParameter, biologicalParameter, physicalParameter) serve only the purpose of structuring; only the lower-level values shall be used.
 ====
 
-[arabic, start=2]
-. _SoilBody_
+====== _SoilBody_
 
 To delineate geographically areas with a soil cover that can be characterized by a set of derived soil profiles, the model introduces the construct of the _SoilBody_ class (see Figure 7). It represents an association (or other types of spatial linkages of various soil types) of derived soil profiles that represent the soils found together in the area of the _SoilBody_. The area is specified by the _geometry_ attribute of the _SoilBody_. The presence of one or more kinds of soils in the _SoilBody_ is modelled with the association class _DerivedProfilePresenceInSoilBody_, which allows to indicate which derived soil profiles are used to describe the soils of the _SoilBody_, and to which extent (expressed as a couple of area share percentages). The couple of percentages offer the flexibility to give a range of percentages to express uncertainty on the presence of any soil type. If only one percentage value is to be used, lower and upper boundaries of the couple of percentages should have identical values. Because of this flexibility with ranges of percentages, it is allowed that the sum of all percentage upper boundaries for the derived soil profiles in one soil body is greater than 100%. However, there is the constraint that the sum of all percentage lower boundaries for the derived soil profiles in one soil body is lower than or equal to 100%.
 
@@ -1069,8 +1067,7 @@ The _soilBodyLabel_ attribute of the _SoilBody_ allows a description of the _Soi
 
 Note that although the geometry (polygon areas) of the _SoilBody_ is known and also how much area within it is covered by each of the soils in the area, expressed as a range of percentages, the exact location and spatial pattern of each kind of soils within the _SoilBody_ is not defined.
 
-[arabic, start=3]
-. _SoilDerivedObject_
+====== _SoilDerivedObject_
 
 In the context of the model, a _SoilDerivedObject_ (Figure 7) is defined as a spatial object (e.g. a point, line, polygon) representing a soil-related property (using the association _soilDerivedObjectObservation_ with an OM_Observation object, see Figure 11) which value can be (but does not have to be) derived from a) values of soil properties of related observed soil profiles and/or related soil bodies, and/or b) any other data or information intern or extern to the model (for example: instances of other SoilDerivedObjects (intern); landcover/climate data (extern)). A collection of such _SoilDerivedObjects_ constitutes a soil thematic map, and is to be regarded as a dataset. The metadata linked to such a dataset provides the details on how the values for the attributes of the __SoilDerivedObject__s have been calculated.
 
@@ -1096,8 +1093,7 @@ Note that the set of name values in the codelist _SoilDerivedObjectParameterName
 
 A collection of __SoilDerivedObject__s that may consist of points, lines and/or polygons, is not meant for the exchange of soil thematic data as raster datasets. This feature is implemented with the _SoilThemeCoverage_ class__.__
 
-[arabic, start=4]
-. _SoilThemeCoverage, SoilThemeDescriptiveCoverage_
+====== _SoilThemeCoverage, SoilThemeDescriptiveCoverage_
 
 The specific purpose of the _SoilThemeCoverage_ class (see Figure 8) is to provide a structure for the interchange of soil thematic maps as continuous phenomena. The geometry is represented as a coverage which is defined as a "feature that acts as a function to return values from its range for any direct position within its spatial, temporal or spatiotemporal domain". For soil this commonly is a rectified grid.
 
@@ -1107,8 +1103,7 @@ The values of the gridcells are covered by a rangeSet constraint that says that 
 
 Since it may be useful to associate to a coverage other coverages of which the cell values are supplementary information to the corresponding grid cells of the coverage itself, the _SoilThemeCoverage_ class has an association to another coverage, the _SoilThemeDescriptiveCoverage_. The _SoilThemeDescriptiveCoverage_ has the same spatial and domain extent as the associated _SoilThemeCoverage_. The attribute _soilThemeDescriptiveParameter_ is of the datatype _SoilThemeDescriptiveParameterType_ that consists of a _soilThemeDescriptiveParameterName_ (characterstring, e.g. _purity_) and a unit of measure (e.g. cm). The _soilThemeDescriptiveParameter_ gives supplementary information on the grid cell values of the associated coverage, often it concerns qualitative information. An example would be the provision of "purity maps" in relation to for instance soil texture maps.
 
-[arabic, start=5]
-. _SoilSite, SoilPlot_
+====== _SoilSite, SoilPlot_
 
 A "soil site" is considered as a wider geographical area, i.e. the larger piece of land where soil investigation takes place in one or more spots, called soil plots. A site represents often just the geographically not strictly defined environment of the plots; thus, the geometry attribute of the soil site can be a surface or a point location. In soil survey and general soil monitoring, all soil information gathered on one site is handled as if it would have been collected at the very same location, which is impossible in the strict sense in the real world whenever soil investigation is destructive. The purpose of this investigation can be general (e.g. taking soil profiles for a general soil characterization) or specific (e.g. sampling to investigate potentially contaminated land). The soil plot object is included in the model to provide the type and location of the associated observed soil profile. A soil plot within a soil site is of a certain type (_borehole_, _sample_, _trial pit_) and located by a geographical point and/or the name of a location.
 
@@ -1120,8 +1115,7 @@ The possible properties of a soil site are modelled through the _soilSiteObserva
 
 A soil plot is represented in the model with the _SoilPlot_ class. A _SoilSite_ comprises one or more __SoilPlot-__s. A soil plot is of a certain type (_soilPlotType_), and its location is indicated by the attribute _soilPlotLocation_ which can take the form of either a specific X,Y-location or a description of the location using text or an identifier.
 
-[arabic, start=6]
-. _Note on Observations_
+====== _Note on Observations_
 
 For the data specifications of soil, the Observations & Measurements standard (O & M) is used (see Figure 11). The Observations & Measurements standard defines a domain-independent conceptual model for the representation of (spatiotemporal) measurement and other observation data. ISO 19156 defines an application schema as a reference schema for data required by one or more applications. O & M can be used as a generic means to deal with measurements and other observations in a standardized way. From that standard, _OM_Observation_ is used in the soil model; from the INSPIRE O&M package, the _INSPIRE_OM_Process_ and the data type _ObservableProperty_ are used in the soil model. This means that for each observation the _phenomenonTime_ and _resultTime_ are always used and additional properties may be used. The _resultTime_ for soil is usually the same time as the _PhenomenonTime_ unless the analysis is not carried out in the field. For the process information, at least a name and a responsible party have to be provided. Additionally, other properties that refer to online or offline documentation can be used. When needed, process parameters can be provided. For instance, for the soil profile parameter with the name carbonStock, which is placed in the _basePhenomenon_ attribute of the _ObservableProperty_ type, the _processParameter_ attribute of the _INSPIRE_OM_Process_ class (that is linked to the _ObservableProperty_) could hold a value that indicates the depth to which this carbonStock value pertains.
 
@@ -5220,8 +5214,9 @@ A *dataset that contain more spatial object and/or data types* may be regarded a
 * all the spatial object / data types that have corresponding types in the source dataset after the necessary transformations fulfil the requirements set out in the ISDSS Regulation and
 * all additional elements of the source model (spatial object types, data types, attributes, constraints, code lists and enumerations together with their values) do not conflict with any rule defined in the interoperability target specifications defined for any theme within INSPIRE.
 
-[arabic, start=6]
-. Even though the last condition can be derived from Art. 8(4) of the Directive, the ISDSS Regulation does not contain requirements concerning the above issue. Therefore, no specific tests have been included in this abstract suite for testing conformity of extended application schemas. Annex F of the Generic Conceptual Model (D2.5) provides an example how to extend INSPIRE application schemas in a compliant way.
+===
+Open issue 6: Even though the last condition can be derived from Art. 8(4) of the Directive, the ISDSS Regulation does not contain requirements concerning the above issue. Therefore, no specific tests have been included in this abstract suite for testing conformity of extended application schemas. Annex F of the Generic Conceptual Model (D2.5) provides an example how to extend INSPIRE application schemas in a compliant way.
+===
 
 The ATS contains a detailed list of abstract tests. It should be noted that some tests in the Application schema conformance class can be automated by utilising xml *schema validation tools.* It should be noted that failing such validation test does not necessary reflect non-compliance to the application schema; it may be the results of erroneous encoding.
 
