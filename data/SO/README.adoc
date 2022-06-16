@@ -4948,9 +4948,7 @@ None.
 |*Default Style* |Yes
 |*Style Title* |Soil Site Default Style
 |*Style Abstract* |This style is for visualising the boundaries of soil sites (polygon geometry) using a solid blue outline with a stroke width of 1 pixel.
-|*Symbology* a|
-[arabic, start=3]
-. The SLD still has to be created
+|*Symbology* a| *Open issue 3*: The SLD still has to be created
 
 |*Minimum & maximum scales* |No scale limits
 |===
@@ -4972,7 +4970,7 @@ There is one colour defined for each of the 32 WRB Reference Soil Groups (RSG):
 
 [width="100%",cols="13%,26%,37%,24%",]
 !===
-! ! ! !
+!WRB RSG Code !WRB RSG Name !Colour RGB code !Colour HEX code
 !AC !Acrisol !(247, 152, 4) !#F79804
 !AB !Albeluvisol !(254, 194, 194) !#FEC2C2
 !AL !Alisol !(255, 255, 190) !#FFFFBE
@@ -5007,9 +5005,7 @@ There is one colour defined for each of the 32 WRB Reference Soil Groups (RSG):
 !VR !Vertisol !(197, 0, 255) !#C500FF
 !===
 
-|*Symbology* a|
-[arabic, start=4]
-. The style has to be transformed to a proper SLD
+|*Symbology* a| *Open issue 4*: The style has to be transformed to a proper SLD
 
 |*Minimum & maximum scales* |No scale limits
 |===
@@ -5020,9 +5016,7 @@ There is one colour defined for each of the 32 WRB Reference Soil Groups (RSG):
 |*Default Style* |Yes
 |*Style Title* |Soil Body Alternative Style
 |*Style Abstract* |This style is for visualising the boundaries of soil bodies (polygon geometry) using a solid *yellow* outline with a stroke width of 1 pixel. Each polygon can be labelled with a value that links it unambiguously to its soilBodyLabel (e.g. the value of the soilBodyLabel itself); the label should be in *yellow* colour using a halo to be readable on dark solid fills and only appears at a certain level of detail centred on the polygon centroid with a size of 10 pt. The same label should appear in the legend with the soilBodyLabel text. This style can be used when overlaying this layer *on dark coloured backgrounds.*
-|*Symbology* a|
-[arabic, start=5]
-. The SLD still has to be created
+|*Symbology* a| *Open issue 5*: The SLD still has to be created
 
 |*Minimum & maximum scales* |No scale limits
 |===
@@ -5103,97 +5097,53 @@ An overview of the conformance classes and the associated tests is given in the 
 
 *Table 1. Overview of the tests within this Abstract Test Suite.*
 
-A.1 Application Schema Conformance Class 125
+*A.1. Application Schema Conformance Class*
+. A.1.1. Schema element denomination test
+A.1.2. Value type test
+A.1.3. Value test
+A.1.4. Soil parameters theme specific value test
+A.1.5. Soil descriptive parameter theme specific value test
+A.1.6. Soil horazion classification theme specific value test
+A.1.7. Soil type name theme specific value test
+A.1.8. Attributes/associations completeness test
+A.1.9. Abstract spatial object test
+A.1.10. Constraints test
+A.1.11. Geometry representation test
+A.2. Reference Systems Conformance Class
+A.2.1. Datum test
+A.2.2. Coordinate reference system test
+A.2.3. Grid test
+A.2.4. View service coordinate reference system test
+A.2.5. Temporal reference system test
+A.2.6. Units of measurements test
+A.3. Data Consistency Conformance Class
+A.3.1. Unique identifier persistency test
+A.3.2. Version consistency test
+A.3.3. Life cycle time sequence test
+A.3.4. Validity time sequence test
+A.3.5. Update frequency test
+A.4. Metadata IR Conformance Class
+A.4.1. Metadata for interoperability test
+A.5. Information Accessibility Conformance Class
+A.5.1. Code list publication test
+A.5.2. CRS publication test
+A.5.3. CRS identification test
+A.5.4. Grid identification test
+A.6. Data Delivery Conformance Class
+A.6.1. Encoding compliance test
+A.7. Portrayal Conformance Class
+A.7.1. Layer designation test
+A.8. Technical Guideline Conformance Class
+A.8.1. Multiplicity test
+A.8.2. CRS http URI test
+A.8.3. Metadata encoding schema validation test
+A.8.4. Metadata occurrence test
+A.8.5. Metadata consistency test
+A.8.6. Encoding schema validation test
+A.8.7. Coverage multipart representation test
+A.8.8. Coverage domain consistency test
+A.8.9. Style test
 
-A.1.1 Schema element denomination test 125
-
-A.1.2 Value type test 125
-
-A.1.3 Value test 126
-
-A.1.4 Soil parameters theme specific value test 126
-
-A.1.5 Soil descriptive parameter theme specific value test 127
-
-A.1.6 Soil horazion classification theme specific value test 127
-
-A.1.7 Soil type name theme specific value test 127
-
-A.1.8 Attributes/associations completeness test 127
-
-A.1.9 Abstract spatial object test 128
-
-A.1.10 Constraints test 128
-
-A.1.11 Geometry representation test 128
-
-A.2 Reference Systems Conformance Class 129
-
-A.2.1 Datum test 129
-
-A.2.2 Coordinate reference system test 129
-
-A.2.3 Grid test 130
-
-A.2.4 View service coordinate reference system test 130
-
-A.2.5 Temporal reference system test 130
-
-A.2.6 Units of measurements test 131
-
-A.3 Data Consistency Conformance Class 131
-
-A.3.1 Unique identifier persistency test 131
-
-A.3.2 Version consistency test 131
-
-A.3.3 Life cycle time sequence test 132
-
-A.3.4 Validity time sequence test 132
-
-A.3.5 Update frequency test 132
-
-A.4 Metadata IR Conformance Class 133
-
-A.4.1 Metadata for interoperability test 133
-
-A.5 Information Accessibility Conformance Class 133
-
-A.5.1 Code list publication test 133
-
-A.5.2 CRS publication test 133
-
-A.5.3 CRS identification test 134
-
-A.5.4 Grid identification test 134
-
-A.6 Data Delivery Conformance Class 134
-
-A.6.1 Encoding compliance test 134
-
-A.7 Portrayal Conformance Class 134
-
-A.7.1 Layer designation test 134
-
-A.8 Technical Guideline Conformance Class 136
-
-A.8.1 Multiplicity test 136
-
-A.8.2 CRS http URI test 136
-
-A.8.3 Metadata encoding schema validation test 136
-
-A.8.4 Metadata occurrence test 136
-
-A.8.5 Metadata consistency test 137
-
-A.8.6 Encoding schema validation test 137
-
-A.8.7 Coverage multipart representation test 137
-
-A.8.8 Coverage domain consistency test 138
-
-A.8.9 Style test 138
 
 In order to be conformant to a conformance class, a data set has to pass *all* tests defined for that conformance class.
 
