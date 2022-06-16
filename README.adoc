@@ -63,6 +63,7 @@ B.6 Digital Economy
 
 inspire-info@ec.europa.eu
 
+<<<
 == Foreword
 Directive 2007/2/EC of the European Parliament and of the Council [INS DIR], adopted on 14 March 2007 aims at establishing an Infrastructure for Spatial Information in the European Community (INSPIRE) for environmental policies, or policies and activities that have an impact on the environment. INSPIRE will make available relevant, harmonised and quality geographic information to support the formulation, implementation, monitoring and evaluation of policies and activities, which have a direct or indirect impact on the environment.
 
@@ -100,6 +101,7 @@ The technical document is intended to facilitate the implementation of Directive
 
 |===
 
+<<<
 == Foreword to this version
 The previous version 1.3 of this Technical Guidelines document has been widely used since its publication in 2013. It has led to a lot of feedback concerning unclear TG Requirements and implementation choices, which this version aims to answer and clarify. This work has been done under INSPIRE Maintenance and Implementation Group (MIG) temporary sub-group for work package 8 (MIWP-8: Metadata). According to its terms of referencefootnote:[Terms of Reference for the MIWP-8 group: https://ies-svn.jrc.ec.europa.eu/attachments/download/780/Inspire%20MIG%20ToR%20Update%20TG%20Metadata%20final.pdf], this new version of the TG document addresses the following issues:
 
@@ -164,6 +166,7 @@ As many Member States have already implemented the previous version of the Techn
 
 To facilitate a smooth transition from version 1.3 to version 2.0, a transitional period of 3 years has been defined, starting from 19 December 2016. During this period, the metadata records compliant with both version 1.3 and 2.0 implementations will be considered as “compliant with the INSPIRE Technical Guidelines for Metadata”. During the transitional period, the validator used in the INSPIRE geoportal will validate against and will provide validation reports for both versions 1.3 and 2.0. The better result will be used for the value of the compliance meter. After the transitional period, the geoportal will only validate against version 2.0.
 
+<<<
 == Revision history
 Changes from the version 1.3 to 2.0
 
@@ -450,7 +453,7 @@ TG Requirements 37 and 38 concerning the Metadata point of contact are now given
 
 TG Requirement 39 concerning the Metadata language is now stated as _TG Requirement C.5_.
 
-
+<<<
 == Normative references
 The following referenced documents are indispensable for the application of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies. For ISO standards that have also been adopted as EN by CEN, the relevant CEN reference and adoption date are given, with the ISO number and adoption date in parentheses.
 
@@ -497,6 +500,7 @@ NOTE [Regulation 1089/2010] is informally also known as "Implementing Rules for 
 
 [OGC Specification Model] The Specification Model – A Standard for Modular specifications, Open Geospatial Consortium, OGC 08-131r3, https://portal.opengeospatial.org/files/?artifact_id=34762
 
+<<<
 == Other references
 [TG SDS] Technical Guidance for INSPIRE Spatial Data Services and services allowing spatial data services to be invoked, version 4.0, http://inspire.ec.europa.eu/id/document/tg/sds/4.0
 
@@ -520,6 +524,7 @@ NOTE This document is not listed under normative references because it is only r
 
 [ISO 15836] ISO 15836:2009, Information and documentation – The Dublin Core metadata element set
 
+<<<
 == Terms and abbreviations
 The terms concerning requirements, conformance test classes and tests are based on the OGC document The Specification Model - A Standard for Modular specifications (08-131r3)footnote:[See http://www.opengeospatial.org/standards/modularspec]. Note that the intermediate structuring entities "requirements module" and "conformance module" are not included here for simplicity. Instead, the requirements are directly included in requirements classes and conformance tests in conformance test classes.
 
@@ -571,6 +576,7 @@ NOTE The technical specifications could e.g. be a web site documentation explain
 
 *View Service* is a service making it possible, as a minimum, to display, navigate, zoom in/out, pan, or overlay viewable spatial data sets and to display legend information and any relevant content of metadata [INSPIRE Directive, Art. 11].
 
+<<<
 == Verbal forms for expression of provisions
 In accordance with the ISO rules for drafting, the following verbal forms shall be interpreted in the given way:
 
