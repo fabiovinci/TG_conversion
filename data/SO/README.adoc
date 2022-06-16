@@ -5150,7 +5150,7 @@ a|
 !===
 !A.6.1. Encoding compliance test
 !===
-!*A.7. Portrayal Conformance Class*
+|*A.7. Portrayal Conformance Class*
 a|
 !===
 !A.7.1. Layer designation test
