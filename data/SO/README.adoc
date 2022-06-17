@@ -5185,7 +5185,7 @@ A *dataset that contain more spatial object and/or data types* may be regarded a
 * all additional elements of the source model (spatial object types, data types, attributes, constraints, code lists and enumerations together with their values) do not conflict with any rule defined in the interoperability target specifications defined for any theme within INSPIRE.
 
 |===
-Open issue 6: Even though the last condition can be derived from Art. 8(4) of the Directive, the ISDSS Regulation does not contain requirements concerning the above issue. Therefore, no specific tests have been included in this abstract suite for testing conformity of extended application schemas. Annex F of the Generic Conceptual Model (D2.5) provides an example how to extend INSPIRE application schemas in a compliant way.
+*Open issue 6*: Even though the last condition can be derived from Art. 8(4) of the Directive, the ISDSS Regulation does not contain requirements concerning the above issue. Therefore, no specific tests have been included in this abstract suite for testing conformity of extended application schemas. Annex F of the Generic Conceptual Model (D2.5) provides an example how to extend INSPIRE application schemas in a compliant way.
 |===
 
 The ATS contains a detailed list of abstract tests. It should be noted that some tests in the Application schema conformance class can be automated by utilising xml *schema validation tools.* It should be noted that failing such validation test does not necessary reflect non-compliance to the application schema; it may be the results of erroneous encoding.
@@ -5214,9 +5214,9 @@ http://inspire.ec.europa.eu/conformance-class/ir/so/as/Soil
 
 ==== Schema element denomination test
 
-{empty}a) Purpose: Verification whether each element of the dataset under inspection carries a name specified in the target application schema(s).
+a) Purpose: Verification whether each element of the dataset under inspection carries a name specified in the target application schema(s).
 
-{empty}b) Reference: Art. 3 and Art.4 of Commission Regulation No 1089/2010
+b) Reference: Art. 3 and Art.4 of Commission Regulation No 1089/2010
 
 {empty}c) Test Method: Examine whether the corresponding elements of the source schema (spatial object types, data types, attributes, association roles, code lists, and enumerations) are mapped to the target schema with the correct designation of mnemonic names.
 
