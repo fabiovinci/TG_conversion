@@ -5755,34 +5755,15 @@ In total 15 Use Cases were defined which covered the following fields:
 
 *_Contaminated sites_*
 
-* {blank}
-
-====
-Contaminated Land Register Austria
-====
-* {blank}
-
-====
-Use Case drinking water and soil contamination
-====
-* {blank}
-
-====
-Use Case Ecology and contamination
-====
-* {blank}
-
-====
-Use Case Property and contamination
-====
+* Contaminated Land Register Austria
+* Use Case drinking water and soil contamination
+* Use Case Ecology and contamination
+* Use Case Property and contamination
 
 *_Soil Monitoring_*
 
-* {blank}
+* Use Case state of soil in Europe
 
-====
-Use Case state of soil in Europe
-====
 
 The following table gives the relation of the Use Cases and the relevant legislation at the appropriate level:
 
@@ -5827,24 +5808,18 @@ RUSLE and USLE can be expressed as follows A = R * K * L * S * C * P
 Where
 
 A = estimated average soil loss in tons per acre per year
-
 R = rainfall-runoff erosivity factor
-
 K = soil erodibility factor
-
 L = slope length factor
-
 S = slope steepness factor
-
 C = cover-management factor
-
 P = support practice factor
 
 *Detailed structured description of the Use Case*
 
 [width="100%",cols="28%,72%"]
 |===
-|*Use Case Description* |
+2+|*Use Case Description*
 |*Name* |_Agri-Environmental Indicator Soil Erosion_
 |*Priority* |_High_
 |*Description* |_Member States will need to provide soil erosion data to Eurostat, according to the RUSLE model_
