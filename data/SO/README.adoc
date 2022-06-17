@@ -5600,9 +5600,9 @@ c) [underline]#Test Method#: Check whether data is made available for the view n
 |SO.ObservedSoilProfile
 |SO.SoilSite
 |SO. <CodeListValue>footnote:[One layer shall be made available for each code list value, in accordance with Art. 14(3).]
-Example: SO. OrganicCarbonContent
+Example: SO.OrganicCarbonContent
 |SO.<CodeListValue>Coveragefootnote:[One layer shall be made available for each code list value, in accordance with Art. 14(3).]
-Example: SO. OrganicCarbonContentCoverage
+Example: SO.OrganicCarbonContentCoverage
 |===
 
 NOTE Further technical information is given in section 11 of this document.
@@ -5715,9 +5715,9 @@ b) [underline]#Reference#: section 11.2.
 
 c) [underline]#Test Method#: Check whether the styles defined in section 11.2 have been made available for each specified layer.
 
-[upperalpha, start=2]
-. (informative) 
-Use Cases
+<<<
+[appendix]
+== (informative) Use Cases
 
 This Annex describes the Use Cases that were used as a basis for the development of this data specification.
 
