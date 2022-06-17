@@ -5717,7 +5717,7 @@ c) [underline]#Test Method#: Check whether the styles defined in section 11.2 ha
 
 <<<
 [appendix]
-== (informative) Use Cases
+== Use Cases (informative)
 
 This Annex describes the Use Cases that were used as a basis for the development of this data specification.
 
@@ -5739,7 +5739,7 @@ In total 15 Use Cases were defined which covered the following fields:
 
 *_Agri-Environmental Indicators:_*
 
-* {blank}
+* 
 
 ====
 Use Case Environmental Indicator Soil Erosion
