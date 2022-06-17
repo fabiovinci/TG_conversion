@@ -5199,6 +5199,7 @@ Each test in this suite follows the same structure:
 
 According to ISO 19105:2000 all tests in this ATS are basic tests. Therefore, this statement is not repeated each time.
 
+<<<
 [discrete]
 [.text-center]
 === *Part 1* (normative)
@@ -5598,30 +5599,26 @@ c) [underline]#Test Method#: Check whether data is made available for the view n
 |SO.SoilBody
 |SO.ObservedSoilProfile
 |SO.SoilSite
-a|
-SO. <CodeListValue>footnote:[One layer shall be made available for each code list value, in accordance with Art. 14(3).]
-
+|SO. <CodeListValue>footnote:[One layer shall be made available for each code list value, in accordance with Art. 14(3).]
 Example: SO. OrganicCarbonContent
-
-a|
-SO.<CodeListValue>Coveragefootnote:[One layer shall be made available for each code list value, in accordance with Art. 14(3).]
-
+|SO.<CodeListValue>Coveragefootnote:[One layer shall be made available for each code list value, in accordance with Art. 14(3).]
 Example: SO. OrganicCarbonContentCoverage
-
 |===
 
 NOTE Further technical information is given in section 11 of this document.
 
-* 
-Part 2 
-*(informative)
+<<<
+[discrete]
+[.text-center]
+=== *Part 2* (informative)
 
-*Conformity with the technical guideline (TG) Requirements*
+[discrete]
+[.text-center]
+=== *Conformity with the technical guideline (TG) Requirements*
 
 === Technical Guideline Conformance Class
 
 *Conformance class:*
-
 _http://inspire.ec.europa.eu/conformance-class/tg/so/3.0_
 
 ==== Multiplicity test
