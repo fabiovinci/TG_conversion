@@ -5214,7 +5214,7 @@ http://inspire.ec.europa.eu/conformance-class/ir/so/as/Soil
 
 ==== Schema element denomination test
 
-a) Purpose: Verification whether each element of the dataset under inspection carries a name specified in the target application schema(s).
+a) [underline]#Purpose#: Verification whether each element of the dataset under inspection carries a name specified in the target application schema(s).
 
 b) Reference: Art. 3 and Art.4 of Commission Regulation No 1089/2010
 
