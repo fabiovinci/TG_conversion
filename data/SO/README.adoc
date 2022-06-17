@@ -5739,59 +5739,19 @@ In total 15 Use Cases were defined which covered the following fields:
 
 *_Agri-Environmental Indicators:_*
 
-* 
-
-====
-Use Case Environmental Indicator Soil Erosion
-====
-* {blank}
-
-====
-Use Case Environmental Indicator Soil Quality
-====
-* {blank}
-
-====
-Progress in management of Contaminated sites (CSI015) indicator.
-====
+* Use Case Environmental Indicator Soil Erosion
+* Use Case Environmental Indicator Soil Quality
+* Progress in management of Contaminated sites (CSI015) indicator.
 
 *_Thematic maps_*
 
-* {blank}
-
-====
-Land irrigation suitability in Navarra (Spain)
-====
-* {blank}
-
-====
-Development of methodologies for soil salinity surveillance in the middle Ebro basin (Spain)
-====
-* {blank}
-
-====
-MARS (Monitoring Agriculture with Remote Sensing) project
-====
-* {blank}
-
-====
-Restrictions for agricultural use based on mineral, the N-, and P saturation in the soil and (shallow) ground water.
-====
-* {blank}
-
-====
-Calculation threshold trace elements
-====
-* {blank}
-
-====
-Use of Soil Scape Viewer
-====
-* {blank}
-
-====
-Establishment Less Favoured Areas (France)
-====
+* Land irrigation suitability in Navarra (Spain)
+* Development of methodologies for soil salinity surveillance in the middle Ebro basin (Spain)
+* MARS (Monitoring Agriculture with Remote Sensing) project
+* Restrictions for agricultural use based on mineral, the N-, and P saturation in the soil and (shallow) ground water.
+* Calculation threshold trace elements
+* Use of Soil Scape Viewer
+* Establishment Less Favoured Areas (France)
 
 *_Contaminated sites_*
 
