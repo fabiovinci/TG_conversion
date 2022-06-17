@@ -5242,21 +5242,9 @@ b) [underline]#Reference#: Art.4 (3) of Commission Regulation No 1089/2010.
 
 c) [underline]#Test Method#: When an attribute / association role has an enumeration or code list as its type, compare the values of each instance with those provided in the application schema. To pass this tests any instance of an attribute / association role
 
-* {blank}
-
-====
-shall not take any other value than defined in the enumeration table when its type is an enumeration.
-====
-* {blank}
-
-====
-shall take only values explicitly specified in the code list when the code list's extensibility is "none".
-====
-* {blank}
-
-====
-shall take only a value explicitly specified in the code list or shall take a value that is narrower (i.e. more specific) than those explicitly specified in the application schema when the code list's extensibility is "narrower".
-====
+* shall not take any other value than defined in the enumeration table when its type is an enumeration.
+* shall take only values explicitly specified in the code list when the code list's extensibility is "none".
+* shall take only a value explicitly specified in the code list or shall take a value that is narrower (i.e. more specific) than those explicitly specified in the application schema when the code list's extensibility is "narrower".
 
 NOTE 1 This test is not applicable to code lists with extensibility "open" or "any".
 
