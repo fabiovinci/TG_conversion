@@ -6130,46 +6130,14 @@ _As vector maps or as rasters._
 
 This quite general Use Case relies on the following soil *input* data:
 
-* {blank}
-
-====
-soil type (WRB) (as a character string expressing the WRB classification)
-====
-* {blank}
-
-====
-available water capacity (e.g. as percentage or as a depth (cm))
-====
-* {blank}
-
-====
-rooting depth (e.g. as cm)
-====
-* {blank}
-
-====
-depth to impermeable layer (e.g. as cm)
-====
-* {blank}
-
-====
-texture (%clay, %sand, %silt)
-====
-* {blank}
-
-====
-water regime (class: e.g. "Wet within 40 cm depth for over 11 months")
-====
-* {blank}
-
-====
-soil OM (e.g. in g/kg or percentage)
-====
-* {blank}
-
-====
-soil OC (e.g. in %)
-====
+* soil type (WRB) (as a character string expressing the WRB classification)
+* available water capacity (e.g. as percentage or as a depth (cm))
+* rooting depth (e.g. as cm)
+* depth to impermeable layer (e.g. as cm)
+* texture (%clay, %sand, %silt)
+* water regime (class: e.g. "Wet within 40 cm depth for over 11 months")
+* soil OM (e.g. in g/kg or percentage)
+* soil OC (e.g. in %)
 
 Since this use case is about 'soil quality', it is assumed that these soil data need to be known for a limited depth of the soil (topsoil).
 
