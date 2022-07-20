@@ -4,7 +4,7 @@
 
 //ifdef::env-github[]
 //:imagesdir: https://github.com/fabiovinci/TG_conversion/blob/main/media
-//:toc: left
+:toc: left
 //endif::[]
 
 
