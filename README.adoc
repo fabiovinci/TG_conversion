@@ -7,8 +7,7 @@
 //:toc: left
 //endif::[]
 
-
-
+:toc: left
 :toc-title:
 :toclevels: 4
 :sectnumlevels: 4
@@ -43,7 +42,6 @@ http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139/2.1.0 (this version
 
 <<<
 == Table of Contents
-:toc: left
 toc::[]
 
 <<<
