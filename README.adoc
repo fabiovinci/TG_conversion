@@ -7,10 +7,16 @@
 //:toc: left
 //endif::[]
 
-:toc: left
+:toc: macro
 :toc-title:
 :toclevels: 4
 :sectnumlevels: 4
+
+// Document properties
+:title: Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007
+:creator: Temporary MIWP 2021-2024 sub-group 2.3.1
+:revdate: 2022-01-31
+:author: INSPIRE Maintenance and Implementation Group (MIG)
 
 image:./media/image1.png[image,width=107,height=107]
 **INSPIRE**
